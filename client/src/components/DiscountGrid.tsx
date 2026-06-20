@@ -8,10 +8,16 @@ import DiscountCard from './DiscountCard'
 const ALL = 'all'
 const PAGE_SIZE = 9
 
+type View = 'all' | 'saved'
+
 function DiscountGrid() {
   const [discounts, setDiscounts] = useState<Discount[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+
+  const [view, setView] = useState<View>('all')
+  const [savedDiscounts, setSavedDiscounts] = useState<Discount[]>([])
+  const [loadingSaved, setLoadingSaved] = useState(false)
 
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState(ALL)
@@ -23,6 +29,12 @@ function DiscountGrid() {
   const userId = session?.user?.id
   const { savedIds, toggle } = useSavedDiscounts(userId)
 
+  // Sign-out while viewing Saved sends you back to All.
+  useEffect(() => {
+    if (!userId && view === 'saved') setView('all')
+  }, [userId, view])
+
+  // All discounts.
   useEffect(() => {
     supabase
       .from('discounts')
@@ -38,14 +50,44 @@ function DiscountGrid() {
       })
   }, [])
 
+  // Saved discounts, joined from saved_discounts → discounts for the current user.
+  useEffect(() => {
+    if (view !== 'saved' || !userId) return
+
+    let active = true
+    setLoadingSaved(true)
+    supabase
+      .from('saved_discounts')
+      .select('discount:discounts(*)')
+      .eq('user_id', userId)
+      .then(({ data, error }) => {
+        if (!active) return
+        if (error) {
+          console.error(error)
+        } else {
+          const rows = (data ?? []) as unknown as { discount: Discount | null }[]
+          setSavedDiscounts(rows.map((r) => r.discount).filter((d): d is Discount => d !== null))
+        }
+        setLoadingSaved(false)
+      })
+
+    return () => {
+      active = false
+    }
+  }, [view, userId])
+
+  const source = view === 'saved' ? savedDiscounts : discounts
+
   const categories = useMemo(() => {
-    const set = new Set(discounts.map((d) => d.category))
+    const set = new Set(source.map((d) => d.category))
     return Array.from(set).sort()
-  }, [discounts])
+  }, [source])
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return discounts.filter((d) => {
+    return source.filter((d) => {
+      // In the saved view, reflect live un-hearts immediately.
+      if (view === 'saved' && !savedIds.has(d.id)) return false
       const matchesCategory = category === ALL || d.category === category
       const matchesQuery =
         q === '' ||
@@ -53,12 +95,12 @@ function DiscountGrid() {
         d.description.toLowerCase().includes(q)
       return matchesCategory && matchesQuery
     })
-  }, [discounts, query, category])
+  }, [source, view, savedIds, query, category])
 
-  // Reset paging whenever the filtered set changes.
+  // Reset paging whenever the visible set changes.
   useEffect(() => {
     setVisibleCount(PAGE_SIZE)
-  }, [query, category])
+  }, [query, category, view])
 
   const visible = filtered.slice(0, visibleCount)
   const hasMore = visibleCount < filtered.length
@@ -82,7 +124,7 @@ function DiscountGrid() {
   }, [hasMore])
 
   if (loading) {
-    return <p className="py-12 text-center text-gray-500">Loading discounts…</p>
+    return <p className="py-12 text-center text-gray-500 dark:text-gray-400">Loading discounts…</p>
   }
 
   if (error) {
@@ -90,10 +132,28 @@ function DiscountGrid() {
   }
 
   const inputClass =
-    'rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-gray-900 focus:outline-none'
+    'rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:focus:border-gray-400'
+
+  const tabClass = (active: boolean) =>
+    `rounded-lg px-4 py-2 text-sm font-medium transition ${
+      active
+        ? 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900'
+        : 'text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+    }`
 
   return (
     <div>
+      {userId && (
+        <div className="mb-5 flex gap-2">
+          <button onClick={() => setView('all')} className={tabClass(view === 'all')}>
+            All discounts
+          </button>
+          <button onClick={() => setView('saved')} className={tabClass(view === 'saved')}>
+            Saved ({savedIds.size})
+          </button>
+        </div>
+      )}
+
       <div className="mb-6 flex flex-col gap-3 sm:flex-row">
         <input
           type="search"
@@ -116,9 +176,15 @@ function DiscountGrid() {
         </select>
       </div>
 
-      {filtered.length === 0 ? (
-        <p className="py-12 text-center text-gray-500">
-          {discounts.length === 0 ? 'No discounts available yet.' : 'No discounts match your search.'}
+      {view === 'saved' && loadingSaved ? (
+        <p className="py-12 text-center text-gray-500 dark:text-gray-400">Loading saved discounts…</p>
+      ) : filtered.length === 0 ? (
+        <p className="py-12 text-center text-gray-500 dark:text-gray-400">
+          {view === 'saved'
+            ? 'You haven’t saved any discounts yet.'
+            : discounts.length === 0
+              ? 'No discounts available yet.'
+              : 'No discounts match your search.'}
         </p>
       ) : (
         <>
@@ -137,7 +203,7 @@ function DiscountGrid() {
             <div ref={sentinelRef} className="flex justify-center py-8">
               <button
                 onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100"
+                className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:border-gray-600 dark:text-gray-200 dark:hover:bg-gray-800"
               >
                 Load more
               </button>

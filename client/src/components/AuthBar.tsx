@@ -67,10 +67,10 @@ function AuthBar() {
   if (session?.user) {
     return (
       <div className="flex items-center gap-3 text-sm">
-        <span className="text-gray-600">{session.user.email}</span>
+        <span className="text-gray-600 dark:text-gray-300">{session.user.email}</span>
         <button
           onClick={handleSignOut}
-          className="rounded-lg border border-gray-300 px-3 py-1.5 font-medium text-gray-700 transition hover:bg-gray-100"
+          className="rounded-lg border border-gray-300 px-3 py-1.5 font-medium text-gray-700 transition hover:bg-gray-100 dark:border-gray-600 dark:text-gray-200 dark:hover:bg-gray-800"
         >
           Sign out
         </button>
@@ -79,7 +79,7 @@ function AuthBar() {
   }
 
   const inputClass =
-    'rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none'
+    'rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:focus:border-gray-400'
 
   return (
     <form onSubmit={handleSignIn} className="flex flex-col items-end gap-2">
@@ -115,7 +115,7 @@ function AuthBar() {
           type="button"
           onClick={handleSignUp}
           disabled={busy}
-          className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-700 transition hover:bg-gray-100 disabled:opacity-50"
+          className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-700 transition hover:bg-gray-100 disabled:opacity-50 dark:border-gray-600 dark:text-gray-200 dark:hover:bg-gray-800"
         >
           Sign up
         </button>
