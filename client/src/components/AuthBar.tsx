@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { supabase } from '../library/supabase'
 import { useSession } from '../library/useSession'
+import { toast } from './Toast'
 
 const EDU_EMAIL = /^[^\s@]+@[^\s@]+\.edu$/i
 
@@ -15,6 +16,7 @@ function AuthBar() {
   function fail(text: string) {
     setMessage({ kind: 'error', text })
     setBusy(false)
+    toast(text)
   }
 
   function validEduEmail() {
@@ -37,6 +39,7 @@ function AuthBar() {
     })
     if (error) return fail(error.message)
     setBusy(false)
+    toast('Signed in')
   }
 
   async function handleSignUp() {
@@ -60,6 +63,7 @@ function AuthBar() {
 
   async function handleSignOut() {
     await supabase.auth.signOut()
+    toast('Signed out')
   }
 
   if (loading) return null
@@ -121,11 +125,7 @@ function AuthBar() {
         </button>
       </div>
 
-      {message && (
-        <span className={`text-xs ${message.kind === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>
-          {message.text}
-        </span>
-      )}
+      
     </form>
   )
 }

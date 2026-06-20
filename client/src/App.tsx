@@ -1,6 +1,7 @@
 import AuthBar from './components/AuthBar'
 import DiscountGrid from './components/DiscountGrid'
 import ThemeToggle from './components/ThemeToggle'
+import { ToastContainer } from './components/Toast'
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
       <main className="mx-auto max-w-5xl px-6 py-8">
         <DiscountGrid />
       </main>
+
+      <ToastContainer />
     </div>
   )
 }

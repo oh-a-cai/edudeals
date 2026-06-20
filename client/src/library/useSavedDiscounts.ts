@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './supabase'
+import { toast } from '../components/Toast'
 
 export function useSavedDiscounts(userId: string | undefined) {
   const [savedIds, setSavedIds] = useState<Set<string>>(new Set())
@@ -53,12 +54,15 @@ export function useSavedDiscounts(userId: string | undefined) {
     if (error) {
       // Revert on failure.
       console.error(error)
+      toast('Something went wrong. Please try again.')
       setSavedIds((prev) => {
         const next = new Set(prev)
         if (isSaved) next.add(discountId)
         else next.delete(discountId)
         return next
       })
+    } else {
+      toast(isSaved ? 'Removed from saved' : 'Discount saved')
     }
   }
 

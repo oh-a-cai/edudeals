@@ -2,3 +2,8 @@
 
 /* Manual (class-based) dark mode instead of Tailwind v4's default prefers-color-scheme. */
 @custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(0.25rem); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -5,7 +5,6 @@ import { useSavedDiscounts } from '../library/useSavedDiscounts'
 import type { Discount } from '../types'
 import DiscountCard from './DiscountCard'
 
-const ALL = 'all'
 const PAGE_SIZE = 9
 
 type View = 'all' | 'saved'
@@ -20,7 +19,7 @@ function DiscountGrid() {
   const [loadingSaved, setLoadingSaved] = useState(false)
 
   const [query, setQuery] = useState('')
-  const [category, setCategory] = useState(ALL)
+  const [selected, setSelected] = useState<Set<string>>(new Set())
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
 
   const sentinelRef = useRef<HTMLDivElement | null>(null)
@@ -88,19 +87,28 @@ function DiscountGrid() {
     return source.filter((d) => {
       // In the saved view, reflect live un-hearts immediately.
       if (view === 'saved' && !savedIds.has(d.id)) return false
-      const matchesCategory = category === ALL || d.category === category
+      const matchesCategory = selected.size === 0 || selected.has(d.category)
       const matchesQuery =
         q === '' ||
         d.brand.toLowerCase().includes(q) ||
         d.description.toLowerCase().includes(q)
       return matchesCategory && matchesQuery
     })
-  }, [source, view, savedIds, query, category])
+  }, [source, view, savedIds, query, selected])
 
   // Reset paging whenever the visible set changes.
   useEffect(() => {
     setVisibleCount(PAGE_SIZE)
-  }, [query, category, view])
+  }, [query, selected, view])
+
+  function toggleCategory(c: string) {
+    setSelected((prev) => {
+      const next = new Set(prev)
+      if (next.has(c)) next.delete(c)
+      else next.add(c)
+      return next
+    })
+  }
 
   const visible = filtered.slice(0, visibleCount)
   const hasMore = visibleCount < filtered.length
@@ -141,6 +149,13 @@ function DiscountGrid() {
         : 'text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
     }`
 
+  const chipClass = (active: boolean) =>
+    `rounded-full border px-3 py-1 text-sm font-medium transition ${
+      active
+        ? 'border-gray-900 bg-gray-900 text-white dark:border-gray-100 dark:bg-gray-100 dark:text-gray-900'
+        : 'border-gray-300 text-gray-600 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'
+    }`
+
   return (
     <div>
       {userId && (
@@ -154,26 +169,25 @@ function DiscountGrid() {
         </div>
       )}
 
-      <div className="mb-6 flex flex-col gap-3 sm:flex-row">
+      <div className="mb-4">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by brand or description…"
-          className={`${inputClass} flex-1`}
+          className={`${inputClass} w-full`}
         />
-        <select
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          className={`${inputClass} capitalize`}
-        >
-          <option value={ALL}>All categories</option>
-          {categories.map((c) => (
-            <option key={c} value={c} className="capitalize">
-              {c}
-            </option>
-          ))}
-        </select>
+      </div>
+
+      <div className="mb-6 flex flex-wrap gap-2">
+        <button onClick={() => setSelected(new Set())} className={chipClass(selected.size === 0)}>
+          All
+        </button>
+        {categories.map((c) => (
+          <button key={c} onClick={() => toggleCategory(c)} className={`${chipClass(selected.has(c))} capitalize`}>
+            {c}
+          </button>
+        ))}
       </div>
 
       {view === 'saved' && loadingSaved ? (
