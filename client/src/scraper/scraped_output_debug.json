@@ -1,0 +1,410 @@
+[
+  {
+    "brand": "84 Viet",
+    "description": "Fresh Vietnamese food in the heart of Berkeley, California",
+    "discount_percent": "5% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#84-viet",
+    "expires_at": null
+  },
+  {
+    "brand": "Bobby G's",
+    "description": "Quality Hand Crafted Pizza Made In-House. 24 hour cold fermented dough rolled daily, fresh local ingredients prepared daily, and house-made cheese & organic marinara",
+    "discount_percent": "5% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#bobby-g-s",
+    "expires_at": null
+  },
+  {
+    "brand": "Bench Café • Pâtisserie",
+    "description": "C offee shop with freshly baked (daily) pastries and delicious coffee. P roudly serving Tay tea and Highwire coffee.",
+    "discount_percent": "15% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#bench-cafe-patisserie",
+    "expires_at": null
+  },
+  {
+    "brand": "Ike’s Love & Sandwiches",
+    "description": "Any sandwich for $8.98 (from 3 pm -6 pm) Ike’s Love & Sandwiches Berkeley ain’t your momma’s sandwich shop! Sandwiches for all: meat lovers, vegetarian, vegan, halal, and gluten-free.",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#ikes-love-sandwiches",
+    "expires_at": null
+  },
+  {
+    "brand": "Juice Appeal",
+    "description": "5% off any vegan, dairy-free, and organic options every day Juice Appeal offers fresh smoothies, açaí bowls, cold-pressed juices, wellness shots, and healthy snacks made with real, high-quality ingredients. We're proud to serve our Berkeley community with vegan, dairy-free, and organic options.",
+    "discount_percent": "5% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#juice-appeal",
+    "expires_at": null
+  },
+  {
+    "brand": "Cancun Sabor Mexicano",
+    "description": "Mexican family recipes, made fresh to order using the best ingredients.",
+    "discount_percent": "10% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#cancun-sabor-mexicano",
+    "expires_at": null
+  },
+  {
+    "brand": "Southside Station",
+    "description": "Wings/Thigh combo = FREE UPGRADE to Thai Iced Tea or Lychee Iced tea (~13% off)\nFamily party tray (3-4 people) = $65 (~15% off)\nOrders $400 or more = 15% off\n(Cannot combine with other offers)\nNamed Berkeley’s #1 fried chicken sandwich and\nTop 100 places to eat in the Bay Area 2022!",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#southside-station",
+    "expires_at": null
+  },
+  {
+    "brand": "BurgerIM",
+    "description": "Chef-inspired gourmet burger restaurant serving customized hamburger flavors, toppings, sauces, fries, and more.",
+    "discount_percent": "10% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#burgerim",
+    "expires_at": null
+  },
+  {
+    "brand": "Namaste Madras Cuisine",
+    "description": "Paneer Masala or Chicken Tikka Masala for $13.95 (served with rice & naan bread)\nRelaxed, vegetarian-friendly restaurant serving Indian fare & a lunch buffet in a landmark building.",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#namaste-madras-cuisine",
+    "expires_at": null
+  },
+  {
+    "brand": "Moe's Sushi & Grill",
+    "description": "Delicious Japanese Restaurant steps away from BART!",
+    "discount_percent": "10% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#moe-s-sushi-grill",
+    "expires_at": null
+  },
+  {
+    "brand": "Masa Ramen Bistro",
+    "description": "Experience the ultimate ramen revolution at Masa Ramen Bistro!",
+    "discount_percent": "10% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#masa-ramen-bistro",
+    "expires_at": null
+  },
+  {
+    "brand": "Cal's Fried Chicken & Burgers",
+    "description": "Smash Burgers, Fried Chicken Sandwhices, Chopped Cheese, Banana Shakes... Best in town",
+    "discount_percent": "10% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#cal-s-fried-chicken-burgers",
+    "expires_at": null
+  },
+  {
+    "brand": "University Taqueria",
+    "description": "A hidden gem, their tacos are a work of art, and each bite bursts with fresh, vibrant taste.",
+    "discount_percent": "10% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#university-taqueria",
+    "expires_at": null
+  },
+  {
+    "brand": "The Breakroom",
+    "description": "50% off Pool Drinks. Food. Pool. Special Events.",
+    "discount_percent": "50% off",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#the-breakroom",
+    "expires_at": null
+  },
+  {
+    "brand": "Pegasus Books",
+    "description": "Pegasus Books offers a unique mix of new, used, and remaindered books. Ask us for a recommendation, or browse our shelves!",
+    "discount_percent": "10% off",
+    "category": "retail",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#pegasus-books",
+    "expires_at": null
+  },
+  {
+    "brand": "Freight and Salvage",
+    "description": "Up to 50% off (under 21)\nThe Freight is a nonprofit musical performance venue that primarily hosts Americana music and world music acts.",
+    "discount_percent": null,
+    "category": "entertainment & activities",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#freight-and-salvage",
+    "expires_at": null
+  },
+  {
+    "brand": "Berkeley Repertory Theatre",
+    "description": "20% off tickets\nBerkeley Rep, a Tony Award-winning venue, has been pioneering innovative theatre since 1968. Come experience tomorrow's hits today at Berkeley Rep!",
+    "discount_percent": null,
+    "category": "entertainment & activities",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#berkeley-repertory-theatre",
+    "expires_at": null
+  },
+  {
+    "brand": "Berkeley Art Museum and Pacific Film Archive",
+    "description": "Free Admission\nOne of the nation’s leading university museums, the UC Berkeley Art Museum and Pacific Film Archive (BAMPFA) is a forum for cultural experiences that transform individuals and advance the local, national, and global discourse on art and film.",
+    "discount_percent": null,
+    "category": "entertainment & activities",
+    "redemption_url": "https://www.downtownberkeley.com/student-discounts/#berkeley-art-museum-and-pacific-film-archive",
+    "expires_at": null
+  },
+  {
+    "brand": "Davis Sexual Health Clinic",
+    "description": "Free self-care wellness pack with visit – options include menstrual kits (containing period products and coupons for products) OR sexual health kits (including condoms, lube, education, pregnancy tests)",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#davis-sexual-health-clinic",
+    "expires_at": null
+  },
+  {
+    "brand": "A Room of Our Own Massage",
+    "description": "$15 off 30-minute massage or facial, $20 off 60-minute massage or 50-minute facial, $30 off 90-minute massage or 75-minute facial every Tuesday for all students",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#a-room-of-our-own-massage",
+    "expires_at": null
+  },
+  {
+    "brand": "Upper Crust Baking",
+    "description": "10% Student Discount All the Time",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#upper-crust-baking",
+    "expires_at": null
+  },
+  {
+    "brand": "Hilton Garden Inn Davis",
+    "description": "Hotel discounted rate for UC Davis students, friends & family. Discounts starting from 12-20% off.",
+    "discount_percent": "20%",
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#hilton-garden-inn-davis",
+    "expires_at": null
+  },
+  {
+    "brand": "Woodstock’s Pizza",
+    "description": "$6 off any Large or XL Pizza! Use code STUDENT",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#woodstocks-pizza",
+    "expires_at": null
+  },
+  {
+    "brand": "Yesterday Vintage",
+    "description": "15% Off One Item of Your Choice! (Cannot be combined with any other coupons/offers, or customer rewards) *One offer per customer",
+    "discount_percent": "15%",
+    "category": "retail",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#yesterday-vintage",
+    "expires_at": null
+  },
+  {
+    "brand": "Crazy D’s Hot Chicken",
+    "description": "$9.99 Lunch Special Chicken Sandwich with fries and sauce. Add drink for $1 more. From 11:00 am to 3:00 pm",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#crazy-ds-hot-chicken",
+    "expires_at": null
+  },
+  {
+    "brand": "The Good People Farms",
+    "description": "5% discount on CBD, hemp & lifestyle products. 20% off total discount on cannabis.",
+    "discount_percent": "20%",
+    "category": "retail",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#the-good-people-farms",
+    "expires_at": null
+  },
+  {
+    "brand": "Akasha Yoga",
+    "description": "New client intro month for $49",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#akasha-yoga",
+    "expires_at": null
+  },
+  {
+    "brand": "The Posh Bagel",
+    "description": "10% Off* *Customers must show a screenshot of the offer as a coupon at the time of purchase, as well as a valid Student ID to redeem the discount.",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#the-posh-bagel",
+    "expires_at": null
+  },
+  {
+    "brand": "Blaze Pizza",
+    "description": "20% Off everyday 2 topping + drink for $10 (Mon-Fri) Offers cannot be combined",
+    "discount_percent": "20%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#blaze-pizza",
+    "expires_at": null
+  },
+  {
+    "brand": "Bubble Belly",
+    "description": "10% Off regular priced purchase",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#bubble-belly",
+    "expires_at": null
+  },
+  {
+    "brand": "Falafel Corner",
+    "description": "15% Off purchase",
+    "discount_percent": "15%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#falafel-corner",
+    "expires_at": null
+  },
+  {
+    "brand": "CPA Tax Desk – Andrew Newman",
+    "description": "Buy a half hour at cpataxdesk.com, get an extra half hour for free",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#cpa-tax-desk-andrew-newman",
+    "expires_at": null
+  },
+  {
+    "brand": "Open Rice Kitchen",
+    "description": "$1 Black Milk Tea, Green Milk Tea, Taro Milk Tea, or Thai Tea with any food purchase. Limit 1 drink per 1 food item 2 drinks maximum per person",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#open-rice-kitchen",
+    "expires_at": null
+  },
+  {
+    "brand": "El Patio Fresh Mexican Grill",
+    "description": "10% Off purchase",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#el-patio-fresh-mexican-grill",
+    "expires_at": null
+  },
+  {
+    "brand": "Maya’s Authentic Mexican Food",
+    "description": "15% Off Purchase",
+    "discount_percent": "15%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#mayas-authentic-mexican-food",
+    "expires_at": null
+  },
+  {
+    "brand": "Creme de la Creme",
+    "description": "Free Gift Wrapping and Card with Purchase",
+    "discount_percent": null,
+    "category": "retail",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#creme-de-la-creme",
+    "expires_at": null
+  },
+  {
+    "brand": "Cultivé Frozen Yogurt",
+    "description": "10% Off Purchase",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#cultive-frozen-yogurt",
+    "expires_at": null
+  },
+  {
+    "brand": "The Paint Chip",
+    "description": "10% Off Purchase",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#the-paint-chip",
+    "expires_at": null
+  },
+  {
+    "brand": "Sweet and Shavery",
+    "description": "3pm-5pm BOGO Small",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#sweet-and-shavery",
+    "expires_at": null
+  },
+  {
+    "brand": "Red 88",
+    "description": "50 cents/pot sticker with purchase of a drink",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#red-88",
+    "expires_at": null
+  },
+  {
+    "brand": "FIT House Davis",
+    "description": "10% off any purchase; drop in rate, 10 class pack, single month unlimited, or retail purchase.",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://davisdowntown.com/aggie-deals/#fit-house-davis",
+    "expires_at": null
+  },
+  {
+    "brand": "PerksConnect",
+    "description": "Members receive free access to PerksConnect discount program. You will start saving instantly on food, activities, ticketed events, and other amenities through PerksConnect partners across the nation.",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#perksconnect",
+    "expires_at": null
+  },
+  {
+    "brand": "Spartan Bookstore",
+    "description": "Get 10% off all SJSU and Spartan branded clothing and gifts in-store and online!",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#spartan-bookstore",
+    "expires_at": null
+  },
+  {
+    "brand": "Timpany Center",
+    "description": "Receive a discounted rate on Pool and Land Membership options.",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#timpany-center",
+    "expires_at": null
+  },
+  {
+    "brand": "Spartan Recreation and Aquatic Center (SRAC)",
+    "description": "SJSU Alumni Association members will be required to present their SJSU Alumni Association membership card showing their graduation year at the time of purchasing their SRAC membership.",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#spartan-recreation-and-aquatic-center-srac",
+    "expires_at": null
+  },
+  {
+    "brand": "Rental Car Agencies",
+    "description": "Members receive discounts between 15 - 25% at Alamo, Auto Europe, Avis, Budget, Hertz, National, and Payless, along with special weekly rental discounts and free weekend days!",
+    "discount_percent": "15 - 25%",
+    "category": "travel",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#rental-car-agencies",
+    "expires_at": null
+  },
+  {
+    "brand": "Choice Hotels",
+    "description": "As a member, you may receive up to 20% off your next stay by using the SJSU Alumni discount code.",
+    "discount_percent": "20%",
+    "category": "travel",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#choice-hotels",
+    "expires_at": null
+  },
+  {
+    "brand": "Cheap Airport Parking",
+    "description": "Use code \"SJSU\" to receive discounted airport parking rates through Cheap Airport Parking!",
+    "discount_percent": null,
+    "category": "travel",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#cheap-airport-parking",
+    "expires_at": null
+  },
+  {
+    "brand": "Dell",
+    "description": "Discounts range upwards of 30% off regular Dell.com pricing. Plus get early access to holiday doorbusters and seasonal sales.",
+    "discount_percent": "30%",
+    "category": "retail",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#dell",
+    "expires_at": null
+  },
+  {
+    "brand": "Liberty Mutual",
+    "description": "Members get special rates and discounts available from Liberty Mutual on auto and home insurance.",
+    "discount_percent": null,
+    "category": "insurance",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#liberty-mutual",
+    "expires_at": null
+  },
+  {
+    "brand": "Medical Air Services Association",
+    "description": "Members get special rates and discounts available from Medical Air Services Association for lifesaving emergency transportation services.",
+    "discount_percent": null,
+    "category": "insurance",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#medical-air-services-association",
+    "expires_at": null
+  }
+]
