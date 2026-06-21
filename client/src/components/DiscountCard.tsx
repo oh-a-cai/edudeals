@@ -39,8 +39,13 @@ interface DiscountCardProps {
   onToggleSave?: () => void
 }
 
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000
+
 function DiscountCard({ discount, saved = false, onToggleSave }: DiscountCardProps) {
   const { brand, description, discount_percent, category, redemption_url, expires_at } = discount
+
+  const expiringSoon =
+    expires_at != null && new Date(expires_at).getTime() - Date.now() < WEEK_MS
 
   return (
     <div className="flex flex-col rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md dark:border-gray-700 dark:bg-gray-900">
@@ -59,8 +64,13 @@ function DiscountCard({ discount, saved = false, onToggleSave }: DiscountCardPro
       <p className="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-300">{description}</p>
 
       {expires_at && (
-        <p className="mt-3 text-xs text-gray-400 dark:text-gray-500">
-          Expires {new Date(expires_at).toLocaleDateString()}
+        <p
+          className={`mt-3 text-xs ${
+            expiringSoon ? 'font-medium text-amber-600 dark:text-amber-400' : 'text-gray-400 dark:text-gray-500'
+          }`}
+        >
+          {expiringSoon ? 'Expiring soon · ' : 'Expires '}
+          {new Date(expires_at).toLocaleDateString()}
         </p>
       )}
 

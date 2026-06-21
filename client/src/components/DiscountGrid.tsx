@@ -8,8 +8,15 @@ import DiscountCard from './DiscountCard'
 const PAGE_SIZE = 9
 
 type View = 'all' | 'saved'
+type Sort = 'newest' | 'expiring' | 'percent'
+
+// Pull the leading number out of strings like "50%" or "20% off".
+function percentValue(s: string | null | undefined) {
+  return parseFloat(String(s ?? '').replace(/[^0-9.]/g, '')) || 0
+}
 
 function DiscountGrid() {
+  const params = new URLSearchParams(window.location.search)
   const [discounts, setDiscounts] = useState<Discount[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -18,8 +25,11 @@ function DiscountGrid() {
   const [savedDiscounts, setSavedDiscounts] = useState<Discount[]>([])
   const [loadingSaved, setLoadingSaved] = useState(false)
 
-  const [query, setQuery] = useState('')
-  const [selected, setSelected] = useState<Set<string>>(new Set())
+  const [query, setQuery] = useState(params.get('q') ?? '')
+  const [selected, setSelected] = useState<Set<string>>(
+    new Set(params.get('cat')?.split(',').filter(Boolean) ?? []),
+  )
+  const [sort, setSort] = useState<Sort>((params.get('sort') as Sort) ?? 'newest')
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
 
   const sentinelRef = useRef<HTMLDivElement | null>(null)
@@ -84,22 +94,48 @@ function DiscountGrid() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return source.filter((d) => {
-      // In the saved view, reflect live un-hearts immediately.
-      if (view === 'saved' && !savedIds.has(d.id)) return false
-      const matchesCategory = selected.size === 0 || selected.has(d.category)
-      const matchesQuery =
-        q === '' ||
-        d.brand.toLowerCase().includes(q) ||
-        d.description.toLowerCase().includes(q)
-      return matchesCategory && matchesQuery
-    })
-  }, [source, view, savedIds, query, selected])
+    const now = Date.now()
+    const byExpiring = (a: Discount, b: Discount) => {
+      // Soonest expiry first; no-expiry items sink to the bottom.
+      const ea = a.expires_at ? new Date(a.expires_at).getTime() : Infinity
+      const eb = b.expires_at ? new Date(b.expires_at).getTime() : Infinity
+      return ea - eb
+    }
+    return source
+      .filter((d) => {
+        // In the saved view, reflect live un-hearts immediately.
+        if (view === 'saved' && !savedIds.has(d.id)) return false
+        // Hide expired discounts everywhere.
+        if (d.expires_at && new Date(d.expires_at).getTime() < now) return false
+        const matchesCategory = selected.size === 0 || selected.has(d.category)
+        const matchesQuery =
+          q === '' ||
+          d.brand.toLowerCase().includes(q) ||
+          d.description.toLowerCase().includes(q)
+        return matchesCategory && matchesQuery
+      })
+      .sort((a, b) => {
+        if (sort === 'percent') return percentValue(b.discount_percent) - percentValue(a.discount_percent)
+        if (sort === 'expiring') return byExpiring(a, b)
+        // newest
+        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+      })
+  }, [source, view, savedIds, query, selected, sort])
 
   // Reset paging whenever the visible set changes.
   useEffect(() => {
     setVisibleCount(PAGE_SIZE)
-  }, [query, selected, view])
+  }, [query, selected, view, sort])
+
+  // Keep filters in the URL so views are shareable / survive reload.
+  useEffect(() => {
+    const p = new URLSearchParams()
+    if (query) p.set('q', query)
+    if (selected.size) p.set('cat', [...selected].join(','))
+    if (sort !== 'newest') p.set('sort', sort)
+    const qs = p.toString()
+    window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname)
+  }, [query, selected, sort])
 
   function toggleCategory(c: string) {
     setSelected((prev) => {
@@ -169,14 +205,24 @@ function DiscountGrid() {
         </div>
       )}
 
-      <div className="mb-4">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by brand or description…"
-          className={`${inputClass} w-full`}
+          className={`${inputClass} flex-1`}
         />
+        <select
+          value={sort}
+          onChange={(e) => setSort(e.target.value as Sort)}
+          className={inputClass}
+          aria-label="Sort discounts"
+        >
+          <option value="newest">Newest</option>
+          <option value="expiring">Expiring soon</option>
+          <option value="percent">Highest % off</option>
+        </select>
       </div>
 
       <div className="mb-6 flex flex-wrap gap-2">
@@ -193,13 +239,23 @@ function DiscountGrid() {
       {view === 'saved' && loadingSaved ? (
         <p className="py-12 text-center text-gray-500 dark:text-gray-400">Loading saved discounts…</p>
       ) : filtered.length === 0 ? (
-        <p className="py-12 text-center text-gray-500 dark:text-gray-400">
-          {view === 'saved'
-            ? 'You haven’t saved any discounts yet.'
-            : discounts.length === 0
-              ? 'No discounts available yet.'
-              : 'No discounts match your search.'}
-        </p>
+        <div className="py-12 text-center text-gray-500 dark:text-gray-400">
+          {view === 'saved' ? (
+            <>
+              <p>You haven’t saved any discounts yet.</p>
+              <button
+                onClick={() => setView('all')}
+                className="mt-3 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
+              >
+                Browse all discounts
+              </button>
+            </>
+          ) : discounts.length === 0 ? (
+            <p>No discounts available yet.</p>
+          ) : (
+            <p>No discounts match your search.</p>
+          )}
+        </div>
       ) : (
         <>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -11,10 +11,8 @@ function AuthBar() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [busy, setBusy] = useState(false)
-  const [message, setMessage] = useState<{ kind: 'error' | 'success'; text: string } | null>(null)
 
   function fail(text: string) {
-    setMessage({ kind: 'error', text })
     setBusy(false)
     toast(text)
   }
@@ -29,7 +27,6 @@ function AuthBar() {
 
   async function handleSignIn(e: FormEvent) {
     e.preventDefault()
-    setMessage(null)
     if (!validEduEmail()) return
 
     setBusy(true)
@@ -43,7 +40,6 @@ function AuthBar() {
   }
 
   async function handleSignUp() {
-    setMessage(null)
     if (!validEduEmail()) return
     if (password.length < 6) return fail('Password must be at least 6 characters.')
 
@@ -56,9 +52,18 @@ function AuthBar() {
     if (error) return fail(error.message)
     setBusy(false)
     // When email confirmation is on, no session is returned until the user confirms.
-    if (!data.session) {
-      setMessage({ kind: 'success', text: `Check ${email.trim()} to confirm your account.` })
-    }
+    if (!data.session) toast(`Check ${email.trim()} to confirm your account.`)
+  }
+
+  async function handleReset() {
+    if (!validEduEmail()) return
+    setBusy(true)
+    const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+      redirectTo: window.location.origin,
+    })
+    setBusy(false)
+    if (error) return fail(error.message)
+    toast('Password reset link sent — check your email.')
   }
 
   async function handleSignOut() {
@@ -91,20 +96,14 @@ function AuthBar() {
         <input
           type="email"
           value={email}
-          onChange={(e) => {
-            setEmail(e.target.value)
-            setMessage(null)
-          }}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="you@school.edu"
           className={inputClass}
         />
         <input
           type="password"
           value={password}
-          onChange={(e) => {
-            setPassword(e.target.value)
-            setMessage(null)
-          }}
+          onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
           className={inputClass}
         />
@@ -125,7 +124,14 @@ function AuthBar() {
         </button>
       </div>
 
-      
+      <button
+        type="button"
+        onClick={handleReset}
+        disabled={busy}
+        className="text-xs text-gray-500 underline transition hover:text-gray-700 disabled:opacity-50 dark:text-gray-400 dark:hover:text-gray-200"
+      >
+        Forgot password?
+      </button>
     </form>
   )
 }
