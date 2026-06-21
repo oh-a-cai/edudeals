@@ -91,7 +91,7 @@ function AuthBar() {
     'rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:focus:border-gray-400'
 
   return (
-    <form onSubmit={handleSignIn} className="flex flex-col items-end gap-2">
+    <form onSubmit={handleSignIn} className="relative flex items-center gap-2">
       <div className="flex items-center gap-2">
         <input
           type="email"
@@ -110,7 +110,7 @@ function AuthBar() {
         <button
           type="submit"
           disabled={busy}
-          className="rounded-lg bg-gray-900 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-gray-700 disabled:opacity-50"
+          className="rounded-lg bg-gray-900 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-gray-700 disabled:opacity-50 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
         >
           {busy ? '…' : 'Sign in'}
         </button>
@@ -128,7 +128,7 @@ function AuthBar() {
         type="button"
         onClick={handleReset}
         disabled={busy}
-        className="text-xs text-gray-500 underline transition hover:text-gray-700 disabled:opacity-50 dark:text-gray-400 dark:hover:text-gray-200"
+        className="absolute right-62 top-9 text-[10px] text-gray-500 underline transition hover:text-gray-700 disabled:opacity-50 dark:text-gray-400 dark:hover:text-gray-200"
       >
         Forgot password?
       </button>

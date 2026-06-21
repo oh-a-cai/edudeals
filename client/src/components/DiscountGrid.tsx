@@ -8,7 +8,7 @@ import DiscountCard from './DiscountCard'
 const PAGE_SIZE = 9
 
 type View = 'all' | 'saved'
-type Sort = 'newest' | 'expiring' | 'percent'
+type Sort = 'alpha' | 'newest' | 'expiring' | 'percent'
 
 // Pull the leading number out of strings like "50%" or "20% off".
 function percentValue(s: string | null | undefined) {
@@ -29,7 +29,7 @@ function DiscountGrid() {
   const [selected, setSelected] = useState<Set<string>>(
     new Set(params.get('cat')?.split(',').filter(Boolean) ?? []),
   )
-  const [sort, setSort] = useState<Sort>((params.get('sort') as Sort) ?? 'newest')
+  const [sort, setSort] = useState<Sort>((params.get('sort') as Sort) ?? 'alpha')
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
 
   const sentinelRef = useRef<HTMLDivElement | null>(null)
@@ -117,8 +117,9 @@ function DiscountGrid() {
       .sort((a, b) => {
         if (sort === 'percent') return percentValue(b.discount_percent) - percentValue(a.discount_percent)
         if (sort === 'expiring') return byExpiring(a, b)
-        // newest
-        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+        if (sort === 'newest') return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+        // alpha
+        return a.brand.localeCompare(b.brand)
       })
   }, [source, view, savedIds, query, selected, sort])
 
@@ -132,7 +133,7 @@ function DiscountGrid() {
     const p = new URLSearchParams()
     if (query) p.set('q', query)
     if (selected.size) p.set('cat', [...selected].join(','))
-    if (sort !== 'newest') p.set('sort', sort)
+    if (sort !== 'alpha') p.set('sort', sort)
     const qs = p.toString()
     window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname)
   }, [query, selected, sort])
@@ -219,6 +220,7 @@ function DiscountGrid() {
           className={inputClass}
           aria-label="Sort discounts"
         >
+          <option value="alpha">Alphabetical</option>
           <option value="newest">Newest</option>
           <option value="expiring">Expiring soon</option>
           <option value="percent">Highest % off</option>
