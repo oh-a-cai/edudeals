@@ -10,7 +10,7 @@ Students sign in with a `.edu` email and land on a searchable grid of discounts.
 
 - **Browse all deals** — paginated grid of discount cards, 9 per page
 - **Search & filter** — match by brand/description, filter by one or more categories, and sort by name, expiry, or highest % off
-- **View your university-specific deals** — a dedicated tab matches discounts against the user's email domain (e.g. `@g.ucla.edu` → schools containing "ucla"); deals marked `school = all` show for every account
+- **View your university-specific deals** — a dedicated tab matches discounts against the user's email domain (e.g. `@g.ucla.edu` → schools containing "ucla")
 - **Save favorites** — heart any deal to add it to a personal "Saved" tab, persisted per user
 - **Read full details** — long descriptions are clamped on the card, with a "Read more" link that opens a detail modal when text actually overflows
 - **Toggle dark mode** — toggle persisted to `localStorage`, defaulting to OS preference, with a glow-on-hover card effect

@@ -4,6 +4,7 @@ import { useSession } from '../library/useSession'
 import { useSavedDiscounts } from '../library/useSavedDiscounts'
 import type { Discount } from '../types'
 import DiscountCard from './DiscountCard'
+import SortDropdown from './SortDropdown'
 
 const PAGE_SIZE = 9
 
@@ -17,6 +18,11 @@ type Sort = 'alpha' | 'expiring' | 'percent'
 // shares nothing with the email domain. Add a domain->school map if that matters.
 function norm(s: string | null | undefined) {
   return String(s ?? '').toLowerCase().trim().replace(/\.edu$/, '').replace(/[^a-z0-9]/g, '')
+}
+// Normalized school tag -> email domain core, for schools whose tag shares nothing
+// with the domain (e.g. "UCB" tag, but emails are @berkeley.edu). Keys/values are norm()'d.
+const SCHOOL_ALIASES: Record<string, string> = {
+  ucb: 'berkeley',
 }
 function schoolTokenFromEmail(email: string | undefined) {
   const domain = email?.split('@')[1]?.toLowerCase() ?? ''
@@ -46,6 +52,7 @@ function DiscountGrid() {
   const [sort, setSort] = useState<Sort>((params.get('sort') as Sort) ?? 'alpha')
   const [page, setPage] = useState(0)
   const [active, setActive] = useState<Discount | null>(null)
+  const [confirmUrl, setConfirmUrl] = useState<string | null>(null)
 
   const { session } = useSession()
   const userId = session?.user?.id
@@ -54,9 +61,8 @@ function DiscountGrid() {
   const { domain, core } = schoolTokenFromEmail(session?.user?.email)
   const matchesSchool = (d: Discount) => {
     if (!core && !domain) return false
-    const ns = norm(d.school)
-    // "all" discounts show for any .edu account.
-    if (ns === 'all' && domain.endsWith('.edu')) return true
+    const raw = norm(d.school)
+    const ns = SCHOOL_ALIASES[raw] ?? raw
     return (core !== '' && ns.includes(core)) || (domain !== '' && ns.includes(norm(domain)))
   }
 
@@ -230,16 +236,16 @@ function DiscountGrid() {
           placeholder="Search by brand or description…"
           className={`${inputClass} flex-1`}
         />
-        <select
+        <SortDropdown<Sort>
           value={sort}
-          onChange={(e) => setSort(e.target.value as Sort)}
-          className={inputClass}
-          aria-label="Sort discounts"
-        >
-          <option value="alpha">Alphabetical</option>
-          <option value="expiring">Expiring soon</option>
-          <option value="percent">Highest % off</option>
-        </select>
+          onChange={setSort}
+          label="Sort discounts"
+          options={[
+            { value: 'alpha', label: 'Alphabetical' },
+            { value: 'expiring', label: 'Expiring soon' },
+            { value: 'percent', label: 'Highest % off' },
+          ]}
+        />
       </div>
 
       <div className="mb-6 flex flex-nowrap gap-2 overflow-x-auto pb-1">
@@ -311,6 +317,7 @@ function DiscountGrid() {
                 saved={savedIds.has(discount.id)}
                 onToggleSave={userId ? () => toggle(discount.id) : undefined}
                 onReadMore={() => setActive(discount)}
+                onRedeem={setConfirmUrl}
               />
             ))}
           </div>
@@ -378,14 +385,46 @@ function DiscountGrid() {
                 Expires {new Date(active.expires_at).toLocaleDateString()}
               </p>
             )}
-            <a
-              href={active.redemption_url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => setConfirmUrl(active.redemption_url)}
               className="mt-6 inline-flex items-center justify-center rounded-lg bg-gray-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
             >
               Redeem
-            </a>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {confirmUrl && (
+        <div
+          onClick={() => setConfirmUrl(null)}
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl dark:bg-gray-900"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Leaving EduDeals</h3>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">You're about to open:</p>
+            <p className="mt-1 break-all text-sm font-medium text-gray-900 dark:text-gray-100">{confirmUrl}</p>
+            <div className="mt-6 flex justify-end gap-3">
+              <button
+                onClick={() => setConfirmUrl(null)}
+                className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-100 dark:border-gray-600 dark:text-gray-200 dark:hover:bg-gray-800"
+              >
+                Cancel
+              </button>
+              <a
+                href={confirmUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setConfirmUrl(null)}
+                className="rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
+              >
+                Confirm
+              </a>
+            </div>
           </div>
         </div>
       )}

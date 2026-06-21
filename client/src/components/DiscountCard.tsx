@@ -43,11 +43,12 @@ interface DiscountCardProps {
   saved?: boolean
   onToggleSave?: () => void
   onReadMore?: () => void
+  onRedeem?: (url: string) => void
 }
 
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000
 
-function DiscountCard({ discount, saved = false, onToggleSave, onReadMore }: DiscountCardProps) {
+function DiscountCard({ discount, saved = false, onToggleSave, onReadMore, onRedeem }: DiscountCardProps) {
   const { brand, description, discount_percent, category, redemption_url, expires_at } = discount
 
   const expiringSoon =
@@ -100,14 +101,13 @@ function DiscountCard({ discount, saved = false, onToggleSave, onReadMore }: Dis
         </p>
       )}
 
-      <a
-        href={redemption_url}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        type="button"
+        onClick={() => onRedeem?.(redemption_url)}
         className="mt-3 inline-flex items-center justify-center rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
       >
         Redeem
-      </a>
+      </button>
     </div>
   )
 }
