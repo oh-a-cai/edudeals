@@ -33,7 +33,8 @@ LOCAL_URLS = [
 # fetch handles them — no ScraperAPI needed. They flow into the same batch call.
 GITHUB_SEED_URLS = [
     "https://raw.githubusercontent.com/couponswift/awesome-student-software-deals/main/README.md",
-    "https://raw.githubusercontent.com/ShreyamMaity/student-offers/main/README.md",
+    # The deals live in Database/database.md (a ~195-row table), NOT the README.
+    "https://raw.githubusercontent.com/ShreyamMaity/student-offers/main/Database/database.md",
 ]
 
 

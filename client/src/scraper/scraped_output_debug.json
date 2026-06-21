@@ -49,8 +49,8 @@
   },
   {
     "brand": "Southside Station",
-    "description": "Wings/Thigh combo = FREE UPGRADE to Thai Iced Tea or Lychee Iced tea (~13% off); Family party tray = $65 (~15% off); Orders $400 or more = 15% off",
-    "discount_percent": "15%",
+    "description": "Wings/Thigh combo = FREE UPGRADE to Thai Iced Tea or Lychee Iced tea (~13% off); Family party tray (3-4 people) = $65 (~15% off); Orders $400 or more = 15% off",
+    "discount_percent": "13-15%",
     "category": "food and drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#southside-station",
     "expires_at": null
@@ -138,14 +138,14 @@
   {
     "brand": "Berkeley Art Museum and Pacific Film Archive",
     "description": "Free Admission",
-    "discount_percent": null,
+    "discount_percent": "100%",
     "category": "entertainment",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#berkeley-art-museum-and-pacific-film-archive",
     "expires_at": null
   },
   {
     "brand": "Davis Sexual Health Clinic",
-    "description": "Free self-care wellness pack with visit",
+    "description": "Free self-care wellness pack with visit – options include menstrual kits (containing period products and coupons for products) OR sexual health kits (including condoms, lube, education, pregnancy tests)",
     "discount_percent": null,
     "category": "services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#davis-sexual-health-clinic",
@@ -153,7 +153,7 @@
   },
   {
     "brand": "A Room of Our Own Massage",
-    "description": "$15 off 30-minute massage or facial, $20 off 60-minute massage or 50-minute facial, $30 off 90-minute massage or 75-minute facial",
+    "description": "$15 off 30-minute massage or facial, $20 off 60-minute massage or 50-minute facial, $30 off 90-minute massage or 75-minute facial every Tuesday for all students",
     "discount_percent": null,
     "category": "services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#a-room-of-our-own-massage",
@@ -169,15 +169,15 @@
   },
   {
     "brand": "Hilton Garden Inn Davis",
-    "description": "Hotel discounted rate for UC Davis students, friends & family. 12-20% off.",
-    "discount_percent": "20%",
+    "description": "Hotel discounted rate for UC Davis students, friends & family. Discounts starting from 12-20% off.",
+    "discount_percent": "12-20%",
     "category": "services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#hilton-garden-inn-davis",
     "expires_at": null
   },
   {
     "brand": "Woodstock’s Pizza",
-    "description": "$6 off any Large or XL Pizza!",
+    "description": "$6 off any Large or XL Pizza! Use code STUDENT",
     "discount_percent": null,
     "category": "food and drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#woodstocks-pizza",
@@ -193,7 +193,7 @@
   },
   {
     "brand": "Crazy D’s Hot Chicken",
-    "description": "$9.99 Lunch Special: Chicken Sandwich with fries and sauce (11 am - 3 pm)",
+    "description": "$9.99 Lunch Special: Chicken Sandwich with fries and sauce. Add drink for $1 more. From 11:00 am to 3:00 pm",
     "discount_percent": null,
     "category": "food and drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#crazy-ds-hot-chicken",
@@ -201,8 +201,8 @@
   },
   {
     "brand": "The Good People Farms",
-    "description": "5% discount on CBD, hemp & lifestyle products; 20% off total discount on cannabis.",
-    "discount_percent": "20%",
+    "description": "5% discount on CBD, hemp & lifestyle products. 20% off total discount on cannabis.",
+    "discount_percent": "5-20%",
     "category": "retail",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#the-good-people-farms",
     "expires_at": null
@@ -250,14 +250,14 @@
   {
     "brand": "CPA Tax Desk – Andrew Newman",
     "description": "Buy a half hour at cpataxdesk.com, get an extra half hour for free",
-    "discount_percent": null,
+    "discount_percent": "50%",
     "category": "services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#cpa-tax-desk-andrew-newman",
     "expires_at": null
   },
   {
     "brand": "Open Rice Kitchen",
-    "description": "$1 Milk Tea with any food purchase",
+    "description": "$1 Black Milk Tea, Green Milk Tea, Taro Milk Tea, or Thai Tea with any food purchase.",
     "discount_percent": null,
     "category": "food and drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#open-rice-kitchen",
@@ -305,7 +305,7 @@
   },
   {
     "brand": "Sweet and Shavery",
-    "description": "Wednesday Student Special 3pm-5pm BOGO Small",
+    "description": "Wednesday Student Special: 3pm-5pm BOGO Small",
     "discount_percent": null,
     "category": "food and drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#sweet-and-shavery",
@@ -321,7 +321,7 @@
   },
   {
     "brand": "FIT House Davis",
-    "description": "10% off any purchase",
+    "description": "10% off any purchase; drop in rate, 10 class pack, single month unlimited, or retail purchase.",
     "discount_percent": "10%",
     "category": "services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#fit-house-davis",
@@ -336,8 +336,16 @@
     "expires_at": null
   },
   {
+    "brand": "Alamo, Auto Europe, Avis, Budget, Hertz, National, and Payless",
+    "description": "Discounts between 15 - 25% for alumni association members",
+    "discount_percent": "15-25%",
+    "category": "services",
+    "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#alamo-auto-europe-avis-budget-hertz-national-and-payless",
+    "expires_at": null
+  },
+  {
     "brand": "Choice Hotels",
-    "description": "Up to 20% off your next stay",
+    "description": "Up to 20% off next stay",
     "discount_percent": "20%",
     "category": "services",
     "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#choice-hotels",
@@ -345,7 +353,7 @@
   },
   {
     "brand": "Dell",
-    "description": "Upwards of 30% off regular Dell.com pricing",
+    "description": "Discounts range upwards of 30% off regular Dell.com pricing.",
     "discount_percent": "30%",
     "category": "retail",
     "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#dell",
@@ -368,19 +376,35 @@
     "expires_at": null
   },
   {
-    "brand": "AJ-USA Automotive Service",
-    "description": "Save 10% off any regular priced service",
+    "brand": "AJ-USA Automotive Service, Collision and Performance Center",
+    "description": "Save 10% off any regular priced service with Student ID",
     "discount_percent": "10%",
     "category": "services",
-    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#aj-usa-automotive-service",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#aj-usa-automotive-service-collision-and-performance-center",
     "expires_at": null
   },
   {
     "brand": "Alpine Division",
-    "description": "30% off on backpacks, duffels, and accessories use code BOOKBAG",
+    "description": "30% off on backpacks, duffels, and accessories use code BOOKBAG at checkout",
     "discount_percent": "30%",
     "category": "retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#alpine-division",
+    "expires_at": null
+  },
+  {
+    "brand": "Amazon",
+    "description": "6 month prime free trial; Discounted rate of $6.49/month",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#amazon",
+    "expires_at": null
+  },
+  {
+    "brand": "Balboa Park Museums",
+    "description": "Discounted admission to museums and other park attractions; Info Center also has discounts for San Diego Zoo - $5 off normal price",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#balboa-park-museums",
     "expires_at": null
   },
   {
@@ -393,8 +417,8 @@
   },
   {
     "brand": "Birch Aquarium",
-    "description": "Discounted general admission of $22.95 or a special UC San Diego student membership for $45",
-    "discount_percent": null,
+    "description": "Discounted general admission of $22.95 or a special UC San Diego student membership for $45; 10% off at Splash! Cafe and the Gift Shop",
+    "discount_percent": "10%",
     "category": "entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#birch-aquarium",
     "expires_at": null
@@ -409,7 +433,7 @@
   },
   {
     "brand": "Caroline's Seaside Cafe",
-    "description": "30% off one meal and one drink",
+    "description": "30% off one meal and one drink for students and staff",
     "discount_percent": "30%",
     "category": "food and drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#caroline-s-seaside-cafe",
@@ -425,7 +449,7 @@
   },
   {
     "brand": "CorePower Yoga",
-    "description": "$17 drop-in with Student ID, or 10 classes for $144",
+    "description": "$17 drop-in with Student ID, or 10 classes for $144; Monthly unlimited membership is $115",
     "discount_percent": null,
     "category": "services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#corepower-yoga",
@@ -441,7 +465,7 @@
   },
   {
     "brand": "Diversionary Theatre",
-    "description": "$15 for dramas; $20 for musicals",
+    "description": "Student Prices: $15 for dramas; $20 for musicals",
     "discount_percent": null,
     "category": "entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#diversionary-theatre",
@@ -465,9 +489,9 @@
   },
   {
     "brand": "Golf Upgrades",
-    "description": "50% off golf lessons",
+    "description": "50% off golf lessons for students",
     "discount_percent": "50%",
-    "category": "services",
+    "category": "entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#golf-upgrades",
     "expires_at": null
   },
@@ -499,8 +523,32 @@
     "brand": "Journey Golf Rental",
     "description": "10% discount on golf club rentals",
     "discount_percent": "10%",
-    "category": "retail",
+    "category": "services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#journey-golf-rental",
+    "expires_at": null
+  },
+  {
+    "brand": "La Jolla Playhouse",
+    "description": "Rush tickets for $20 on Monday; Regular student rush: 50% off regular price",
+    "discount_percent": "50%",
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#la-jolla-playhouse",
+    "expires_at": null
+  },
+  {
+    "brand": "Lamb's Players Theatre",
+    "description": "$4 off adult price, $10 student rush",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#lamb-s-players-theatre",
+    "expires_at": null
+  },
+  {
+    "brand": "Lamplighters Community Theatre",
+    "description": "$12 prices",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#lamplighters-community-theatre",
     "expires_at": null
   },
   {
@@ -520,8 +568,32 @@
     "expires_at": null
   },
   {
+    "brand": "Moonlight Stage Productions",
+    "description": "Prices: Moonlight Amphitheatre, student lawn $10 (Wed., Thur., and Sun.); $15 (Fri. and Sat.)",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#moonlight-stage-productions",
+    "expires_at": null
+  },
+  {
+    "brand": "National Comedy Theatre",
+    "description": "$14 tickets",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#national-comedy-theatre",
+    "expires_at": null
+  },
+  {
+    "brand": "Nature Center",
+    "description": "20% student discount",
+    "discount_percent": "20%",
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#nature-center",
+    "expires_at": null
+  },
+  {
     "brand": "Nelson Photo Supplies",
-    "description": "10% student discount on tripods, bags, etc.",
+    "description": "10% student discount on tripods, bags, and everything else, EXCEPT cameras and lens",
     "discount_percent": "10%",
     "category": "retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#nelson-photo-supplies",
@@ -536,11 +608,43 @@
     "expires_at": null
   },
   {
+    "brand": "North Coast Repertory Theatre",
+    "description": "$18-$20; $15 student rush",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#north-coast-repertory-theatre",
+    "expires_at": null
+  },
+  {
+    "brand": "OnStage Playhouse",
+    "description": "$17; $16 each for groups of 10-19; $15 each for groups of 20-40",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#onstage-playhouse",
+    "expires_at": null
+  },
+  {
+    "brand": "Patio Playhouse",
+    "description": "$10 price",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#patio-playhouse",
+    "expires_at": null
+  },
+  {
     "brand": "Pinkberry",
     "description": "10% student discount",
     "discount_percent": "10%",
     "category": "food and drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#pinkberry",
+    "expires_at": null
+  },
+  {
+    "brand": "Poway Performing Arts Company",
+    "description": "$10 for students",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#poway-performing-arts-company",
     "expires_at": null
   },
   {
@@ -560,25 +664,65 @@
     "expires_at": null
   },
   {
-    "brand": "Riffs Studios",
+    "brand": "Riffs Studios | Yoga & Wellness | La Jolla",
     "description": "15% off any recurring membership",
     "discount_percent": "15%",
     "category": "services",
-    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#riffs-studios",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#riffs-studios-yoga-wellness-la-jolla",
     "expires_at": null
   },
   {
     "brand": "Rothy’s",
-    "description": "20% discount",
+    "description": "20% discount for students",
     "discount_percent": "20%",
     "category": "retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#rothys",
     "expires_at": null
   },
   {
+    "brand": "San Diego Padres",
+    "description": "$20 Padres discounted tickets for select baseball games",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-padres",
+    "expires_at": null
+  },
+  {
+    "brand": "San Diego Gulls",
+    "description": "$15 college student tickets on ALL weekday games",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-gulls",
+    "expires_at": null
+  },
+  {
+    "brand": "San Diego Museum of Art",
+    "description": "$6 for admission into the museum; concerts at the museum, $7.50-$10 for students",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-museum-of-art",
+    "expires_at": null
+  },
+  {
+    "brand": "San Diego Opera",
+    "description": "20% off regular prices 1 hour before show time; $20 rush tickets 90 minutes before performance",
+    "discount_percent": "20%",
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-opera",
+    "expires_at": null
+  },
+  {
+    "brand": "San Diego Symphony",
+    "description": "$3 off regular prices; $5 rush tickets 1 hour prior to performance",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-symphony",
+    "expires_at": null
+  },
+  {
     "brand": "Scripps Golf",
-    "description": "10% storewide student discount",
-    "discount_percent": "10%",
+    "description": "10% storewide student discount; 20% student discount on Yonex sets",
+    "discount_percent": "10-20%",
     "category": "retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#scripps-golf",
     "expires_at": null
@@ -600,6 +744,14 @@
     "expires_at": null
   },
   {
+    "brand": "Spotify",
+    "description": "Discounted rate of $4.99/month (includes Spotify Premium, Hulu, and SHOWTIME)",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#spotify",
+    "expires_at": null
+  },
+  {
     "brand": "Supercuts",
     "description": "$3 off MVP services",
     "discount_percent": null,
@@ -617,7 +769,7 @@
   },
   {
     "brand": "Tomedes",
-    "description": "10% discount on translation services",
+    "description": "A 10% discount on translation services.",
     "discount_percent": "10%",
     "category": "services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#tomedes",
@@ -632,11 +784,35 @@
     "expires_at": null
   },
   {
+    "brand": "UCSD Theatre and Dance",
+    "description": "Single ticket: $10",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#ucsd-theatre-and-dance",
+    "expires_at": null
+  },
+  {
+    "brand": "UTC ICE",
+    "description": "$5 off a public session",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#utc-ice",
+    "expires_at": null
+  },
+  {
     "brand": "Vertical Hold",
     "description": "10% off membership, day pass, gear rental, and lessons",
     "discount_percent": "10%",
-    "category": "services",
+    "category": "entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#vertical-hold",
+    "expires_at": null
+  },
+  {
+    "brand": "Yoga Six Studios",
+    "description": "First class free; Monthly membership: $99 (normal price $149)",
+    "discount_percent": "33%",
+    "category": "services",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#yoga-six-studios",
     "expires_at": null
   },
   {
@@ -649,18 +825,18 @@
   },
   {
     "brand": "AMVET Thrift",
-    "description": "20% discount on total purchases",
+    "description": "20% discount on total purchases (Thursdays only)",
     "discount_percent": "20%",
     "category": "retail",
     "redemption_url": "https://www.fresnocitycollege.edu/campus-life/clubs/asg-student-discounts.html#amvet-thrift",
     "expires_at": null
   },
   {
-    "brand": "Dutch Bros.",
-    "description": "$1.00 off any drink",
-    "discount_percent": null,
-    "category": "food and drink",
-    "redemption_url": "https://www.fresnocitycollege.edu/campus-life/clubs/asg-student-discounts.html#dutch-bros",
+    "brand": "DAV Thrift Store",
+    "description": "10% student discount at any location in Central California",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.fresnocitycollege.edu/campus-life/clubs/asg-student-discounts.html#dav-thrift-store",
     "expires_at": null
   },
   {
@@ -672,8 +848,32 @@
     "expires_at": null
   },
   {
+    "brand": "American Conservatory Theater",
+    "description": "Up to two half-price full season subscriptions; packages start as low as $12.50 per play",
+    "discount_percent": "50%",
+    "category": "entertainment",
+    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#american-conservatory-theater",
+    "expires_at": null
+  },
+  {
+    "brand": "Best Online Traffic School",
+    "description": "25% discount on the course fee ($9.99)",
+    "discount_percent": "25%",
+    "category": "services",
+    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#best-online-traffic-school",
+    "expires_at": null
+  },
+  {
+    "brand": "Chamberlin Real Estate School",
+    "description": "Save $25 off any pre-license package",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#chamberlin-real-estate-school",
+    "expires_at": null
+  },
+  {
     "brand": "Palace Games",
-    "description": "10% off weekday discount",
+    "description": "10% off weekday discount for UCSF Students",
     "discount_percent": "10%",
     "category": "entertainment",
     "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#palace-games",
@@ -693,6 +893,30 @@
     "discount_percent": "20%",
     "category": "services",
     "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#varsity-tutors",
+    "expires_at": null
+  },
+  {
+    "brand": "Tickets at Work",
+    "description": "Save $5 on your first order",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://hr.ucr.edu/employee-resources/ucr-discounts#tickets-at-work",
+    "expires_at": null
+  },
+  {
+    "brand": "Booking.com",
+    "description": "Special employee pricing of up to 40% off select hotels worldwide",
+    "discount_percent": "40%",
+    "category": "services",
+    "redemption_url": "https://hr.ucr.edu/employee-resources/ucr-discounts#booking-com",
+    "expires_at": null
+  },
+  {
+    "brand": "Expedia.com",
+    "description": "Employees can save 8% OFF select hotels",
+    "discount_percent": "8%",
+    "category": "services",
+    "redemption_url": "https://hr.ucr.edu/employee-resources/ucr-discounts#expedia-com",
     "expires_at": null
   },
   {
@@ -731,21 +955,21 @@
     "brand": "Quincy Natural Foods Co-Op",
     "description": "10% off with membership",
     "discount_percent": "10%",
-    "category": "food and drink",
+    "category": "retail",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#quincy-natural-foods-co-op",
     "expires_at": null
   },
   {
-    "brand": "Quincy Provisions",
+    "brand": "Quincy Provisions (Carey Candy Co.)",
     "description": "20% off ALL DRINKS on Tuesdays",
     "discount_percent": "20%",
     "category": "food and drink",
-    "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#quincy-provisions",
+    "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#quincy-provisions-carey-candy-co",
     "expires_at": null
   },
   {
     "brand": "Rich Bar Taproom and Kitchen",
-    "description": "10% off with a valid student ID",
+    "description": "10% off with a valid student ID (12:00 PM - 4:00 PM Everyday)",
     "discount_percent": "10%",
     "category": "food and drink",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#rich-bar-taproom-and-kitchen",
@@ -753,171 +977,27 @@
   },
   {
     "brand": "Town Hall Theater",
-    "description": "$8 admission ($1 discount) with current FRC student ID card",
+    "description": "$8 admission ($1 discount)",
     "discount_percent": null,
     "category": "entertainment",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#town-hall-theater",
     "expires_at": null
   },
   {
-    "brand": "A Cut of Confidence",
-    "description": "Half price on Tuesdays",
-    "discount_percent": "50%",
-    "category": "services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#a-cut-of-confidence",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Avocado Theory",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#avocado-theory",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Ben and Jerry’s",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#ben-and-jerrys",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "BK Jewelry, Inc.",
-    "description": "20% off",
-    "discount_percent": "20%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#bk-jewelry-inc",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Catch 35",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#catch-35",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Couture Vision",
-    "description": "20% off eyeglass or sunglass purchase",
-    "discount_percent": "20%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#couture-vision",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Everdine’s Grilled Cheese Co.",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#everdines-grilled-cheese-co",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Jeni's Splendid Ice Creams",
-    "description": "15% off",
-    "discount_percent": "15%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#jeni-s-splendid-ice-creams",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "JoJo’s Shake Bar",
-    "description": "20% off",
+    "brand": "The Scoop (Ice Cream Shop)",
+    "description": "$1 off ice cream with FREE waffle cone; 20% discount on board games",
     "discount_percent": "20%",
     "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#jojos-shake-bar",
-    "expires_at": "2025-07-21"
+    "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#the-scoop-ice-cream-shop",
+    "expires_at": null
   },
   {
-    "brand": "Karisma Boutique",
-    "description": "20% off",
-    "discount_percent": "20%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#karisma-boutique",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Le Chocolat du Bouchard",
-    "description": "10% off any entrée",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#le-chocolat-du-bouchard",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Little Barn Baby",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#little-barn-baby",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Miskatonic Craft Kitchen",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#miskatonic-craft-kitchen",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Pinot’s Palette",
-    "description": "15% off",
-    "discount_percent": "15%",
+    "brand": "Plumas Pines: Hot Shots",
+    "description": "30% student discount on rentals for Hot Shot driving range",
+    "discount_percent": "30%",
     "category": "entertainment",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pinots-palette",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Pro Image Sports",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pro-image-sports",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Pure Barre",
-    "description": "$10 off",
-    "discount_percent": null,
-    "category": "services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pure-barre",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Shyft Pilates",
-    "description": "10% on single class, 20% off any membership",
-    "discount_percent": "20%",
-    "category": "services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#shyft-pilates",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Sparrow Coffee",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "food and drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#sparrow-coffee",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Standard Goods",
-    "description": "15% off",
-    "discount_percent": "15%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#standard-goods",
-    "expires_at": "2025-07-21"
-  },
-  {
-    "brand": "Treasures",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#treasures",
-    "expires_at": "2025-07-21"
+    "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#plumas-pines-hot-shots",
+    "expires_at": null
   },
   {
     "brand": "Arslans Turkish Street Food",
@@ -925,6 +1005,14 @@
     "discount_percent": "10%",
     "category": "food and drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#arslans-turkish-street-food",
+    "expires_at": null
+  },
+  {
+    "brand": "Artifact",
+    "description": "10-15% off select racks",
+    "discount_percent": "10-15%",
+    "category": "retail",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#artifact",
     "expires_at": null
   },
   {
@@ -944,11 +1032,35 @@
     "expires_at": null
   },
   {
+    "brand": "Cruzio",
+    "description": "Use Code \"STUDENT\" to get one month free!",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#cruzio",
+    "expires_at": null
+  },
+  {
+    "brand": "EyeQ",
+    "description": "10% discount on available services for private pay patients.",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#eyeq",
+    "expires_at": null
+  },
+  {
     "brand": "Far West Fungi",
     "description": "10% off",
     "discount_percent": "10%",
-    "category": "food and drink",
+    "category": "retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#far-west-fungi",
+    "expires_at": null
+  },
+  {
+    "brand": "Fine Point Law",
+    "description": "$999 Fledgling Plan instead of the usual price of $2,000",
+    "discount_percent": "50%",
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#fine-point-law",
     "expires_at": null
   },
   {
@@ -961,9 +1073,9 @@
   },
   {
     "brand": "Go Ask Alice",
-    "description": "10% off student discount anytime; 20% off student days every Wednesday",
-    "discount_percent": "20%",
-    "category": "food and drink",
+    "description": "10% off anytime; 20% off student days every Wednesday.",
+    "discount_percent": "10-20%",
+    "category": "retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#go-ask-alice",
     "expires_at": null
   },
@@ -976,11 +1088,11 @@
     "expires_at": null
   },
   {
-    "brand": "Hula's",
+    "brand": "Hula's Island Grill and Tiki Lounge",
     "description": "10% off",
     "discount_percent": "10%",
     "category": "food and drink",
-    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#hula-s",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#hula-s-island-grill-and-tiki-lounge",
     "expires_at": null
   },
   {
@@ -1000,18 +1112,26 @@
     "expires_at": null
   },
   {
-    "brand": "Kianti's",
-    "description": "BOGO Kianti's Signature Cocktail with purchase of entree",
-    "discount_percent": null,
+    "brand": "Kianti's Pizza & Pasta Bar",
+    "description": "BOGO (Buy One Get One) Kianti's Signature Cocktail with the purchase of any entree.",
+    "discount_percent": "50%",
     "category": "food and drink",
-    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#kianti-s",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#kianti-s-pizza-pasta-bar",
+    "expires_at": null
+  },
+  {
+    "brand": "Kinship Hair Co.",
+    "description": "10% off products",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#kinship-hair-co",
     "expires_at": null
   },
   {
     "brand": "Level Up Video Games",
-    "description": "10% off used games",
+    "description": "10% off Used Games",
     "discount_percent": "10%",
-    "category": "entertainment",
+    "category": "retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#level-up-video-games",
     "expires_at": null
   },
@@ -1027,16 +1147,16 @@
     "brand": "M.K. Contemporary Art",
     "description": "10% off",
     "discount_percent": "10%",
-    "category": "retail",
+    "category": "entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#m-k-contemporary-art",
     "expires_at": null
   },
   {
-    "brand": "Mission Hill Creamery",
-    "description": "10% off coffee and ice cream",
+    "brand": "Mission Hill Coffee & Creamery",
+    "description": "10% off of coffee and ice cream",
     "discount_percent": "10%",
     "category": "food and drink",
-    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#mission-hill-creamery",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#mission-hill-coffee-creamery",
     "expires_at": null
   },
   {
@@ -1049,7 +1169,7 @@
   },
   {
     "brand": "Nicely",
-    "description": "20% off any item (except ART)",
+    "description": "20% off any item all the time- except ART!",
     "discount_percent": "20%",
     "category": "retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#nicely",
@@ -1057,7 +1177,7 @@
   },
   {
     "brand": "Offshore Sounds",
-    "description": "10% off all records and tapes",
+    "description": "10% off on all records and tapes in-store.",
     "discount_percent": "10%",
     "category": "retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#offshore-sounds",
@@ -1080,6 +1200,14 @@
     "expires_at": null
   },
   {
+    "brand": "Plaza Lane Optometry",
+    "description": "Buy one complete set of glasses and get the second set of single vision, glare-free lenses for FREE",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#plaza-lane-optometry",
+    "expires_at": null
+  },
+  {
     "brand": "Poke House",
     "description": "10% off",
     "discount_percent": "10%",
@@ -1088,19 +1216,43 @@
     "expires_at": null
   },
   {
-    "brand": "Santa Cruz Ayuverda",
-    "description": "30% off on initial Ayurvedic consultation",
+    "brand": "Santa Cruz Ayurveda",
+    "description": "30% off on an initial Ayurvedic consultation",
     "discount_percent": "30%",
     "category": "services",
-    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-ayuverda",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-ayurveda",
+    "expires_at": null
+  },
+  {
+    "brand": "Santa Cruz Cinema",
+    "description": "Student price Monday:$8; Discount Tuesday’s :$5; Student price Wednesday:$8",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-cinema",
     "expires_at": null
   },
   {
     "brand": "Santa Cruz Somatic Bodywork",
-    "description": "20% off cranial sacral and somatic wellness massage",
+    "description": "20% off cranial sacral and somatic wellness massage.",
     "discount_percent": "20%",
     "category": "services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-somatic-bodywork",
+    "expires_at": null
+  },
+  {
+    "brand": "Santa Cruz Symphony",
+    "description": "Students pay only $15 for all Symphony concerts",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-symphony",
+    "expires_at": null
+  },
+  {
+    "brand": "Shen's Gallery",
+    "description": "10% off Japanese porcelain house wares",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#shen-s-gallery",
     "expires_at": null
   },
   {
@@ -1112,16 +1264,32 @@
     "expires_at": null
   },
   {
-    "brand": "The Hat Company",
-    "description": "10% off",
+    "brand": "Super Silver",
+    "description": "free tote bag with a $20 purchase",
+    "discount_percent": null,
+    "category": "retail",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#super-silver",
+    "expires_at": null
+  },
+  {
+    "brand": "Hat Company of Santa Cruz",
+    "description": "10% off to students",
     "discount_percent": "10%",
     "category": "retail",
-    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-hat-company",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#hat-company-of-santa-cruz",
+    "expires_at": null
+  },
+  {
+    "brand": "The Museum of Art & History",
+    "description": "$10 off membership",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-museum-of-art-history",
     "expires_at": null
   },
   {
     "brand": "The Salty Otter Sports Grill",
-    "description": "10% off",
+    "description": "10% off student discount",
     "discount_percent": "10%",
     "category": "food and drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-salty-otter-sports-grill",
@@ -1136,11 +1304,27 @@
     "expires_at": null
   },
   {
+    "brand": "Thrifty Cuts",
+    "description": "10% off the first visit",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#thrifty-cuts",
+    "expires_at": null
+  },
+  {
     "brand": "Variance Objects",
     "description": "15% off",
     "discount_percent": "15%",
     "category": "retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#variance-objects",
+    "expires_at": null
+  },
+  {
+    "brand": "Vision Sanctuary",
+    "description": "10% discount on studio memberships",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#vision-sanctuary",
     "expires_at": null
   },
   {
@@ -1165,6 +1349,2494 @@
     "discount_percent": "10%",
     "category": "services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#yoso-wellness-spa",
+    "expires_at": null
+  },
+  {
+    "brand": "A Cut of Confidence",
+    "description": "Half price on Tuesdays",
+    "discount_percent": "50%",
+    "category": "services",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#a-cut-of-confidence",
+    "expires_at": null
+  },
+  {
+    "brand": "Advanced Wellness of Main Street",
+    "description": "Consultation, spinal exam and x-rays for $25",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#advanced-wellness-of-main-street",
+    "expires_at": null
+  },
+  {
+    "brand": "Avocado Theory",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#avocado-theory",
+    "expires_at": null
+  },
+  {
+    "brand": "Ben and Jerry’s",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#ben-and-jerrys",
+    "expires_at": null
+  },
+  {
+    "brand": "BK Jewelry, Inc.",
+    "description": "20% off",
+    "discount_percent": "20%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#bk-jewelry-inc",
+    "expires_at": null
+  },
+  {
+    "brand": "Catch 35",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#catch-35",
+    "expires_at": null
+  },
+  {
+    "brand": "Cheronda Beauty & Braids",
+    "description": "$100 Sew-Ins",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#cheronda-beauty-braids",
+    "expires_at": null
+  },
+  {
+    "brand": "Couture Vision",
+    "description": "20% off eyeglass or sunglass purchase",
+    "discount_percent": "20%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#couture-vision",
+    "expires_at": null
+  },
+  {
+    "brand": "Everdine’s Grilled Cheese Co.",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#everdines-grilled-cheese-co",
+    "expires_at": null
+  },
+  {
+    "brand": "Jeni's Splendid Ice Creams",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#jeni-s-splendid-ice-creams",
+    "expires_at": null
+  },
+  {
+    "brand": "JoJo’s Shake Bar",
+    "description": "20% off",
+    "discount_percent": "20%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#jojos-shake-bar",
+    "expires_at": null
+  },
+  {
+    "brand": "Karisma Boutique",
+    "description": "20% off",
+    "discount_percent": "20%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#karisma-boutique",
+    "expires_at": null
+  },
+  {
+    "brand": "Le Chocolat du Bouchard/Bistro du Bouchard",
+    "description": "10% off any entrée for lunch or dinner",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#le-chocolat-du-bouchard-bistro-du-bouchard",
+    "expires_at": null
+  },
+  {
+    "brand": "Little Barn Baby",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#little-barn-baby",
+    "expires_at": null
+  },
+  {
+    "brand": "Miskatonic Craft Kitchen",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#miskatonic-craft-kitchen",
+    "expires_at": null
+  },
+  {
+    "brand": "Pinot’s Palette",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "entertainment",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pinots-palette",
+    "expires_at": null
+  },
+  {
+    "brand": "Pro Image Sports",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pro-image-sports",
+    "expires_at": null
+  },
+  {
+    "brand": "Pure Barre",
+    "description": "$10 off",
+    "discount_percent": null,
+    "category": "services",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pure-barre",
+    "expires_at": null
+  },
+  {
+    "brand": "Shyft Pilates",
+    "description": "10% on a single class or class package, 20% off any membership for students",
+    "discount_percent": "20%",
+    "category": "services",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#shyft-pilates",
+    "expires_at": null
+  },
+  {
+    "brand": "Sparrow Coffee",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#sparrow-coffee",
+    "expires_at": null
+  },
+  {
+    "brand": "Standard Goods",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#standard-goods",
+    "expires_at": null
+  },
+  {
+    "brand": "Treasures",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#treasures",
+    "expires_at": null
+  },
+  {
+    "brand": "Bloom Ink",
+    "description": "10% OFF First Service",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#bloom-ink",
+    "expires_at": null
+  },
+  {
+    "brand": "Dillon James Jewelry",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#dillon-james-jewelry",
+    "expires_at": null
+  },
+  {
+    "brand": "Lightexture",
+    "description": "15% OFF",
+    "discount_percent": "15%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#lightexture",
+    "expires_at": null
+  },
+  {
+    "brand": "Maitri Yoga",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "services",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#maitri-yoga",
+    "expires_at": null
+  },
+  {
+    "brand": "MoJo's Cafe and Gallery",
+    "description": "7.5% OFF",
+    "discount_percent": "7.5%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#mojo-s-cafe-and-gallery",
+    "expires_at": null
+  },
+  {
+    "brand": "River Street Poké Bar",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#river-street-poke-bar",
+    "expires_at": null
+  },
+  {
+    "brand": "T&J Handcrafted Soap",
+    "description": "10% OFF Body Products",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#t-j-handcrafted-soap",
+    "expires_at": null
+  },
+  {
+    "brand": "Troy Dance Factory",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "entertainment",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#troy-dance-factory",
+    "expires_at": null
+  },
+  {
+    "brand": "Upstate of Mind",
+    "description": "15% OFF",
+    "discount_percent": "15%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#upstate-of-mind",
+    "expires_at": null
+  },
+  {
+    "brand": "Weathered Wood",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#weathered-wood",
+    "expires_at": null
+  },
+  {
+    "brand": "db trends",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#db-trends",
+    "expires_at": null
+  },
+  {
+    "brand": "Annick Designs",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#annick-designs",
+    "expires_at": null
+  },
+  {
+    "brand": "Bard and Baker Board Game Cafe",
+    "description": "10% OFF Food and Drink Daily. 50% OFF Game Fee Daily.",
+    "discount_percent": "10-50%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#bard-and-baker-board-game-cafe",
+    "expires_at": null
+  },
+  {
+    "brand": "Collectiveffort",
+    "description": "Studio rental 50 % off",
+    "discount_percent": "50%",
+    "category": "services",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#collectiveffort",
+    "expires_at": null
+  },
+  {
+    "brand": "First Choice Caribbean",
+    "description": "Free Drink",
+    "discount_percent": null,
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#first-choice-caribbean",
+    "expires_at": null
+  },
+  {
+    "brand": "Hart-Cluett Museum",
+    "description": "Free for students with valid ID.",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#hart-cluett-museum",
+    "expires_at": null
+  },
+  {
+    "brand": "Lo Porto Ristorante Caffe",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#lo-porto-ristorante-caffe",
+    "expires_at": null
+  },
+  {
+    "brand": "Marcus Blaque",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#marcus-blaque",
+    "expires_at": null
+  },
+  {
+    "brand": "Mi Casa Market",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#mi-casa-market",
+    "expires_at": null
+  },
+  {
+    "brand": "Oh Corn! Arepas",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#oh-corn-arepas",
+    "expires_at": null
+  },
+  {
+    "brand": "Stacks Espresso Bar",
+    "description": "10% OFF Food and Drink",
+    "discount_percent": "10%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#stacks-espresso-bar",
+    "expires_at": null
+  },
+  {
+    "brand": "The Ruck",
+    "description": "15% OFF Lunch",
+    "discount_percent": "15%",
+    "category": "food and drink",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#the-ruck",
+    "expires_at": null
+  },
+  {
+    "brand": "Uncle Sam's Good Nutrition",
+    "description": "25% OFF Supplements",
+    "discount_percent": "25%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#uncle-sam-s-good-nutrition",
+    "expires_at": null
+  },
+  {
+    "brand": "Vibe Beauty Collective",
+    "description": "15% OFF",
+    "discount_percent": "15%",
+    "category": "services",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#vibe-beauty-collective",
+    "expires_at": null
+  },
+  {
+    "brand": "Yellow Lab Vintage",
+    "description": "10% OFF",
+    "discount_percent": "10%",
+    "category": "retail",
+    "redemption_url": "https://www.downtowntroyny.org/for-students#yellow-lab-vintage",
+    "expires_at": null
+  },
+  {
+    "brand": "Portland Art Museum",
+    "description": "College Creative License annual pass $20 and $5 Fridays",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#portland-art-museum",
+    "expires_at": null
+  },
+  {
+    "brand": "Portland Japanese Garden",
+    "description": "Reduced admission for students: $11.95",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#portland-japanese-garden",
+    "expires_at": null
+  },
+  {
+    "brand": "Oregon Historical Society",
+    "description": "Reduced admission for students: $9",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#oregon-historical-society",
+    "expires_at": null
+  },
+  {
+    "brand": "Cinemagic Theater",
+    "description": "$5.50 student rate and $5 Tuesdays",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#cinemagic-theater",
+    "expires_at": null
+  },
+  {
+    "brand": "5th Avenue Cinema",
+    "description": "$4 admission for students",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#5th-avenue-cinema",
+    "expires_at": null
+  },
+  {
+    "brand": "Brody Theater",
+    "description": "$12 student rate",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#brody-theater",
+    "expires_at": null
+  },
+  {
+    "brand": "Living Room Theaters",
+    "description": "$8 student rate for regular films and $6 on Mondays and Tuesdays",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#living-room-theaters",
+    "expires_at": null
+  },
+  {
+    "brand": "Portland Center Stage at The Armory",
+    "description": "$30 for students who are 30 or younger",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://pdx.uoregon.edu/portland-student-discounts#portland-center-stage-at-the-armory",
+    "expires_at": null
+  },
+  {
+    "brand": "AWS Educate",
+    "description": "Access to cloud computing content, training, and collaboration tools, plus credits for hands-on experience.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://aws.amazon.com/education/awseducate/",
+    "expires_at": null
+  },
+  {
+    "brand": "Azure for Students",
+    "description": "$100 credit, no credit card required, plus free access to popular developer services.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://azure.microsoft.com/en-us/free/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Google Cloud for Students",
+    "description": "Credits and learning opportunities for students to build on GCP.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://edu.google.com/programs/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "DigitalOcean",
+    "description": "$200 in platform credit for 1 year (via GitHub Student Developer Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.digitalocean.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Heroku",
+    "description": "One free Hobby Dyno for up to 2 years (via GitHub Student Developer Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.heroku.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "IBM Cloud",
+    "description": "Free access to over 40 services and credits for students via the Academic Initiative.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.ibm.com/academic",
+    "expires_at": null
+  },
+  {
+    "brand": "Alibaba Cloud",
+    "description": "Free cloud servers and training certifications for verified students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.alibabacloud.com/campaign/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Vercel",
+    "description": "Hobby plan is free forever for personal projects, inclusive of CI/CD and global CDN.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://vercel.com/pricing",
+    "expires_at": null
+  },
+  {
+    "brand": "Netlify",
+    "description": "Free Starter plan for personal projects with serverless functions and global deployment.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.netlify.com/pricing/",
+    "expires_at": null
+  },
+  {
+    "brand": "Oracle Cloud",
+    "description": "Free Tier includes two compute VMs, object storage, and data egress.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.oracle.com/cloud/free/",
+    "expires_at": null
+  },
+  {
+    "brand": "Linode (Akamai)",
+    "description": "Research and education grants available for credits.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.linode.com/docs/guides/linode-for-education/",
+    "expires_at": null
+  },
+  {
+    "brand": "JetBrains",
+    "description": "Free All Products Pack (IntelliJ IDEA, PyCharm, WebStorm, etc.) for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.jetbrains.com/community/education/#students",
+    "expires_at": null
+  },
+  {
+    "brand": "Visual Studio Code",
+    "description": "Free, open-source code editor with thousands of extensions.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://code.visualstudio.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Tower",
+    "description": "Free Pro account for the powerful Git client (available in GitHub Student Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.git-tower.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Termius",
+    "description": "Free Premium plan for students to sync SSH data across devices.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://termius.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "GitKraken",
+    "description": "Free Pro Suite including GitKraken Client, GitLens, and more.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.gitkraken.com/student-resources",
+    "expires_at": null
+  },
+  {
+    "brand": "Bootstrap Studio",
+    "description": "Free license for the powerful desktop app for creating responsive websites.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://bootstrapstudio.io/pages/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Axure RP",
+    "description": "Free educational license for students and teachers.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.axure.com/edu",
+    "expires_at": null
+  },
+  {
+    "brand": "Postman",
+    "description": "Student Expert certification and badging.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.postman.com/student-program/",
+    "expires_at": null
+  },
+  {
+    "brand": "Typora",
+    "description": "Discounted license for the minimal markdown editor.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://support.typora.io/Purchase-Typora/#discount-for-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Working Copy",
+    "description": "Free Pro features for this powerful iOS Git client.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://workingcopyapp.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Sublime Text",
+    "description": "Unlimited evaluation period (Win/Mac/Linux).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.sublimetext.com/buy",
+    "expires_at": null
+  },
+  {
+    "brand": "Namecheap",
+    "description": "Free .me domain name and discounted hosting for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://nc.me/",
+    "expires_at": null
+  },
+  {
+    "brand": "Webflow",
+    "description": "Free CMS site plan for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://webflow.com/classrooms",
+    "expires_at": null
+  },
+  {
+    "brand": "Framer",
+    "description": "50% discount on Pro plans for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.framer.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Wix",
+    "description": "50% off Yearly Premium plans for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.wix.com/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Squarespace",
+    "description": "50% off your first full year of Squarespace.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.squarespace.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Themeisle",
+    "description": "Free year of premium WordPress themes (GitHub Student Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://themeisle.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "GitHub Copilot",
+    "description": "Free access to the AI pair programmer for verified students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://education.github.com/pack",
+    "expires_at": null
+  },
+  {
+    "brand": "OpenAI",
+    "description": "(Check for research grants/student access via university).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://openai.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Hugging Face",
+    "description": "Educational benefits including compute grants and ambassador programs.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://huggingface.co/students",
+    "expires_at": null
+  },
+  {
+    "brand": "DeepNote",
+    "description": "Free Education plan for students and teachers.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://deepnote.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Google Colab",
+    "description": "Free access to GPUs (K80s, T4s) for standard use.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://colab.research.google.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Polymer",
+    "description": "Free Pro plan for students to visualize data with AI.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.polymersearch.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Weights & Biases",
+    "description": "Free academic plan for tracking ML experiments.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://wandb.ai/site/academic",
+    "expires_at": null
+  },
+  {
+    "brand": "Roboflow",
+    "description": "Free public workspace usage for computer vision projects.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://roboflow.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Adobe Creative Cloud",
+    "description": "Over 60% discount on the \"All Apps\" plan.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.adobe.com/creativecloud/buy/students.html",
+    "expires_at": null
+  },
+  {
+    "brand": "Figma",
+    "description": "Free Professional plan for students and educators.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.figma.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Sketch",
+    "description": "Free for students and educators.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.sketch.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Canva",
+    "description": "Canva for Education is free for K-12.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.canva.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "CorelDRAW",
+    "description": "Significant discounts on the Graphics Suite for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.coreldraw.com/en/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Blender",
+    "description": "Free and open-source 3D creation suite.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.blender.org/",
+    "expires_at": null
+  },
+  {
+    "brand": "Cinema 4D (Maxon)",
+    "description": "Low-cost educational license for the full Maxon One bundle.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.maxon.net/en/educational-licenses",
+    "expires_at": null
+  },
+  {
+    "brand": "Autodesk Education",
+    "description": "Free access to Maya, 3ds Max, AutoCAD, and Fusion 360.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.autodesk.com/education/edu-software/overview",
+    "expires_at": null
+  },
+  {
+    "brand": "InVision",
+    "description": "Free education license.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.invisionapp.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "IconScout",
+    "description": "Free access to premium icons and assets.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://iconscout.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Notion",
+    "description": "Free Personal Pro plan for students and educators.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.notion.so/product/notion-for-education",
+    "expires_at": null
+  },
+  {
+    "brand": "Miro",
+    "description": "Free Education plan with unlimited boards.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://miro.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Todoist",
+    "description": "Discounted Pro plan for students/educators.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://todoist.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Trello",
+    "description": "Discount available via Atlassian's education programs.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://trello.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Asana",
+    "description": "Free access to Premium features for student organizations.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://asana.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Monday.com",
+    "description": "Free Student Program for eligible students and classes.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://monday.com/lang/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "TickTick",
+    "description": "25% educational discount on Premium.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://ticktick.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Airtable",
+    "description": "Free Pro plan for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://airtable.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Typeform",
+    "description": "Discount on plans for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.typeform.com/help/a/student-discount-360029574451/",
+    "expires_at": null
+  },
+  {
+    "brand": "Linear",
+    "description": "Free for student organizations.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://linear.app/method/linear-for-students",
+    "expires_at": null
+  },
+  {
+    "brand": "ClickUp",
+    "description": "Student discount available upon request.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://help.clickup.com/hc/en-us/articles/6303426214551-ClickUp-for-students-and-educators",
+    "expires_at": null
+  },
+  {
+    "brand": "Slack",
+    "description": "85% discount for education workspaces.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://slack.com/help/articles/206646877-Apply-for-the-Slack-for-Education-discount",
+    "expires_at": null
+  },
+  {
+    "brand": "Evernote",
+    "description": "50% off Personal plans for eligible students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://evernote.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "MongoDB Atlas",
+    "description": "$50 in credits and certification (via GitHub Student Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.mongodb.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Tableau",
+    "description": "Free 1-year license of Tableau Desktop for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.tableau.com/academic/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Navicat",
+    "description": "Free NFR One-Year license for verified students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.navicat.com/en/sponsorship/education/student",
+    "expires_at": null
+  },
+  {
+    "brand": "PopSQL",
+    "description": "Free Premium license for collaborative SQL coding.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://popsql.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "SAS",
+    "description": "Free SAS access for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.sas.com/en_us/learn/academic-programs/students.html",
+    "expires_at": null
+  },
+  {
+    "brand": "Metabase",
+    "description": "Free open-source business intelligence tool.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.metabase.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Ableton Live",
+    "description": "40% off Ableton Live Standard or Suite.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.ableton.com/en/shop/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Avid Pro Tools",
+    "description": "Significant discount (from $9.99/mo) for students and teachers.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.avid.com/pro-tools/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Logic Pro (Apple)",
+    "description": "Available as part of the \"Pro Apps Bundle for Education\" ($199 for Logic, MainStage, Final Cut, Motion, Compressor).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.apple.com/us-edu/shop/product/BMGE2Z/A/pro-apps-bundle-for-education",
+    "expires_at": null
+  },
+  {
+    "brand": "FL Studio",
+    "description": "Educational license available (check authorized resellers).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.image-line.com/fl-studio/educational-version/",
+    "expires_at": null
+  },
+  {
+    "brand": "PreSonus Studio One",
+    "description": "Discounts for students and educators.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.presonus.com/en/buy-studio-one-education.html",
+    "expires_at": null
+  },
+  {
+    "brand": "Bitwig Studio",
+    "description": "Educational discount availability.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.bitwig.com/buy/educational/",
+    "expires_at": null
+  },
+  {
+    "brand": "DaVinci Resolve",
+    "description": "The standard free version is incredibly powerful for students; Studio has a one-time fee.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "expires_at": null
+  },
+  {
+    "brand": "1Password",
+    "description": "Free for 1 year (via GitHub Student Developer Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://1password.com/github-student-developer-pack/",
+    "expires_at": null
+  },
+  {
+    "brand": "Dashlane",
+    "description": "Free Premium for 1 year for students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.dashlane.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Namecheap SSL",
+    "description": "Free SSL certificate (often bundled with Namecheap education offers).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.namecheap.com/security/ssl-certificates/",
+    "expires_at": null
+  },
+  {
+    "brand": "Cryptomator",
+    "description": "Free open source file encryption.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://cryptomator.org/",
+    "expires_at": null
+  },
+  {
+    "brand": "O'Reilly Learning",
+    "description": "Free access provided by many university libraries.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.oreilly.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Frontend Masters",
+    "description": "6 months free (via GitHub Student Developer Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://frontendmasters.com/guides/learning-roadmap/",
+    "expires_at": null
+  },
+  {
+    "brand": "Educative.io",
+    "description": "6 months free (via GitHub Student Developer Pack).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.educative.io/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Coursera",
+    "description": "\"Coursera for Students\" (often one free course a year or financial aid).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.coursera.org/for-university-and-college-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Codecademy",
+    "description": "Discounted Pro membership for eligible college students.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.codecademy.com/student-center",
+    "expires_at": null
+  },
+  {
+    "brand": "Udacity",
+    "description": "Various scholarship programs.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.udacity.com/scholarships",
+    "expires_at": null
+  },
+  {
+    "brand": "freeCodeCamp",
+    "description": "Always free, verified certifications.",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.freecodecamp.org/",
+    "expires_at": null
+  },
+  {
+    "brand": "DataCamp",
+    "description": "Free access to the full platform for classrooms (requires teacher setup).",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://www.datacamp.com/groups/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Bio Link",
+    "description": "Link in bio - the clickable URL that you can add to your profile section",
+    "discount_percent": null,
+    "category": "social media links manager",
+    "redemption_url": "https://bio.link/",
+    "expires_at": null
+  },
+  {
+    "brand": "AnyDesk Student",
+    "description": "All Anydesk Product Licenses while you are student",
+    "discount_percent": null,
+    "category": "design, art",
+    "redemption_url": "https://anydesk.com/en/education/free-for-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Spotify premium student discount",
+    "description": "Student Discount as low as INR66/month",
+    "discount_percent": null,
+    "category": "music",
+    "redemption_url": "https://www.spotify.com/in-en/student/",
+    "expires_at": null
+  },
+  {
+    "brand": "VS Enterprise",
+    "description": "Visual Studio Code Enterprise Subscription",
+    "discount_percent": null,
+    "category": "development",
+    "redemption_url": "https://visualstudio.microsoft.com/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Last Pass",
+    "description": "6 months subscription",
+    "discount_percent": null,
+    "category": "password manager",
+    "redemption_url": "https://www.lastpass.com",
+    "expires_at": null
+  },
+  {
+    "brand": "eSurveyCreator",
+    "description": "Student License while you are student",
+    "discount_percent": null,
+    "category": "survey creation and distribution app",
+    "redemption_url": "https://www.surveyhero.com/esurveycreator-is-now-surveyhero",
+    "expires_at": null
+  },
+  {
+    "brand": "LucidChart",
+    "description": "Lifetime free suscription",
+    "discount_percent": null,
+    "category": "flowchart service",
+    "redemption_url": "https://www.lucidchart.com/pages/",
+    "expires_at": null
+  },
+  {
+    "brand": "Prezi",
+    "description": "Lifetime Subscription",
+    "discount_percent": null,
+    "category": "video conferencing app",
+    "redemption_url": "https://prezi.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "BlackBerry QNX",
+    "description": "Lifetime Subscription",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://blackberry.qnx.com/en",
+    "expires_at": null
+  },
+  {
+    "brand": "Name.com",
+    "description": "One year domain and Advance Security SSL Sertificate",
+    "discount_percent": null,
+    "category": "domains",
+    "redemption_url": "https://www.name.com/partner/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Github",
+    "description": "Github pro package",
+    "discount_percent": null,
+    "category": "developer",
+    "redemption_url": "https://education.github.com/benefits/offers",
+    "expires_at": null
+  },
+  {
+    "brand": "Microsoft Azure",
+    "description": "25+ microsoft cloud services + $100.00 in Azure credit",
+    "discount_percent": null,
+    "category": "cloud",
+    "redemption_url": "https://azure.microsoft.com/en-in/free/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Unity",
+    "description": "Lifetime",
+    "discount_percent": null,
+    "category": "game development",
+    "redemption_url": "https://unity.com/products/unity-student",
+    "expires_at": null
+  },
+  {
+    "brand": "Jetbrains",
+    "description": "Annual Subscription",
+    "discount_percent": null,
+    "category": "developer",
+    "redemption_url": "https://www.jetbrains.com/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Digital Ocean",
+    "description": "$50 Credit",
+    "discount_percent": null,
+    "category": "cloud",
+    "redemption_url": "https://www.digitalocean.com/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Bootstrap Studio",
+    "description": "Studio License",
+    "discount_percent": null,
+    "category": "design concept",
+    "redemption_url": "https://bootstrapstudio.io/",
+    "expires_at": null
+  },
+  {
+    "brand": "Frontend Masters",
+    "description": "6 Months Validity",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://frontendmasters.com/welcome/github-student-developers/",
+    "expires_at": null
+  },
+  {
+    "brand": "Heroku",
+    "description": "Hobby Dyno",
+    "discount_percent": null,
+    "category": "cloud",
+    "redemption_url": "https://www.heroku.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": ".tech Domains",
+    "description": ".tech domain 1 year validity + 2 emails + 100 MB storage",
+    "discount_percent": null,
+    "category": "domains",
+    "redemption_url": "https://get.tech/github-student-developer-pack",
+    "expires_at": null
+  },
+  {
+    "brand": "PomoDone",
+    "description": "Lite Plan for 2 years",
+    "discount_percent": null,
+    "category": "productivity",
+    "redemption_url": "https://pomodoneapp.com/pomodoro-timer-for-students.html",
+    "expires_at": null
+  },
+  {
+    "brand": "GitKraken",
+    "description": "GitKraken Pro Kit",
+    "discount_percent": null,
+    "category": "developing tools",
+    "redemption_url": "https://www.gitkraken.com/github-student-developer-pack-bundle",
+    "expires_at": null
+  },
+  {
+    "brand": "DataCamp",
+    "description": "3 months plan",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://www.datacamp.com/pricing/student",
+    "expires_at": null
+  },
+  {
+    "brand": "One Month",
+    "description": "30 days subsription",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://onemonth.com/github/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Education Host",
+    "description": "1 Year Plan + Upgrade plan discount",
+    "discount_percent": null,
+    "category": "cloud",
+    "redemption_url": "https://github-students.educationhost.co.uk/",
+    "expires_at": null
+  },
+  {
+    "brand": "Interview Cake",
+    "description": "3 weeks Plan",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://www.interviewcake.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "GitHub Campus Experts",
+    "description": "Complete Course",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://education.github.com/experts",
+    "expires_at": null
+  },
+  {
+    "brand": "iconscout",
+    "description": "1 year Subscription + 60 Premiums icons",
+    "discount_percent": null,
+    "category": "design",
+    "redemption_url": "https://iconscout.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "twilio",
+    "description": "$50 credit + APIs",
+    "discount_percent": null,
+    "category": "infrastructure & apis",
+    "redemption_url": "https://www.twilio.com/blog/twilio-perks-students-and-educators-now-available-github-education",
+    "expires_at": null
+  },
+  {
+    "brand": "testmail.app",
+    "description": "Essential plan",
+    "discount_percent": null,
+    "category": "developing tools",
+    "redemption_url": "https://testmail.app/",
+    "expires_at": null
+  },
+  {
+    "brand": "Polypane",
+    "description": "1 year subscription",
+    "discount_percent": null,
+    "category": "design",
+    "redemption_url": "https://polypane.app/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Pageclip",
+    "description": "Basic Plan subscription",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://pageclip.co/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "next.tech",
+    "description": "1 year Subscription",
+    "discount_percent": null,
+    "category": "developing & learn",
+    "redemption_url": "https://next.tech/",
+    "expires_at": null
+  },
+  {
+    "brand": "ATOM",
+    "description": "Annual Subscription",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://atomlearning.co.uk/pricing",
+    "expires_at": null
+  },
+  {
+    "brand": "Arduino Education",
+    "description": "6 months Subscription",
+    "discount_percent": null,
+    "category": "internet of things & infrastructure",
+    "redemption_url": "https://https://www.arduino.cc/education/explore-iot-kit",
+    "expires_at": null
+  },
+  {
+    "brand": "Typeform",
+    "description": "1 year Subscription",
+    "discount_percent": null,
+    "category": "design &  marketing",
+    "redemption_url": "https://product.typeform.com/github/",
+    "expires_at": null
+  },
+  {
+    "brand": "netwise.",
+    "description": "1 year Subscription",
+    "discount_percent": null,
+    "category": "cloud & internet of things",
+    "redemption_url": "https://www.netwise.co.uk/students/",
+    "expires_at": null
+  },
+  {
+    "brand": "HazeOver",
+    "description": "Lifetime",
+    "discount_percent": null,
+    "category": "productivity",
+    "redemption_url": "https://hazeover.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "ICONS8",
+    "description": "3 Months unlimited Subscription",
+    "discount_percent": null,
+    "category": "design",
+    "redemption_url": "https://icons8.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Mailgun",
+    "description": "12 months subcription + 20,000 free emails + 100 email validations",
+    "discount_percent": null,
+    "category": "infrastructures",
+    "redemption_url": "https://www.mailgun.com/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Go Rails",
+    "description": "12 months subcription – Video Lessons",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://gorails.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Rhino3D",
+    "description": "Rhino3D Educational License",
+    "discount_percent": null,
+    "category": "3d rendering",
+    "redemption_url": "https://www.rhino3d.com/for/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "Enscape",
+    "description": "Enscape educational license",
+    "discount_percent": null,
+    "category": "visual reality & real time rendering",
+    "redemption_url": "https://enscape3d.com/educational-license/",
+    "expires_at": null
+  },
+  {
+    "brand": "Chaos",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "3d work",
+    "redemption_url": "https://www.chaos.com/education/students",
+    "expires_at": null
+  },
+  {
+    "brand": "QT",
+    "description": "QT Educational License",
+    "discount_percent": null,
+    "category": "cross platform development",
+    "redemption_url": "https://www.qt.io/qt-educational-license",
+    "expires_at": null
+  },
+  {
+    "brand": "Copyright.com",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://www.copyright.com/solutions-annual-copyright-license-student-assessments/",
+    "expires_at": null
+  },
+  {
+    "brand": "cPanel",
+    "description": "Educational License",
+    "discount_percent": null,
+    "category": "cpanel for free but faculty only",
+    "redemption_url": "https://support.cpanel.net/hc/en-us/articles/1500005429921-cPanel-Education-Licenses",
+    "expires_at": null
+  },
+  {
+    "brand": "Gurobi",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "business problem solving",
+    "redemption_url": "https://www.gurobi.com/academia/academic-program-and-licenses/",
+    "expires_at": null
+  },
+  {
+    "brand": "Shapr3d",
+    "description": "Student License 1 Year",
+    "discount_percent": null,
+    "category": "3d modeling app",
+    "redemption_url": "https://www.shapr3d.com/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Gliffy",
+    "description": "Free account for active students",
+    "discount_percent": null,
+    "category": "diagram drawing",
+    "redemption_url": "https://help.gliffy.com/online/Content/GliffyOnline/free_for_students.htm",
+    "expires_at": null
+  },
+  {
+    "brand": "Portfolio Box Pro",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "portfolio creation",
+    "redemption_url": "https://https://www.portfoliobox.net/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Lumion Pro",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "3d rendering software",
+    "redemption_url": "https://lumion.com/educational-licenses.html",
+    "expires_at": null
+  },
+  {
+    "brand": "Tableau Prep Builder",
+    "description": "1 Year Student License",
+    "discount_percent": null,
+    "category": "data cleaner for data analysis",
+    "redemption_url": "https://www.tableau.com/products/prep",
+    "expires_at": null
+  },
+  {
+    "brand": "THINKFUL",
+    "description": "1 Month Web Development",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://www.thinkful.com/blog/github-adds-thinkful-to-student-developer-pack/",
+    "expires_at": null
+  },
+  {
+    "brand": "Invision App",
+    "description": "Free while you are student",
+    "discount_percent": null,
+    "category": "ui/ux design",
+    "redemption_url": "https://support.invisionapp.com/hc/en-us",
+    "expires_at": null
+  },
+  {
+    "brand": "Basecamp account",
+    "description": "Free account for teachers and students",
+    "discount_percent": null,
+    "category": "project management & team collab",
+    "redemption_url": "https://basecamp.com/discounts",
+    "expires_at": null
+  },
+  {
+    "brand": "Amazon Prime Student (.com)",
+    "description": "6 month Prime + prime videos(all region) + deals 7 discounts",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.amazon.in/b?ie=UTF8&node=15307611031",
+    "expires_at": null
+  },
+  {
+    "brand": "Unidays",
+    "description": "Student Discounts",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.myunidays.com/US/en-US",
+    "expires_at": null
+  },
+  {
+    "brand": "SheerID",
+    "description": "Student Discount",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.sheerid.com/shoppers/studentdeals/",
+    "expires_at": null
+  },
+  {
+    "brand": "OnTheHub",
+    "description": "Discounts on softwares for Stdents,Faculty and staff",
+    "discount_percent": null,
+    "category": "softwares",
+    "redemption_url": "https://onthehub.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "PTC student",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "3d cad",
+    "redemption_url": "https://www.ptc.com/en/products/education/free-software/creo-college-download",
+    "expires_at": null
+  },
+  {
+    "brand": "Intel education software",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "development",
+    "redemption_url": "https://www.intel.com/content/www/us/en/education/intel-education.html",
+    "expires_at": null
+  },
+  {
+    "brand": "Newegg Premier",
+    "description": "Discounts",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.newegg.com/neweggpremier",
+    "expires_at": null
+  },
+  {
+    "brand": "Mnx.io",
+    "description": "**$50 credit in cloud hosting for students, valid for 1 year.**",
+    "discount_percent": null,
+    "category": "cloud server",
+    "redemption_url": "https://mnx.io/pricing",
+    "expires_at": null
+  },
+  {
+    "brand": "DNS simple",
+    "description": "DNS Simple student license",
+    "discount_percent": null,
+    "category": "dns data observation",
+    "redemption_url": "https://dnsimple.com/signup",
+    "expires_at": null
+  },
+  {
+    "brand": "Send grid",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "stmp mail system",
+    "redemption_url": "https://sendgrid.com/pricing/",
+    "expires_at": null
+  },
+  {
+    "brand": "Orchestrate.io",
+    "description": "Free developer account",
+    "discount_percent": null,
+    "category": "database service",
+    "redemption_url": "https://orchestration.io/",
+    "expires_at": null
+  },
+  {
+    "brand": "Bitnami",
+    "description": "Student License free",
+    "discount_percent": null,
+    "category": "pre-packaged images for automated setup of popular server software on windows, mac os",
+    "redemption_url": "https://bitnami.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Crowdflower",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "ai ml training software",
+    "redemption_url": "https://www.truelancer.com/crowdflower-online-jobs-freelancer-job",
+    "expires_at": null
+  },
+  {
+    "brand": "Squarespace",
+    "description": "Discount and Free months",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://www.squarespace.com/coupons",
+    "expires_at": null
+  },
+  {
+    "brand": "Students beans",
+    "description": "Membership ID",
+    "discount_percent": null,
+    "category": "student id for discounts",
+    "redemption_url": "https://www.studentbeans.com/student-discount/uk/all",
+    "expires_at": null
+  },
+  {
+    "brand": "Themescale",
+    "description": "Wordpress themes license for 1 year",
+    "discount_percent": null,
+    "category": "website",
+    "redemption_url": "https://www.timescale.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Hexagon Geospatail",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://hexagon.com/company/divisions/safety-infrastructure-geospatial/education-program",
+    "expires_at": null
+  },
+  {
+    "brand": "replit",
+    "description": "3 months Hackers Plan",
+    "discount_percent": null,
+    "category": "developers & learn",
+    "redemption_url": "https://replit.com/site/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Bhphotovideo",
+    "description": "Student License",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.bhphotovideo.com/find/eduAdvantage.jsp",
+    "expires_at": null
+  },
+  {
+    "brand": "Flatiron School",
+    "description": "1 month Subscription",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://flatironschool.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "IMGBOT",
+    "description": "Free Image Optimisation",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://github.com/marketplace/imgbot/plan/MLP_kgDNGw8#pricing-and-setup",
+    "expires_at": null
+  },
+  {
+    "brand": "POPSQL",
+    "description": "Premium Plan",
+    "discount_percent": null,
+    "category": "developers tools",
+    "redemption_url": "https://popsql.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "DATADOG",
+    "description": "Pro Account + 10 Servers + 2 Years Plan",
+    "discount_percent": null,
+    "category": "security & analytics",
+    "redemption_url": "https://www.datadoghq.com/blog/datadog-github-student-developer-pack/",
+    "expires_at": null
+  },
+  {
+    "brand": "Kodika.io",
+    "description": "Unlimited Pro Plan 6 Months – Build iOS Applications",
+    "discount_percent": null,
+    "category": "design & mobile",
+    "redemption_url": "https://kodika.io/pricing/",
+    "expires_at": null
+  },
+  {
+    "brand": "Stripe",
+    "description": "No transaction fee on $1000 Revenue",
+    "discount_percent": null,
+    "category": "infrastructure & apis",
+    "redemption_url": "https://",
+    "expires_at": null
+  },
+  {
+    "brand": "Adafruit",
+    "description": "1 year subscription",
+    "discount_percent": null,
+    "category": "internet of things & infrastructure apis",
+    "redemption_url": "https://www.adafruit.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Dashlane",
+    "description": "6 Months premium plan",
+    "discount_percent": null,
+    "category": "productivity",
+    "redemption_url": "https://www.dashlane.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Travis CI",
+    "description": "Open Source",
+    "discount_percent": null,
+    "category": "developer tools & internet of things",
+    "redemption_url": "https://education.travis-ci.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "TOWER",
+    "description": "Pro Subscription",
+    "discount_percent": null,
+    "category": "developer tools",
+    "redemption_url": "https://www.git-tower.com/students/windows",
+    "expires_at": null
+  },
+  {
+    "brand": "Gitpod",
+    "description": "6 months personal plan subscription",
+    "discount_percent": null,
+    "category": "developer tools & learn",
+    "redemption_url": "https://gitpod.io/plans/",
+    "expires_at": null
+  },
+  {
+    "brand": "Sentry",
+    "description": "Unlimited team members and 10GB attachments per month for free",
+    "discount_percent": null,
+    "category": "crash reporting",
+    "redemption_url": "https://sentry.io/for/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "XOJO",
+    "description": "Desktop License",
+    "discount_percent": null,
+    "category": "design & developer tools",
+    "redemption_url": "https://www.xojo.com/githubstudent/",
+    "expires_at": null
+  },
+  {
+    "brand": "CryptoLens",
+    "description": "Create up to 10 licenses and any number of end users for free",
+    "discount_percent": null,
+    "category": "software licensing",
+    "redemption_url": "https://app.cryptolens.io/user/githubstudent",
+    "expires_at": null
+  },
+  {
+    "brand": "BrowserStack",
+    "description": "Automate 1 year plan",
+    "discount_percent": null,
+    "category": "developing tools",
+    "redemption_url": "https://www.browserstack.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Freshpoint",
+    "description": "Growth Plan",
+    "discount_percent": null,
+    "category": "marketing & apis",
+    "redemption_url": "https://www.freshpoint.com/news/page/6/",
+    "expires_at": null
+  },
+  {
+    "brand": "Neve’s",
+    "description": "1 year agency wordpress theme",
+    "discount_percent": null,
+    "category": "design & apis",
+    "redemption_url": "https://themeisle.com/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Codecov",
+    "description": "Public & Private repositories",
+    "discount_percent": null,
+    "category": "developer tools",
+    "redemption_url": "https://about.codecov.io/",
+    "expires_at": null
+  },
+  {
+    "brand": "CART",
+    "description": "2 Years Premium Plan",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://cart.org/",
+    "expires_at": null
+  },
+  {
+    "brand": "SQLGATE",
+    "description": "1 Years Plan Subscription",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://www.sqlgate.com/pricing/subscription?language=en",
+    "expires_at": null
+  },
+  {
+    "brand": "Vaadin",
+    "description": "Pro Subscription",
+    "discount_percent": null,
+    "category": "infrastructure & apis",
+    "redemption_url": "https://vaadin.com/student-program",
+    "expires_at": null
+  },
+  {
+    "brand": "Deepscan",
+    "description": "6 Months premium plan",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://deepscan.io/github-student-pack",
+    "expires_at": null
+  },
+  {
+    "brand": "CodeScene",
+    "description": "Private Github repositories",
+    "discount_percent": null,
+    "category": "security & analytics",
+    "redemption_url": "https://codescene.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Simple Analytics",
+    "description": "1 year subscription",
+    "discount_percent": null,
+    "category": "infrastructure & marketing",
+    "redemption_url": "https://simpleanalytics.com/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Better Code Hub",
+    "description": "Individual License & Access private repos",
+    "discount_percent": null,
+    "category": "developing tools",
+    "redemption_url": "https://bettercodehub.com/github-student-developer-pack",
+    "expires_at": null
+  },
+  {
+    "brand": "Daily BOT",
+    "description": "6 Months Business",
+    "discount_percent": null,
+    "category": "productivity",
+    "redemption_url": "https://www.dailybot.com/pricing",
+    "expires_at": null
+  },
+  {
+    "brand": "POEditor",
+    "description": "1 year subscription",
+    "discount_percent": null,
+    "category": "developer tools & infrastructure",
+    "redemption_url": "https://poeditor.com/blog/translation-localization-educational-projects/",
+    "expires_at": null
+  },
+  {
+    "brand": "Honeybadger.io",
+    "description": "1 year subscription",
+    "discount_percent": null,
+    "category": "security & analytics",
+    "redemption_url": "https://www.honeybadger.io/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Kaltura",
+    "description": "$10K/year Credits",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://corp.kaltura.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "astra",
+    "description": "6 months Subscription",
+    "discount_percent": null,
+    "category": "security & analytics",
+    "redemption_url": "https://www.getastra.com/github-student-developer-pack",
+    "expires_at": null
+  },
+  {
+    "brand": "Pushbots",
+    "description": "6 months Subscription",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://pushbots.com/for/education/",
+    "expires_at": null
+  },
+  {
+    "brand": "LingoHub",
+    "description": "Professional Plan with 10,000 text segments",
+    "discount_percent": null,
+    "category": "infrastructure, productivity",
+    "redemption_url": "https://lingohub.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Blockchair",
+    "description": "100,000 free requests",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://blockchair.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Datree:Combat misconfigurations",
+    "description": "Pro Subscription",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://www.datree.io/",
+    "expires_at": null
+  },
+  {
+    "brand": "EverSQL",
+    "description": "6 months Subscription",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://www.eversql.com/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "baremetrics",
+    "description": "Free Baremetrics to $2.5K monthly recurring revenue",
+    "discount_percent": null,
+    "category": "marketing",
+    "redemption_url": "https://baremetrics.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "LambdaTEST",
+    "description": "1 year Live Plan",
+    "discount_percent": null,
+    "category": "test",
+    "redemption_url": "https://www.lambdatest.com/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "LambdaTEST",
+    "description": "1 year Live Plan",
+    "discount_percent": null,
+    "category": "test",
+    "redemption_url": "https://www.lambdatest.com/pricing",
+    "expires_at": null
+  },
+  {
+    "brand": "Sqlsmash",
+    "description": "Standard Plan",
+    "discount_percent": null,
+    "category": "developing tools",
+    "redemption_url": "https://sqlsmash.com/buy.html",
+    "expires_at": null
+  },
+  {
+    "brand": "Wisej",
+    "description": "Premium plus plan",
+    "discount_percent": null,
+    "category": "infrastructure",
+    "redemption_url": "https://wisej.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "AccessLint",
+    "description": "Access public and Private repos",
+    "discount_percent": null,
+    "category": "repos",
+    "redemption_url": "https://github.com/AccessLint",
+    "expires_at": null
+  },
+  {
+    "brand": "appfigures",
+    "description": "1 year premium plan",
+    "discount_percent": null,
+    "category": "marketing",
+    "redemption_url": "https://appfigures.com/landing/github-student",
+    "expires_at": null
+  },
+  {
+    "brand": "logDNA",
+    "description": "50GB/monthly 1 year plan",
+    "discount_percent": null,
+    "category": "security & analytics",
+    "redemption_url": "https://www.mezmo.com/blog/get-a-free-logdna-account-in-the-github-student-developer-pack",
+    "expires_at": null
+  },
+  {
+    "brand": "Sofy",
+    "description": "6 Months premium plan",
+    "discount_percent": null,
+    "category": "tools & mobile",
+    "redemption_url": "https://www.mezmo.com/blog/get-a-free-logdna-account-in-the-github-student-developer-packs://",
+    "expires_at": null
+  },
+  {
+    "brand": "Transloadit",
+    "description": "10 GB Startup Plan",
+    "discount_percent": null,
+    "category": "infrastructure & tools",
+    "redemption_url": "https://transloadit.com/github-students/",
+    "expires_at": null
+  },
+  {
+    "brand": "Phrase",
+    "description": "12 months premium plan",
+    "discount_percent": null,
+    "category": "infrastructure & tools",
+    "redemption_url": "https://bit.ly/PhraseOffer",
+    "expires_at": null
+  },
+  {
+    "brand": "Coveralls",
+    "description": "Unlimited private repos access",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://coveralls.io/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Yakindu",
+    "description": "12 months premium",
+    "discount_percent": null,
+    "category": "learn",
+    "redemption_url": "https://www.itemis.com/en/yakindu/state-machine/yakindu-universities/",
+    "expires_at": null
+  },
+  {
+    "brand": "Crowdin",
+    "description": "12 months premium",
+    "discount_percent": null,
+    "category": "tools, infrastructure , productivity",
+    "redemption_url": "https://crowdin.com/page/github-students",
+    "expires_at": null
+  },
+  {
+    "brand": "Transifex",
+    "description": "6 Months premium",
+    "discount_percent": null,
+    "category": "infrastructure & tools",
+    "redemption_url": "https://www.transifex.com/pricing/",
+    "expires_at": null
+  },
+  {
+    "brand": "Minecraft Educational License",
+    "description": "Educational License of Minecraft",
+    "discount_percent": null,
+    "category": "game",
+    "redemption_url": "https://education.minecraft.net/en-us/licensing",
+    "expires_at": null
+  },
+  {
+    "brand": "Udemy Coupons for Music Online Courses",
+    "description": "Learn Rs 700 at Udemy",
+    "discount_percent": null,
+    "category": "courses",
+    "redemption_url": "https://udemy.com",
+    "expires_at": null
+  },
+  {
+    "brand": "Testbook Offer for Visa Cards",
+    "description": "Up to 60% OFF + 15% OFF on Testbook Pass",
+    "discount_percent": null,
+    "category": "tools & mobile",
+    "redemption_url": "https://testbook.com/offers/5c6d38b3fdb8bb27ca727f62",
+    "expires_at": null
+  },
+  {
+    "brand": "Clean My Mac",
+    "description": "30% off on lifetime edition and annual plans",
+    "discount_percent": null,
+    "category": "tools & pc",
+    "redemption_url": "https://macpaw.com/store/cleanmymac",
+    "expires_at": null
+  },
+  {
+    "brand": "SpiceJet",
+    "description": "SpiceJet will provide up to 10% discount on the base fare on direct domestic ﬂights",
+    "discount_percent": null,
+    "category": null,
+    "redemption_url": "https://corporate.spicejet.com/studentdiscountlanding.aspx",
+    "expires_at": null
+  },
+  {
+    "brand": "Qoddi",
+    "description": "Qoddi is a web hosting platform which offers $250 per year for every student",
+    "discount_percent": null,
+    "category": "web hosting",
+    "redemption_url": "https://blog.qoddi.com/flashdrive-student-program/",
+    "expires_at": null
+  },
+  {
+    "brand": "Autodesk",
+    "description": "AutoDesk is a Software company for Architecture softwares. They give special discounts to students.",
+    "discount_percent": null,
+    "category": "architecture design, cad",
+    "redemption_url": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual",
+    "expires_at": null
+  },
+  {
+    "brand": "Audible",
+    "description": "Access a selection of Audible Originals, audiobooks, and podcasts including exclusive series.",
+    "discount_percent": null,
+    "category": "learning",
+    "redemption_url": "https://www.amazon.com/hz/audible/mlp?ie=UTF8&tag=colinfgee-20",
+    "expires_at": null
+  },
+  {
+    "brand": "YouNeedABudget",
+    "description": "Free budgeting software for college students with student ID",
+    "discount_percent": null,
+    "category": "tools",
+    "redemption_url": "https://www.youneedabudget.com/college/",
+    "expires_at": null
+  },
+  {
+    "brand": "Headspace",
+    "description": "85% off",
+    "discount_percent": null,
+    "category": "meditation",
+    "redemption_url": "https://www.headspace.com/studentplan",
+    "expires_at": null
+  },
+  {
+    "brand": "Apple",
+    "description": "Discounts on Apple Products for Students",
+    "discount_percent": null,
+    "category": "products",
+    "redemption_url": "https://www.apple.com/us-edu/store",
+    "expires_at": null
+  },
+  {
+    "brand": "Coursera",
+    "description": "Get certified courses for free with Financial Aid",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://www.coursera.support/s/article/209819033-Apply-for-Financial-Aid-or-a-Scholarship?language=en_US",
+    "expires_at": null
+  },
+  {
+    "brand": "Microsoft for Students",
+    "description": "Free 8 Microsoft Certification. Required: .edu email address.",
+    "discount_percent": null,
+    "category": "certification",
+    "redemption_url": "https://msftstudentcert.cloudreadyskills.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Hulu for Students",
+    "description": "Students: Get Hulu For Just $1.99/Month.",
+    "discount_percent": null,
+    "category": "video streaming",
+    "redemption_url": "https://www.hulu.com/student",
+    "expires_at": null
+  },
+  {
+    "brand": "Expedia",
+    "description": "Expedia Students Travel Offer",
+    "discount_percent": null,
+    "category": "tour and travel",
+    "redemption_url": "https://www.expedia.com/student-travel-discounts",
+    "expires_at": null
+  },
+  {
+    "brand": "Impact Soundworks",
+    "description": "Educational Offer in Impact Soundworks",
+    "discount_percent": null,
+    "category": "music",
+    "redemption_url": "https://impactsoundworks.com/support/#academic-discounts/",
+    "expires_at": null
+  },
+  {
+    "brand": "Oneplus",
+    "description": "Educational Discount on Oneplus Products",
+    "discount_percent": null,
+    "category": "software",
+    "redemption_url": "https://www.oneplus.in/education",
+    "expires_at": null
+  },
+  {
+    "brand": "Cursa",
+    "description": "Get certified courses for free",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://cursa.app/en",
+    "expires_at": null
+  },
+  {
+    "brand": "Envato Elements",
+    "description": "Envato Elements for Students",
+    "discount_percent": null,
+    "category": "design",
+    "redemption_url": "https://elements.envato.com/pricing/students",
+    "expires_at": null
+  },
+  {
+    "brand": "IRCTC",
+    "description": "Season Ticket Booking Concession for Students",
+    "discount_percent": null,
+    "category": "travel",
+    "redemption_url": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,2,281,880",
+    "expires_at": null
+  },
+  {
+    "brand": "Indigo",
+    "description": "Total baggage allowance of 25Kgs (1 pc only) including the additional allowance of 10 kgs (collectively referred to as “Benefits”).",
+    "discount_percent": null,
+    "category": "flight booking discount",
+    "redemption_url": "https://www.goindigo.in/add-on-services/student-discount.html",
+    "expires_at": null
+  },
+  {
+    "brand": "StudentMoneySaver",
+    "description": "Provide lucrative discounts on top brands for students",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.studentmoneysaver.co.uk/",
+    "expires_at": null
+  },
+  {
+    "brand": "Dell",
+    "description": "Provide discounts on laptops and free delivery for students",
+    "discount_percent": null,
+    "category": "products",
+    "redemption_url": "https://www.dell.com/en-in/lp/student-laptop-discount#Featured-Student-Laptops",
+    "expires_at": null
+  },
+  {
+    "brand": "Lenovo Student Store",
+    "description": "Special discounts for College and School Students",
+    "discount_percent": null,
+    "category": "products",
+    "redemption_url": "https://www.lenovo.com/in/en/d/students-offer/",
+    "expires_at": null
+  },
+  {
+    "brand": "Air India",
+    "description": "Student concession on flights",
+    "discount_percent": null,
+    "category": "travel",
+    "redemption_url": "https://www.airindia.in/student-concession.htm",
+    "expires_at": null
+  },
+  {
+    "brand": "Mubi",
+    "description": "90 days of hand-picked films for free. Only for students.",
+    "discount_percent": null,
+    "category": "cinema streaming",
+    "redemption_url": "https://mubi.com/promos/student-india",
+    "expires_at": null
+  },
+  {
+    "brand": "VOXI for Students",
+    "description": "Students get first month free.",
+    "discount_percent": null,
+    "category": "cellular data",
+    "redemption_url": "https://www.voxi.co.uk/acquisition/students",
+    "expires_at": null
+  },
+  {
+    "brand": "Amazon",
+    "description": "Student concession on prime video",
+    "discount_percent": null,
+    "category": "entertainment",
+    "redemption_url": "https://www.primevideo.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "UNiDAYS",
+    "description": "Get up to 50% Off - only for students",
+    "discount_percent": null,
+    "category": "tech, fashion, learning and more every time you shop",
+    "redemption_url": "https://www.myunidays.com/IN/en-IN/content/about",
+    "expires_at": null
+  },
+  {
+    "brand": "Macpaw",
+    "description": "Student offer upto 30%",
+    "discount_percent": null,
+    "category": "cleanmymac x plan",
+    "redemption_url": "https://macpaw.com/macpaw-student-discount?campaign=cmmx_search_sitelink_en&campaign=cmmx_search_brand_in_en&ci=16806056043&adgroupid=135530056059&adpos=&ck=cleanmymac%20discount&targetid=kwd-331823206928&match={if:p}&gnetwork=g&creative=591911619779&placement=&placecat=&accname=cmm&gclid=CjwKCAjw79iaBhAJEiwAPYwoCPikBA_zA5hEVpgUUyVjqLZnihdOCw1OfTYojxBtjJf2wcOTAGKP4RoCa4IQAvD_BwE",
+    "expires_at": null
+  },
+  {
+    "brand": "Samsung",
+    "description": "Get up to 10% off on Samsung products with Student Advantage Program",
+    "discount_percent": null,
+    "category": "products",
+    "redemption_url": "https://www.samsung.com/in/microsite/student-advantage/",
+    "expires_at": null
+  },
+  {
+    "brand": "HP",
+    "description": "Discounts, cashback, free products and other offers for Students",
+    "discount_percent": null,
+    "category": "products",
+    "redemption_url": "https://www.hp.com/in-en/shop/students/about-the-program",
+    "expires_at": null
+  },
+  {
+    "brand": "Flipkart",
+    "description": "Student concession on flipkart plus",
+    "discount_percent": null,
+    "category": "shopping",
+    "redemption_url": "https://www.flipkart.com/students-enrollment-store?",
+    "expires_at": null
+  },
+  {
+    "brand": "Udemy",
+    "description": "Student concession Udemy Courses",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://googie.coupons/udemy/?loc=9061866&pos=&ad=430569585489&device=c⌖=kwd-66803475385&ext=&camp=2036421541&group=70876059966&utm_medium=16772139466432396440&utm_source=16772139466432396440&utm_campaign=16772139466432396440&gclid=CjwKCAjw79iaBhAJEiwAPYwoCM5iqdWKVmKsuXzAMIZvdlI8y7nTHdvnNI7RePjU9jYwcPyCu-4VFRoC_XAQAvD_BwE?loc=9061866&pos=&ad=430569585489&device=c⌖=kwd-66803475385&ext=&camp=2036421541&group=70876059966&utm_medium=16772139466432396440&utm_source=adu92&utm_campaign=16772139466432396440&gclid=CjwKCAjw79iaBhAJEiwAPYwoCM5iqdWKVmKsuXzAMIZvdlI8y7nTHdvnNI7RePjU9jYwcPyCu-4VFRoC_XAQAvD_BwE",
+    "expires_at": null
+  },
+  {
+    "brand": "Spotify",
+    "description": "Student offer upto 50% on Spotify Premium",
+    "discount_percent": null,
+    "category": "music",
+    "redemption_url": "https://www.spotify.com/in-en/student/?utm_source=in-en_neev_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_asia_in_premiumbusiness_Student_brand_neev+contextual-mobile+text+phrase+in-en+google&gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ39ZqLWFVjo64WGLp_cNwrKx_3eiJ8GZ6_lUSUGpt8XrCngK2ApVgYaAoN0EALw_wcB&gclsrc=aw.ds",
+    "expires_at": null
+  },
+  {
+    "brand": "Booktopia",
+    "description": "Student offer upto 10%",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://www.myunidays.com/AU/en-AU/partners/booktopia/view",
+    "expires_at": null
+  },
+  {
+    "brand": "Adobe",
+    "description": "Student offer upto 65%",
+    "discount_percent": null,
+    "category": "education",
+    "redemption_url": "https://gateway.studentbeans.com/us/offer/89f9c9b4-d223-41b1-bf58-48f66d73362c?brand=adobe&category=tech-mobile&utm_source=affiliate&utm_medium=rakuten&utm_campaign=3781960:BrokeScholar&utm_content=3&utm_term=usnetwork&ranMID=44445&ranEAID=*LjTQqvRo5A&ranSiteID=.LjTQqvRo5A-CmG1u971Dcl4NiZHqsZEpA",
+    "expires_at": null
+  },
+  {
+    "brand": "Lenovo",
+    "description": "Student offer upto 20%",
+    "discount_percent": null,
+    "category": "product",
+    "redemption_url": "https://lenovo.studentbeans.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Netlify",
+    "description": "FREE server for website hosting",
+    "discount_percent": null,
+    "category": "web development",
+    "redemption_url": "https://www.netlify.com/",
+    "expires_at": null
+  },
+  {
+    "brand": "Printful",
+    "description": "Free shipping on custom printed products",
+    "discount_percent": null,
+    "category": "product",
+    "redemption_url": "https://www.printful.com/student-deals",
+    "expires_at": null
+  },
+  {
+    "brand": "Realme",
+    "description": "5% extra Disocunt on phones and gadgets",
+    "discount_percent": null,
+    "category": "electronics",
+    "redemption_url": "https://www.realme.com/eu/student-discount",
+    "expires_at": null
+  },
+  {
+    "brand": "Youtube",
+    "description": "1-month free trial and ₹79.00/month after trail",
+    "discount_percent": null,
+    "category": "streaming",
+    "redemption_url": "https://www.youtube.com/premium/student",
+    "expires_at": null
+  },
+  {
+    "brand": "Spitfire Audio",
+    "description": "30%-50% Discount on Digital Instruments",
+    "discount_percent": null,
+    "category": "music production",
+    "redemption_url": "https://www.spitfireaudio.com/education-program",
+    "expires_at": null
+  },
+  {
+    "brand": "Steinberg",
+    "description": "Up to 50% Off on Steinberg Cubase",
+    "discount_percent": null,
+    "category": "music production",
+    "redemption_url": "https://www.steinberg.net/education/students-teachers/",
+    "expires_at": null
+  },
+  {
+    "brand": "Image-Line FL Studio",
+    "description": "Discounts on FL Studio",
+    "discount_percent": null,
+    "category": "music production",
+    "redemption_url": "https://www.image-line.com/edu-licenses/",
+    "expires_at": null
+  },
+  {
+    "brand": "Avid Pro Tools",
+    "description": "Discounts on Avid Pro Tools",
+    "discount_percent": null,
+    "category": "music production",
+    "redemption_url": "https://www.avid.com/academic-eligibility",
+    "expires_at": null
+  },
+  {
+    "brand": "Antares",
+    "description": "50% Off on Antares Tech Products",
+    "discount_percent": null,
+    "category": "music production",
+    "redemption_url": "https://identit-e.com/antaresaudiotech",
+    "expires_at": null
+  },
+  {
+    "brand": "Perplexity",
+    "description": "Perplexity 1-Year Free Pro Subscription for Eligible Colleges",
+    "discount_percent": null,
+    "category": "ai-powered research",
+    "redemption_url": "https://www.perplexity.ai/backtoschool",
     "expires_at": null
   }
 ]

@@ -13,7 +13,7 @@ import httpx
 
 from config import LOCAL_URLS, GITHUB_SEED_URLS
 from pipeline_global import discover_local_directories, filter_directories
-from pipeline_local import fetch, page_text, parse_deals_batch
+from pipeline_local import fetch, page_text, parse_deals_batch, parse_github_markdown
 from database import Deal, save_deals
 
 # Anchored to this file (not cwd) so the dump always lands in the scraper folder.
@@ -25,6 +25,22 @@ SEED_QUERIES = [
     "site:.edu 'student discounts' OR 'campus perks' California",
     "downtown association 'student deals' OR 'local discounts'",
 ]
+
+
+def dedupe(deals: list[Deal]) -> list[Deal]:
+    """Collapse rows sharing a redemption_url (same offer listed in both GitHub
+    files, etc.), keeping the first seen. Mirrors the DB's ON CONFLICT so the debug
+    file matches what actually lands in the table. Null-URL rows pass through —
+    they're dropped later at the save step anyway."""
+    seen: set[str] = set()
+    out: list[Deal] = []
+    for d in deals:
+        if d.redemption_url and d.redemption_url in seen:
+            continue
+        if d.redemption_url:
+            seen.add(d.redemption_url)
+        out.append(d)
+    return out
 
 
 def dump_debug(deals: list[Deal]) -> None:
@@ -68,13 +84,17 @@ async def main():
         global_urls = await collect_global_urls()
         global_pages = await collect_pages(global_urls, client)
 
-    # ONE Gemini call for every page (stays under the ~1 RPM limit of the model).
-    all_deals = await parse_deals_batch(local_pages + github_pages + global_pages)
+    # Campus HTML is messy -> Gemini. The curated GitHub lists are clean structured
+    # markdown -> a deterministic regex parser (100% recall, no quota, no LLM call).
+    campus_deals = await parse_deals_batch(local_pages + global_pages)
+    github_deals = parse_github_markdown(github_pages)
+    all_deals = dedupe(campus_deals + github_deals)
 
     dump_debug(all_deals)
 
     written = await save_deals(all_deals)
-    print(f"[main] discounts upserted: {written} | debug json: {len(all_deals)}")
+    print(f"[main] discounts upserted: {written} | debug json: {len(all_deals)} "
+          f"(campus {len(campus_deals)} + github {len(github_deals)}, deduped)")
 
 
 if __name__ == "__main__":

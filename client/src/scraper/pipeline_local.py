@@ -9,6 +9,7 @@ import json
 import random
 import re
 import unicodedata
+from datetime import date
 
 import httpx
 from bs4 import BeautifulSoup
@@ -221,11 +222,15 @@ async def extract_deals_llm_batch(pages: list[dict]) -> list[dict]:
     ONE call. `pages` = [{"url": ..., "html_text": ...}, ...]."""
     if not pages:
         return []
-    payload = "\n".join(
-        f"<scraped_site url='{p['url']}'>\n{p['html_text'][:_BATCH_PAGE_CAP]}\n</scraped_site>"
-        for p in pages
-    )
-    return await _generate_json(_BATCH_PROMPT + payload, list[DealBlock])
+    blocks = []
+    for p in pages:
+        # Curated GitHub lists are dense and trustworthy — never clip them, or we
+        # lose trailing deals. HTML pages still get capped to bound the payload.
+        text = p["html_text"]
+        if "githubusercontent.com" not in p["url"]:
+            text = text[:_BATCH_PAGE_CAP]
+        blocks.append(f"<scraped_site url='{p['url']}'>\n{text}\n</scraped_site>")
+    return await _generate_json(_BATCH_PROMPT + "\n".join(blocks), list[DealBlock])
 
 
 # Placeholder brand values the LLM emits when it can't identify a merchant —
@@ -242,6 +247,15 @@ _PERK_SIGNAL = re.compile(
     r"\d|\$|%|\bfree\b|\bbogo\b|buy[\s-]?one|half[\s-]?(off|price)|complimentary",
     re.I,
 )
+
+
+def _is_expired(expires_at: str) -> bool:
+    """True only if expires_at is a valid date strictly before today. Unparseable
+    dates are kept (don't drop a good deal over a format quirk)."""
+    try:
+        return date.fromisoformat(expires_at) < date.today()
+    except ValueError:
+        return False
 
 
 def _is_low_quality(discount_percent: str | None, description: str) -> bool:
@@ -270,6 +284,13 @@ def _block_to_deal(b: dict) -> Deal | None:
     discount_percent = (b.get("discount_percent") or "").strip() or None
     # Drop vague no-detail rows (e.g. "offers discounts" with no % / $ / free).
     if _is_low_quality(discount_percent, description):
+        print(f"[Filter] Skipped no-signal deal: {brand}")
+        return None
+
+    # Drop deals that have already lapsed — a stale row is worse than no row.
+    expires_at = (b.get("expires_at") or "").strip() or None
+    if expires_at and _is_expired(expires_at):
+        print(f"[Filter] Skipped expired deal: {brand}")
         return None
 
     # One directory page lists many merchants → all share the page URL. Append a
@@ -281,13 +302,87 @@ def _block_to_deal(b: dict) -> Deal | None:
         discount_percent=discount_percent,
         category=(b.get("category") or "").strip().lower() or None,
         redemption_url=url,
-        expires_at=(b.get("expires_at") or "").strip() or None,
+        expires_at=expires_at,
     )
 
 
 def _deals_from_llm_json(blocks: list[dict]) -> list[Deal]:
     """Map LLM blocks → Deals, dropping anything the guards reject."""
     return [d for b in blocks if (d := _block_to_deal(b))]
+
+
+# ── Deterministic parsers for curated GitHub markdown lists ─────────────────────
+# These files are clean, pre-curated structured markdown, so regex beats an LLM:
+# 100% recall, zero quota, no model variance. We skip the no-signal guard here —
+# by construction every row is a real, verified deal, and many are perks without a
+# % or $ ("Lifetime Pro", "Annual Subscription") that the guard would wrongly drop.
+
+_MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")  # [text](url)
+
+
+def _unescape_md(s: str) -> str:
+    """Drop backslash escapes markdown uses for literals, e.g. '\\$200' -> '$200'."""
+    return re.sub(r"\\([$|*_`~])", r"\1", s).strip()
+
+
+def _md_deal(brand: str, url: str, description: str, category: str | None = None) -> Deal | None:
+    """Build a Deal from a curated row. The product's own link is the redemption
+    URL (each is unique), so no anchor fragment is needed."""
+    brand = _unescape_md(brand)
+    description = _unescape_md(description)
+    if not brand or brand.lower() in _BAD_BRANDS or not description or not url.strip():
+        return None
+    return Deal(
+        brand=brand,
+        description=description,
+        category=(category or "").strip().lower() or None,
+        redemption_url=url.strip(),
+    )
+
+
+def parse_markdown_deals(text: str) -> list[Deal]:
+    """Extract deals from both curated layouts in one pass:
+    - pipe table:  | [Brand](url) | Offer | Type |
+    - bullet list: - [Brand](url) - description
+    A line only matches one shape, so running both and concatenating is safe."""
+    deals: list[Deal] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+
+        if line.startswith("|"):  # table row
+            cells = [c.strip() for c in line.strip("|").split("|")]
+            if len(cells) < 2:
+                continue
+            m = _MD_LINK.search(cells[0])
+            if not m:  # header / separator / unlinked row
+                continue
+            cat = cells[2] if len(cells) > 2 else None
+            d = _md_deal(m.group(1), m.group(2), cells[1], cat)
+            if d:
+                deals.append(d)
+
+        elif line.startswith("- ") or line.startswith("* "):  # bullet row
+            body = line[2:].strip()
+            m = _MD_LINK.match(body)
+            if not m:
+                continue
+            description = body[m.end():].lstrip(" -–—:").strip()
+            d = _md_deal(m.group(1), m.group(2), description)
+            if d:
+                deals.append(d)
+
+    return deals
+
+
+def parse_github_markdown(pages: list[dict]) -> list[Deal]:
+    """Deterministic (no-LLM) extraction for the curated GitHub seed lists.
+    `pages` = [{"url": ..., "html_text": ...}, ...]."""
+    deals: list[Deal] = []
+    for p in pages:
+        found = parse_markdown_deals(p["html_text"])
+        print(f"[github] {p['url'].rsplit('/', 1)[-1]} -> {len(found)} deals (regex)")
+        deals.extend(found)
+    return deals
 
 
 def page_text(html: str) -> str:
@@ -357,6 +452,40 @@ if __name__ == "__main__":
     assert deals[0].expires_at == "2026-12-31"
     assert deals[1].discount_percent is None and deals[1].expires_at is None  # '' -> None
     print("ok: LLM JSON drops empty/N/A/urlless brands + vague rows, keeps short perks")
+
+    # Freshness guard: past expiry dropped, future/empty/garbage kept.
+    assert _is_expired("2020-01-01")
+    assert not _is_expired("2099-12-31")
+    assert not _is_expired("whenever")  # unparseable -> keep
+    fresh = _deals_from_llm_json([
+        {"brand": "Stale Co", "description": "20% off", "discount_percent": "20%",
+         "category": "Retail", "redemption_url": base, "expires_at": "2020-01-01"},  # dropped
+        {"brand": "Future Co", "description": "20% off", "discount_percent": "20%",
+         "category": "Retail", "redemption_url": base, "expires_at": "2099-12-31"},  # kept
+    ])
+    assert [d.brand for d in fresh] == ["Future Co"], fresh
+    print("ok: freshness guard drops lapsed deals, keeps future/unparseable")
+
+    # Markdown parsers: pipe table + bullet list, skip headers/separators, unescape.
+    md = """
+| Product | Offer Benefits | Type |
+|:--------|:---------------|:-----|
+| [Notion Pro](https://notion.so/edu) | Notion Pro for lifetime for students | Note Taking |
+| [Azure](https://azure.com/students) | 25+ services + \\$100 in credit | Cloud |
+| Plain Header Row | no link here | skip |
+- [Figma](https://figma.com/education) - Free Professional plan for students
+- [Wix](https://wix.com/students) — 50% off Yearly Premium
+* not a link bullet
+"""
+    mdeals = parse_markdown_deals(md)
+    assert [d.brand for d in mdeals] == ["Notion Pro", "Azure", "Figma", "Wix"], mdeals
+    assert mdeals[0].redemption_url == "https://notion.so/edu"      # product url, no #anchor
+    assert mdeals[0].description == "Notion Pro for lifetime for students"  # kept (no signal)
+    assert mdeals[1].description == "25+ services + $100 in credit"  # \$ unescaped
+    assert mdeals[1].category == "cloud"
+    assert mdeals[2].description == "Free Professional plan for students"
+    assert mdeals[3].description == "50% off Yearly Premium"         # em-dash separator stripped
+    print("ok: markdown parser reads tables + bullets at full recall, no LLM")
 
     # Retry classifier: 429/5xx retryable, 4xx/other not.
     assert _is_retryable(genai_errors.APIError(429, {"message": "rate"}))
