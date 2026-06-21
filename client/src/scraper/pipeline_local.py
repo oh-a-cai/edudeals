@@ -4,27 +4,40 @@ We strip boilerplate, flatten the content to a text dump, then let an LLM pull
 out merchants. This is layout-agnostic: it works whether names live in <h2>,
 <h3>, table cells, or <div>s — no per-page tag conventions.
 """
+import asyncio
 import json
+import random
 import re
 import unicodedata
 
 import httpx
 from bs4 import BeautifulSoup
 from google import genai
+from google.genai import errors as genai_errors
 from google.genai import types
 from pydantic import BaseModel
 
-from config import LOCAL_URLS, SCRAPERAPI_KEY, GEMINI_API_KEY
+from config import SCRAPERAPI_KEY, GEMINI_API_KEY
 from database import Deal
+
+# Smarter model, but free tier is ~1 RPM — hence the batch path (all pages in one
+# call) so a full run stays under the limit.
+_MODEL = "gemini-3.1-flash-lite"
+
+# Per-page text cap inside a batch payload (keeps the combined prompt bounded).
+# 50k holds the full curated GitHub lists without clipping trailing deals.
+_BATCH_PAGE_CAP = 50_000
 
 
 class DealBlock(BaseModel):
-    """LLM output schema for one merchant (drives Gemini structured output)."""
+    """LLM output schema for one merchant (drives Gemini structured output).
+    Flat — no scope/locality fields."""
     brand: str
     description: str
     discount_percent: str  # '' when none stated
     category: str          # e.g. 'Food and Drink', 'Retail', 'Services'
-    anchor_slug: str       # slugified brand name
+    redemption_url: str    # copied from the parent <scraped_site url='...'> tag
+    expires_at: str        # ISO date ('2026-12-31') or '' when none stated
 
 
 def slugify(name: str) -> str:
@@ -33,13 +46,6 @@ def slugify(name: str) -> str:
     ascii_name = (unicodedata.normalize("NFKD", name)
                   .encode("ascii", "ignore").decode("ascii"))
     return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
-
-
-def deal_url(base_url: str, brand: str) -> str:
-    """Local directories list many merchants on one page. Append a per-brand
-    anchor fragment so each row gets a unique, non-null redemption_url and
-    discounts_url_unique never collides on upsert."""
-    return f"{base_url}#{slugify(brand)}"
 
 # Tags that are never page content — removed wholesale.
 _NOISE_TAGS = ["script", "style", "nav", "footer", "header",
@@ -136,85 +142,165 @@ def clean_content(html: str) -> str:
     return container.decode().strip()
 
 
-_LLM_PROMPT = (
-    "You extract student/local discounts from the text of a deals directory page.\n"
+# Shared extraction rules for the batched prompt.
+_RULES = (
     "Return one entry per MERCHANT only. For each merchant:\n"
     "- brand: the business name\n"
     "- description: the full offer text, keeping multi-item offers intact\n"
     "- discount_percent: e.g. '10%', or '' if no percentage is stated\n"
     "- category: e.g. 'Food and Drink', 'Retail', 'Services', 'Entertainment'\n"
-    "- anchor_slug: the brand name lowercased and hyphenated\n"
-    "Skip navigation, how-it-works steps, and section headers that aren't merchants.\n\n"
-    "PAGE TEXT:\n"
+    "- redemption_url: copy the exact URL from the parent <scraped_site> tag\n"
+    "- expires_at: the offer's expiry date as 'YYYY-MM-DD', or '' if none stated\n"
+    "Skip navigation, how-it-works steps, and section headers that aren't merchants.\n"
+    "If a merchant or brand name cannot be conclusively determined from the "
+    "surrounding text context for a specific discount record, DO NOT generate a "
+    "fallback 'N/A' object. Omit the record from the output JSON array entirely.\n"
+    "CRITICAL: Do not extract a merchant if the source text only mentions that a "
+    "discount exists but fails to provide specific details about what the discount "
+    "actually is (e.g., a percentage, a dollar amount, a free item, or clear "
+    "promotional terms). If a merchant lacks explicit perk details, omit it from "
+    "the JSON array entirely. Do not generate rows with generic descriptions like "
+    "'Offers discounts' or null value fields.\n"
+    "EXCEPTION: If the source text is clearly a flat directory, list, or menu of "
+    "business specials (indicated by a sequence of merchant names followed "
+    "immediately by concise values like '10% off' or 'BOGO'), these are "
+    "HIGH-QUALITY records. You must map the line containing the company name to the "
+    "'brand' key, and pair it with the subsequent discount line as the "
+    "'description' and 'discount_percent'. Only enforce the strict vagueness filter "
+    "to skip records when reading narrative news articles, blog posts, or editorial "
+    "prose.\n"
+)
+
+_BATCH_PROMPT = (
+    "You are receiving a combined payload of multiple scraped web pages, each "
+    "enclosed in a <scraped_site url='...'> tag. Extract every discount and return "
+    "a single, flat JSON array of raw deals. For each deal, set 'redemption_url' to "
+    "the exact URL attribute copied from its parent <scraped_site> tag.\n"
+    + _RULES + "\nPAGES:\n"
 )
 
 
-async def extract_deals_llm(text: str) -> list[dict]:
-    """Send the cleaned page text to Gemini, get back structured deal blocks.
-    Returns [] (never raises) if the key is missing or the call fails."""
+_MAX_RETRIES = 3
+
+
+def _is_retryable(e: Exception) -> bool:
+    """429 (rate limit) and 5xx (transient server) are worth retrying; 4xx auth/
+    bad-request errors are not — retrying those just burns the same failure."""
+    return isinstance(e, genai_errors.APIError) and (e.code == 429 or 500 <= e.code < 600)
+
+
+async def _generate_json(contents: str, schema) -> list[dict]:
+    """One Gemini call returning parsed JSON. Retries 429/5xx up to _MAX_RETRIES
+    with exponential backoff + jitter; non-retryable or final failure bubbles up."""
     if not GEMINI_API_KEY:
         print("[local] GEMINI_API_KEY not set — cannot run LLM extraction.")
         return []
     client = genai.Client(api_key=GEMINI_API_KEY)
-    try:
-        resp = await client.aio.models.generate_content(
-            model="gemini-2.5-flash-lite",  # this key has free-tier quota here
-            contents=_LLM_PROMPT + text[:30_000],  # cap tokens for the flash tier
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=list[DealBlock],
-            ),
-        )
-        return json.loads(resp.text)
-    except Exception as e:
-        print(f"[local] LLM extraction failed: {type(e).__name__}: {e}")
+    for attempt in range(1, _MAX_RETRIES + 1):
+        try:
+            resp = await client.aio.models.generate_content(
+                model=_MODEL,
+                contents=contents,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=schema,
+                ),
+            )
+            return json.loads(resp.text)
+        except Exception as e:
+            if not _is_retryable(e) or attempt == _MAX_RETRIES:
+                raise  # non-retryable, or out of attempts -> let the trace surface
+            delay = (2 ** attempt) * random.uniform(0.5, 1.5)
+            print(f"[gemini] Encountered rate limit/server error. Retrying in "
+                  f"{delay:.2f} seconds (Attempt {attempt}/{_MAX_RETRIES})...")
+            await asyncio.sleep(delay)
+
+
+async def extract_deals_llm_batch(pages: list[dict]) -> list[dict]:
+    """Batch extraction: wrap each page in a <scraped_site> tag and parse all in
+    ONE call. `pages` = [{"url": ..., "html_text": ...}, ...]."""
+    if not pages:
         return []
+    payload = "\n".join(
+        f"<scraped_site url='{p['url']}'>\n{p['html_text'][:_BATCH_PAGE_CAP]}\n</scraped_site>"
+        for p in pages
+    )
+    return await _generate_json(_BATCH_PROMPT + payload, list[DealBlock])
 
 
-def _deals_from_llm_json(blocks: list[dict], source_url: str) -> list[Deal]:
-    """Map LLM blocks → Deal rows. Pure (no network) so it's unit-testable.
-    Builds redemption_url from the base URL + a re-slugified anchor."""
-    deals: list[Deal] = []
-    for b in blocks:
-        brand = (b.get("brand") or "").strip()
-        description = (b.get("description") or "").strip()
-        if not brand or not description:
-            continue  # brand/description are NOT NULL in the schema
-        slug = slugify(b.get("anchor_slug") or brand)  # re-slug to guarantee URL-safe
-        deals.append(Deal(
-            brand=brand,
-            description=description,
-            discount_percent=(b.get("discount_percent") or "").strip() or None,
-            category=(b.get("category") or "").strip().lower() or None,
-            redemption_url=f"{source_url}#{slug}",
-        ))
-    return deals
+# Placeholder brand values the LLM emits when it can't identify a merchant —
+# anonymous deals are useless, so we drop them before they reach the DB.
+_BAD_BRANDS = {"n/a", "na", "none", "null", "unknown"}
+
+# A concrete perk has at least one of: a number, a dollar sign, a percent, or a
+# concise special term (free / BOGO / buy-one / half off|price / complimentary).
+# We use this instead of a raw length cutoff because legit perks can be short
+# ("Free Admission", "$5 off", "BOGO") — a <35-char rule would wrongly drop those
+# while still missing long-but-vague text ("the shop offers discounts to all
+# students who show a valid ID").
+_PERK_SIGNAL = re.compile(
+    r"\d|\$|%|\bfree\b|\bbogo\b|buy[\s-]?one|half[\s-]?(off|price)|complimentary",
+    re.I,
+)
 
 
-async def parse_deals(cleaned_markup: str, source_url: str) -> list[Deal]:
-    """Layout-agnostic extraction: flatten the cleaned markup to text, hand it to
-    the LLM, map the structured result to Deal rows. No tag conventions assumed."""
-    text = BeautifulSoup(cleaned_markup, "html.parser").get_text("\n", strip=True)
-    blocks = await extract_deals_llm(text)
-    deals = _deals_from_llm_json(blocks, source_url)
-    print(f"[local] LLM extracted {len(deals)} merchants from {source_url}")
-    return deals
+def _is_low_quality(discount_percent: str | None, description: str) -> bool:
+    """A deal is low-quality (drop it) only when it has NO explicit percent AND no
+    concrete perk terms in the description — i.e. vague 'offers discounts' rows."""
+    if discount_percent:
+        return False  # explicit percent is itself a concrete perk
+    return not _PERK_SIGNAL.search(description)
 
 
-async def extract() -> list[Deal]:
-    if not LOCAL_URLS:
-        print("[local] No LOCAL_URLS configured — skipping.")
-        return []
+def _block_to_deal(b: dict) -> Deal | None:
+    """Map one LLM block → Deal, applying all guards. Returns None to drop it.
+    Pure (no network) so it's unit-testable."""
+    brand = (b.get("brand") or "").strip()
+    description = (b.get("description") or "").strip()
+    # Drop null/empty/placeholder brands (N/A etc.) — anonymous deals are junk.
+    if not brand or brand.lower() in _BAD_BRANDS or not description:
+        return None  # brand/description are NOT NULL in the schema
 
-    deals: list[Deal] = []
-    async with httpx.AsyncClient(timeout=20, follow_redirects=True) as client:
-        for url in LOCAL_URLS:
-            html = await fetch(url, client)
-            if not html:
-                continue
-            cleaned = clean_content(html)
-            deals.extend(await parse_deals(cleaned, url))
+    # redemption_url comes from the parent <scraped_site> tag. Without it we can't
+    # dedupe (NULLs never conflict), so drop the row.
+    base = (b.get("redemption_url") or "").strip()
+    if not base:
+        return None
 
+    discount_percent = (b.get("discount_percent") or "").strip() or None
+    # Drop vague no-detail rows (e.g. "offers discounts" with no % / $ / free).
+    if _is_low_quality(discount_percent, description):
+        return None
+
+    # One directory page lists many merchants → all share the page URL. Append a
+    # per-brand anchor so each row is unique and the upsert never collapses them.
+    url = base if "#" in base else f"{base}#{slugify(brand)}"
+    return Deal(
+        brand=brand,
+        description=description,
+        discount_percent=discount_percent,
+        category=(b.get("category") or "").strip().lower() or None,
+        redemption_url=url,
+        expires_at=(b.get("expires_at") or "").strip() or None,
+    )
+
+
+def _deals_from_llm_json(blocks: list[dict]) -> list[Deal]:
+    """Map LLM blocks → Deals, dropping anything the guards reject."""
+    return [d for b in blocks if (d := _block_to_deal(b))]
+
+
+def page_text(html: str) -> str:
+    """Raw HTML -> chrome-stripped, tag-flattened text ready for a batch payload."""
+    return BeautifulSoup(clean_content(html), "html.parser").get_text("\n", strip=True)
+
+
+async def parse_deals_batch(pages: list[dict]) -> list[Deal]:
+    """Batch extraction: ONE LLM call across all pages. `pages` =
+    [{"url": ..., "html_text": ...}, ...]. Each deal carries its page's URL."""
+    blocks = await extract_deals_llm_batch(pages)
+    deals = _deals_from_llm_json(blocks)
+    print(f"[local] batch LLM extracted {len(deals)} merchants from {len(pages)} pages")
     return deals
 
 
@@ -241,20 +327,40 @@ if __name__ == "__main__":
     assert "tracking()" not in out and "copyright" not in out, out
     print("ok: cleaner keeps content, strips nav/sidebar/footer/script")
 
-    # LLM JSON → Deal mapping (pure, no network): URL built from base + slug,
-    # category lowercased, empty discount_percent -> None, junk rows dropped.
+    # LLM JSON → Deal mapping (pure, no network): per-brand anchor appended to the
+    # page URL, category lowercased, empty discount_percent/expires_at -> None,
+    # junk rows dropped, and rows without a redemption_url dropped (can't dedupe).
+    base = "https://x.test/d/"
     blocks = [
         {"brand": "Vendor One", "description": "5% off", "discount_percent": "5%",
-         "category": "Food and Drink", "anchor_slug": "vendor-one"},
+         "category": "Food and Drink", "redemption_url": base, "expires_at": "2026-12-31"},
         {"brand": "Vendor Two", "description": "Free coffee", "discount_percent": "",
-         "category": "Services", "anchor_slug": "vendor two"},  # bad slug -> re-slugged
+         "category": "Services", "redemption_url": base, "expires_at": ""},
         {"brand": "", "description": "no brand", "discount_percent": "",
-         "category": "", "anchor_slug": ""},  # dropped (NOT NULL)
+         "category": "", "redemption_url": base},          # dropped (empty brand)
+        {"brand": "N/A", "description": "anon deal", "discount_percent": "5%",
+         "category": "Retail", "redemption_url": base},     # dropped (N/A placeholder)
+        {"brand": "No URL", "description": "5% off", "discount_percent": "5%",
+         "category": "Retail", "redemption_url": ""},       # dropped (no redemption_url)
+        {"brand": "Twisted Palm Yogurt", "description": "offers discounts",
+         "discount_percent": "", "category": "Food", "redemption_url": base},  # dropped (vague)
+        {"brand": "City Museum", "description": "Free Admission",
+         "discount_percent": "", "category": "Entertainment", "redemption_url": base},  # kept (free)
+        {"brand": "Slice Co", "description": "BOGO", "discount_percent": "",
+         "category": "Food", "redemption_url": base},       # kept (concise special)
     ]
-    deals = _deals_from_llm_json(blocks, "https://x.test/d/")
-    assert [d.brand for d in deals] == ["Vendor One", "Vendor Two"], deals
+    deals = _deals_from_llm_json(blocks)
+    assert [d.brand for d in deals] == ["Vendor One", "Vendor Two", "City Museum", "Slice Co"], deals
     assert deals[0].redemption_url == "https://x.test/d/#vendor-one"
-    assert deals[1].redemption_url == "https://x.test/d/#vendor-two"  # re-slugged
+    assert deals[1].redemption_url == "https://x.test/d/#vendor-two"
     assert deals[0].category == "food and drink"
-    assert deals[1].discount_percent is None  # '' -> None
-    print("ok: LLM JSON maps to Deal rows with clean URLs + nullable fields")
+    assert deals[0].expires_at == "2026-12-31"
+    assert deals[1].discount_percent is None and deals[1].expires_at is None  # '' -> None
+    print("ok: LLM JSON drops empty/N/A/urlless brands + vague rows, keeps short perks")
+
+    # Retry classifier: 429/5xx retryable, 4xx/other not.
+    assert _is_retryable(genai_errors.APIError(429, {"message": "rate"}))
+    assert _is_retryable(genai_errors.APIError(503, {"message": "down"}))
+    assert not _is_retryable(genai_errors.APIError(400, {"message": "bad"}))
+    assert not _is_retryable(ValueError("nope"))
+    print("ok: retry classifier flags only 429/5xx")

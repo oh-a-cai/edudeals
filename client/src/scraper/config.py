@@ -21,15 +21,19 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 # ScraperAPI key — used only as a fallback when a local page returns 403.
 SCRAPERAPI_KEY = os.environ.get("SCRAPERAPI_KEY", "")
 
-# Seed brands pipeline_global searches "<brand> student discount" for.
-GLOBAL_BRANDS = ["Nike", "Apple", "Spotify"]
-
 # pipeline_local pages. Just URLs — the semantic cleaner generalizes across
 # layouts, so no per-page CSS selectors needed. Add a site = add a URL.
 LOCAL_URLS = [
     "https://www.downtownberkeley.com/student-discounts/",
     "https://davisdowntown.com/aggie-deals/",
     "https://www.sjsu.edu/alumni/join/member-benefits.php",
+]
+
+# Curated open-source student-deal lists (raw markdown). Plain text, so the native
+# fetch handles them — no ScraperAPI needed. They flow into the same batch call.
+GITHUB_SEED_URLS = [
+    "https://raw.githubusercontent.com/couponswift/awesome-student-software-deals/main/README.md",
+    "https://raw.githubusercontent.com/ShreyamMaity/student-offers/main/README.md",
 ]
 
 

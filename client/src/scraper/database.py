@@ -23,7 +23,7 @@ class Deal:
     expires_at: str | None = None  # ISO date string ('2026-12-31') or None
 
 
-_UPSERT = """
+_UPSERT_SQL = """
     INSERT INTO public.discounts
         (brand, description, discount_percent, category, redemption_url, expires_at)
     VALUES (%s, %s, %s, %s, %s, %s)
@@ -41,6 +41,8 @@ def drop_unconflictable(deals: list[Deal]) -> list[Deal]:
 
 
 async def save_deals(deals: list[Deal]) -> int:
+    """Bulk upsert every deal into public.discounts on the redemption_url unique
+    constraint. One flat table — no scope/locality split."""
     # Lazy import: keeps Deal/drop_unconflictable usable without the DB driver.
     from psycopg_pool import AsyncConnectionPool
 
@@ -62,7 +64,7 @@ async def save_deals(deals: list[Deal]) -> int:
         await pool.open()
         async with pool.connection() as conn:
             async with conn.cursor() as cur:
-                await cur.executemany(_UPSERT, [
+                await cur.executemany(_UPSERT_SQL, [
                     (d.brand, d.description, d.discount_percent,
                      d.category, d.redemption_url, d.expires_at)
                     for d in rows
