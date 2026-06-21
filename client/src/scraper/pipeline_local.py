@@ -12,6 +12,7 @@ import unicodedata
 from datetime import date
 
 import httpx
+from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 from google import genai
 from google.genai import errors as genai_errors
@@ -293,16 +294,28 @@ def _block_to_deal(b: dict) -> Deal | None:
         print(f"[Filter] Skipped expired deal: {brand}")
         return None
 
+    # Drop region-locked foreign-currency prices (not real US student deals).
+    if is_non_usd(description):
+        print(f"[Filter] Skipped non-USD deal: {brand}")
+        return None
+
     # One directory page lists many merchants → all share the page URL. Append a
     # per-brand anchor so each row is unique and the upsert never collapses them.
     url = base if "#" in base else f"{base}#{slugify(brand)}"
+    url = localize_url(url)  # remap known foreign locales (e.g. /in-en/ -> /us/)
+    if is_foreign_url(url):
+        print(f"[Filter] Skipped non-US deal: {brand}")
+        return None
+    tags = canonical_tags(b.get("category"), description)
     return Deal(
         brand=brand,
         description=description,
         discount_percent=discount_percent,
-        category=(b.get("category") or "").strip().lower() or None,
+        category=tags[0],
+        tags=tags,
         redemption_url=url,
         expires_at=expires_at,
+        school=school_for(url),
     )
 
 
@@ -320,6 +333,134 @@ def _deals_from_llm_json(blocks: list[dict]) -> list[Deal]:
 _MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")  # [text](url)
 
 
+# Non-USD currency amounts. Only INR (INR / Rs / ₹) appears in the curated lists.
+# Such offers are region-locked (e.g. India Spotify) and aren't real US student
+# prices, so we drop them rather than show a misleading converted figure.
+_NON_USD_RE = re.compile(r"(?:₹|\bINR|\bRs\.?)\s?\d", re.I)
+
+
+def is_non_usd(text: str) -> bool:
+    """True if the offer is priced in a non-USD currency we don't localize."""
+    return bool(_NON_USD_RE.search(text))
+
+
+# Foreign-region indicators -> drop (so we never prioritize foreign pricing).
+# Path hints match anywhere in the URL; TLDs are matched against the host so we
+# don't false-positive on '.info'/'.industries' etc.
+_FOREIGN_PATH_HINTS = ("/in-en/", "/uk/", "/ca/", "/au/")
+_FOREIGN_TLDS = (".in", ".co.uk")
+
+# Known foreign locale segments we can safely remap to the US storefront instead
+# of dropping — keeps the deal, fixes the link (e.g. Spotify /in-en/ -> /us/).
+_LOCALE_REMAP = {"/in-en/": "/us/"}
+
+
+def localize_url(url: str) -> str:
+    """Rewrite a known foreign locale path to its US equivalent (English/US)."""
+    for foreign, us in _LOCALE_REMAP.items():
+        url = url.replace(foreign, us)
+    return url
+
+
+def is_foreign_url(url: str) -> bool:
+    """True if the URL points at a non-US storefront (host TLD or locale path)."""
+    host = urlsplit(url if "//" in url else "//" + url).netloc.lower()
+    if host.endswith(_FOREIGN_TLDS):
+        return True
+    return any(hint in url.lower() for hint in _FOREIGN_PATH_HINTS)
+
+
+# Curated source-host -> school label. Discovered hosts not listed here fall back
+# to their bare domain, so a new directory is still traceable without a code edit.
+_SCHOOL_BY_HOST = {
+    "downtownberkeley.com": "UC Berkeley",
+    "davisdowntown.com": "UC Davis",
+    "downtownsantacruz.com": "UC Santa Cruz",
+    "sjsu.edu": "San Jose State University",
+    "ucsd.edu": "UC San Diego",
+    "ucsf.edu": "UC San Francisco",
+    "fresnocitycollege.edu": "Fresno City College",
+    "frc.edu": "Feather River College",
+    "northcentralcollege.edu": "North Central College",
+    "ucr.edu": "UC Riverside",
+    "uoregon.edu": "University of Oregon",
+}
+
+# GitHub-list deals aren't tied to a campus — they're national/online offers.
+_ONLINE_SCHOOL = "Online"
+
+
+# Canonical tag vocabulary — kept small and short. A deal can carry several tags;
+# we map the source's free-form category + description onto this fixed set so the
+# stored vocabulary stays low-cardinality instead of the dozens of raw labels.
+_TAG_KEYWORDS = {
+    "Food & Drink": ("food", "drink", "restaurant", "cafe", "coffee", "pizza",
+                     "bakery", "dining", "bar", "grill", "kitchen", "yogurt",
+                     "ice cream", "tea", "bagel", "sandwich", "snack", "eatery", "brew"),
+    "Retail": ("retail", "shop", "shopping", "store", "clothing", "apparel",
+               "boutique", "fashion", "jewelry", "gift", "shoe", "eyewear",
+               "book", "vintage", "electronics"),
+    "Services": ("service", "salon", "repair", "automotive", "cleaning", "tax",
+                 "translation", "printing", "barber", "hair", "laundry", "legal"),
+    "Entertainment": ("entertainment", "theater", "theatre", "museum", "movie",
+                      "film", "game", "gaming", "aquarium", "bowling", "tour",
+                      "arcade", "concert", "event", "art",
+                      "music", "spotify", "audio", "song", "vinyl", "record"),
+    "Education": ("education", "learn", "course", "study", "certification",
+                  "tutoring", "academic", "exam", "class"),
+    "Tech & Software": ("software", "app", "productivity", "note", "password",
+                        "survey", "editor", "saas", "tool", "subscription",
+                        "license", "mobile", "marketing", "analytics", "security",
+                        "privacy", "social", "collaboration",
+                        "cloud", "hosting", "server", "domain", "infrastructure",
+                        "vps", "storage", "database",
+                        "developer", "develop", "git", "code", "coding", "api",
+                        "programming", "ide", "devops", "sdk", "repo", "crash"),
+    "Design": ("design", "graphic", "icon", "illustration", "creative", "photo",
+               "video", "flowchart", "prototype", "diagram"),
+    "Health & Wellness": ("health", "wellness", "fitness", "gym", "yoga",
+                          "pilates", "massage", "spa", "nutrition", "dental",
+                          "medical", "clinic", "meditation"),
+    "Travel": ("travel", "hotel", "flight", "airline", "transport", "rental",
+               "parking", "lodging", "trip"),
+}
+# 9 tags above + the "Other" fallback = a 10-label universal vocabulary. Separator
+# style ("Food & Drink" / "Food and Drink" / "Food, Retail") never matters: we
+# keyword-match the raw text, so comma/&/and lists all resolve to the same tags.
+
+# Word-boundary match with optional common suffix (plural/-ing/-er/-ment) so
+# "learn" hits "Learning" and "develop" hits "developer/development" — while the
+# leading \b still avoids "bar" inside "library" or "app" inside "happy".
+_TAG_RE = {
+    tag: re.compile(
+        r"\b(?:" + "|".join(re.escape(k) for k in kws) + r")(?:s|ing|er|ers|ment)?\b",
+        re.I)
+    for tag, kws in _TAG_KEYWORDS.items()
+}
+
+
+def canonical_tags(raw: str | None, description: str = "") -> list[str]:
+    """Map a free-form category + description onto the canonical tag set. Tags from
+    the category come first (so tags[0] is the best primary), then any extra tags
+    the description implies. Falls back to the cleaned raw label if nothing matches."""
+    raw_tags = [t for t, rx in _TAG_RE.items() if rx.search(raw or "")]
+    desc_tags = [t for t, rx in _TAG_RE.items() if rx.search(description)]
+    tags = raw_tags + [t for t in desc_tags if t not in raw_tags]
+    return tags or ["Other"]  # unmatched -> single catch-all (keeps vocab bounded)
+
+
+def school_for(url: str) -> str:
+    """Friendly school/source label from the deal's host. Known campus sources map
+    to a curated name; anything else falls back to its bare domain."""
+    host = urlsplit(url if "//" in url else "//" + url).netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    for frag, name in _SCHOOL_BY_HOST.items():
+        if frag in host:
+            return name
+    return host or "Unknown"
+
+
 def _unescape_md(s: str) -> str:
     """Drop backslash escapes markdown uses for literals, e.g. '\\$200' -> '$200'."""
     return re.sub(r"\\([$|*_`~])", r"\1", s).strip()
@@ -332,11 +473,21 @@ def _md_deal(brand: str, url: str, description: str, category: str | None = None
     description = _unescape_md(description)
     if not brand or brand.lower() in _BAD_BRANDS or not description or not url.strip():
         return None
+    if is_non_usd(description):  # region-locked foreign price, not a US deal
+        print(f"[Filter] Skipped non-USD deal: {brand}")
+        return None
+    url = localize_url(url.strip())  # remap known foreign locales (e.g. /in-en/ -> /us/)
+    if is_foreign_url(url):
+        print(f"[Filter] Skipped non-US deal: {brand}")
+        return None
+    tags = canonical_tags(category, description)
     return Deal(
         brand=brand,
         description=description,
-        category=(category or "").strip().lower() or None,
-        redemption_url=url.strip(),
+        category=tags[0],
+        tags=tags,
+        redemption_url=url,
+        school=_ONLINE_SCHOOL,
     )
 
 
@@ -344,19 +495,25 @@ def parse_markdown_deals(text: str) -> list[Deal]:
     """Extract deals from both curated layouts in one pass:
     - pipe table:  | [Brand](url) | Offer | Type |
     - bullet list: - [Brand](url) - description
-    A line only matches one shape, so running both and concatenating is safe."""
+    A line only matches one shape, so running both and concatenating is safe.
+    Bullet lists carry no per-row type, so the current `##` section heading is used
+    as their category (e.g. '## Design & Creative' -> Design)."""
     deals: list[Deal] = []
+    section: str | None = None
     for raw in text.splitlines():
         line = raw.strip()
 
-        if line.startswith("|"):  # table row
+        if line.startswith("#"):  # section heading -> category for following bullets
+            section = line.lstrip("#").strip()
+
+        elif line.startswith("|"):  # table row
             cells = [c.strip() for c in line.strip("|").split("|")]
             if len(cells) < 2:
                 continue
             m = _MD_LINK.search(cells[0])
             if not m:  # header / separator / unlinked row
                 continue
-            cat = cells[2] if len(cells) > 2 else None
+            cat = cells[2] if len(cells) > 2 else section  # Type cell, else section
             d = _md_deal(m.group(1), m.group(2), cells[1], cat)
             if d:
                 deals.append(d)
@@ -367,7 +524,7 @@ def parse_markdown_deals(text: str) -> list[Deal]:
             if not m:
                 continue
             description = body[m.end():].lstrip(" -–—:").strip()
-            d = _md_deal(m.group(1), m.group(2), description)
+            d = _md_deal(m.group(1), m.group(2), description, section)
             if d:
                 deals.append(d)
 
@@ -448,7 +605,7 @@ if __name__ == "__main__":
     assert [d.brand for d in deals] == ["Vendor One", "Vendor Two", "City Museum", "Slice Co"], deals
     assert deals[0].redemption_url == "https://x.test/d/#vendor-one"
     assert deals[1].redemption_url == "https://x.test/d/#vendor-two"
-    assert deals[0].category == "food and drink"
+    assert deals[0].category == "Food & Drink" and deals[0].tags == ["Food & Drink"]
     assert deals[0].expires_at == "2026-12-31"
     assert deals[1].discount_percent is None and deals[1].expires_at is None  # '' -> None
     print("ok: LLM JSON drops empty/N/A/urlless brands + vague rows, keeps short perks")
@@ -482,10 +639,52 @@ if __name__ == "__main__":
     assert mdeals[0].redemption_url == "https://notion.so/edu"      # product url, no #anchor
     assert mdeals[0].description == "Notion Pro for lifetime for students"  # kept (no signal)
     assert mdeals[1].description == "25+ services + $100 in credit"  # \$ unescaped
-    assert mdeals[1].category == "cloud"
+    assert mdeals[1].category == "Tech & Software" and "Tech & Software" in mdeals[1].tags
     assert mdeals[2].description == "Free Professional plan for students"
     assert mdeals[3].description == "50% off Yearly Premium"         # em-dash separator stripped
     print("ok: markdown parser reads tables + bullets at full recall, no LLM")
+
+    # Currency: flag non-USD (INR/Rs/₹) offers; plain USD/percent untouched.
+    assert is_non_usd("as low as INR66/month")
+    assert is_non_usd("Learn Rs 700 at Udemy")
+    assert is_non_usd("free trial and ₹79.00/month after")
+    assert not is_non_usd("10% off and a $5 deal")
+    assert not _md_deal("Spotify IN", "https://spotify.com", "as low as INR66/month")  # dropped
+    print("ok: non-USD (INR) offers flagged and dropped")
+
+    # Region: foreign TLD/locale URLs dropped, /in-en/ remapped to /us/, .info safe.
+    assert localize_url("https://www.spotify.com/in-en/student/") == "https://www.spotify.com/us/student/"
+    assert is_foreign_url("https://www.amazon.in/b?node=1")
+    assert is_foreign_url("https://shop.co.uk/x") and is_foreign_url("https://s.com/uk/x")
+    assert not is_foreign_url("https://www.spotify.com/us/student/")
+    assert not is_foreign_url("https://berlin.info/students")  # .in must not match .info
+    assert _md_deal("Spotify", "https://www.spotify.com/in-en/student/", "50% off") \
+        .redemption_url == "https://www.spotify.com/us/student/"   # localized, kept
+    assert not _md_deal("AmazonIN", "https://www.amazon.in/x", "10% off")  # foreign, dropped
+    print("ok: region filter drops foreign URLs, remaps /in-en/ -> /us/")
+
+    # School tag: curated campus hosts -> name, GitHub -> Online, unknown -> domain.
+    assert school_for("https://sfs.ucsd.edu/campus-cards/x#a") == "UC San Diego"
+    assert school_for("https://www.downtownberkeley.com/student-discounts/#b") == "UC Berkeley"
+    assert school_for("https://newplace.edu/deals#c") == "newplace.edu"  # fallback
+    assert _md_deal("Figma", "https://figma.com/edu", "Free").school == "Online"
+    campus = _deals_from_llm_json([{"brand": "Cafe", "description": "10% off",
+        "discount_percent": "10%", "category": "Food",
+        "redemption_url": "https://www.downtownberkeley.com/student-discounts/"}])
+    assert campus[0].school == "UC Berkeley", campus
+    print("ok: school tag set from source host (campus name / Online / domain)")
+
+    # Canonical tags: small vocabulary, multiple per deal, category = primary.
+    assert canonical_tags("Food and Drink", "10% off pizza") == ["Food & Drink"]
+    yoga = canonical_tags("Services", "yoga membership 10% off")
+    assert yoga == ["Services", "Health & Wellness"], yoga          # multi-tag
+    cloud = canonical_tags("Cloud", "Free hosting and domain for developers")
+    assert cloud == ["Tech & Software"], cloud  # cloud/hosting/dev all one tag now
+    assert canonical_tags("Zxqwv Nonsense", "") == ["Other"]  # unmatched -> Other
+    assert canonical_tags("", "") == ["Other"]
+    assert canonical_tags("Learning & Resources", "") == ["Education"]  # -ing suffix
+    assert not _TAG_RE["Food & Drink"].search("library bartender")     # no false 'bar'
+    print("ok: canonical tags reduce vocabulary, allow multiple, set primary")
 
     # Retry classifier: 429/5xx retryable, 4xx/other not.
     assert _is_retryable(genai_errors.APIError(429, {"message": "rate"}))

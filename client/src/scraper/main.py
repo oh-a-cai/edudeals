@@ -7,7 +7,10 @@ scraped_output_debug.json keeps an on-disk copy for debugging.
 import asyncio
 import json
 import os
+import re
 from dataclasses import asdict
+
+from urllib.parse import urlsplit
 
 import httpx
 
@@ -27,20 +30,51 @@ SEED_QUERIES = [
 ]
 
 
+# Brand-name noise words stripped before comparison, so "Spotify" and "Spotify
+# Premium Student Discount" collapse to the same key.
+_BRAND_NOISE = re.compile(
+    r"\b(premium|student|students|discount|discounts|offer|offers|deal|deals|for|the|pro|plan)\b")
+
+
+def _norm_brand(name: str) -> str:
+    """Brand name -> comparison key: noise words dropped, then alnum-only."""
+    b = re.sub(r"[^a-z0-9]+", "", _BRAND_NOISE.sub("", name.lower()))
+    return b or re.sub(r"[^a-z0-9]+", "", name.lower())  # all-noise -> full name
+
+
+def _dedupe_key(d: Deal) -> tuple[str, str] | None:
+    """(normalized brand, host). Collapses the same merchant listed twice on the
+    same site (e.g. a product in both GitHub files) while KEEPING the same brand on
+    different sites — Woodstock's in two cities, Spotify campus vs spotify.com — so
+    we never delete a genuinely distinct deal. Null URL -> no key (passes through)."""
+    if not d.redemption_url:
+        return None
+    return (_norm_brand(d.brand), urlsplit(d.redemption_url).netloc.lower())
+
+
 def dedupe(deals: list[Deal]) -> list[Deal]:
-    """Collapse rows sharing a redemption_url (same offer listed in both GitHub
-    files, etc.), keeping the first seen. Mirrors the DB's ON CONFLICT so the debug
-    file matches what actually lands in the table. Null-URL rows pass through —
-    they're dropped later at the save step anyway."""
-    seen: set[str] = set()
+    """Collapse rows for the same merchant on the same site, keeping the first seen.
+    Null-URL rows pass through — they're dropped later at the save step anyway."""
+    seen: set[tuple[str, str]] = set()
     out: list[Deal] = []
     for d in deals:
-        if d.redemption_url and d.redemption_url in seen:
+        key = _dedupe_key(d)
+        if key and key in seen:
             continue
-        if d.redemption_url:
-            seen.add(d.redemption_url)
+        if key:
+            seen.add(key)
         out.append(d)
     return out
+
+
+def merge_sources(campus: list[Deal], github: list[Deal]) -> list[Deal]:
+    """Dedupe within each source by (brand, host); across sources GitHub wins — if a
+    brand exists in the GitHub lists, drop the campus rows for that same brand (the
+    curated enterprise listing is preferred over a campus-specific one)."""
+    github = dedupe(github)
+    gh_brands = {_norm_brand(d.brand) for d in github}
+    campus = [d for d in dedupe(campus) if _norm_brand(d.brand) not in gh_brands]
+    return campus + github
 
 
 def dump_debug(deals: list[Deal]) -> None:
@@ -88,7 +122,9 @@ async def main():
     # markdown -> a deterministic regex parser (100% recall, no quota, no LLM call).
     campus_deals = await parse_deals_batch(local_pages + global_pages)
     github_deals = parse_github_markdown(github_pages)
-    all_deals = dedupe(campus_deals + github_deals)
+    # Within-source dedupe + GitHub-wins on cross-source brand collisions.
+    # (Non-USD region-locked deals were already dropped at parse time.)
+    all_deals = merge_sources(campus_deals, github_deals)
 
     dump_debug(all_deals)
 

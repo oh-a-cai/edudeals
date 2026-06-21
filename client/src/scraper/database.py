@@ -1,7 +1,7 @@
 """Async Postgres upsert via a psycopg v3 connection pool."""
 import asyncio
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from config import DATABASE_URL
 
@@ -18,20 +18,31 @@ class Deal:
     brand: str
     description: str
     discount_percent: str | None = None
-    category: str | None = None
+    category: str | None = None    # primary tag (tags[0]); kept for the frontend grid
     redemption_url: str | None = None
     expires_at: str | None = None  # ISO date string ('2026-12-31') or None
+    school: str | None = None      # source campus/school label, e.g. 'UC Berkeley'
+    tags: list[str] = field(default_factory=list)  # canonical multi-tag set
 
 
 _UPSERT_SQL = """
     INSERT INTO public.discounts
-        (brand, description, discount_percent, category, redemption_url, expires_at)
-    VALUES (%s, %s, %s, %s, %s, %s)
+        (brand, description, discount_percent, category, redemption_url, expires_at, school, tags)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
     ON CONFLICT (redemption_url)
     DO UPDATE SET
         description = EXCLUDED.description,
-        discount_percent = EXCLUDED.discount_percent;
+        discount_percent = EXCLUDED.discount_percent,
+        school = EXCLUDED.school,
+        category = EXCLUDED.category,
+        tags = EXCLUDED.tags;
 """
+
+
+def _ensure_scheme(url: str) -> str:
+    """Frontend needs absolute links — prepend https:// to any scheme-less URL
+    (e.g. a raw 'stripe.com' from a markdown list) so it isn't read as relative."""
+    return url if url.startswith(("http://", "https://")) else "https://" + url
 
 
 def drop_unconflictable(deals: list[Deal]) -> list[Deal]:
@@ -65,8 +76,8 @@ async def save_deals(deals: list[Deal]) -> int:
         async with pool.connection() as conn:
             async with conn.cursor() as cur:
                 await cur.executemany(_UPSERT_SQL, [
-                    (d.brand, d.description, d.discount_percent,
-                     d.category, d.redemption_url, d.expires_at)
+                    (d.brand, d.description, d.discount_percent, d.category,
+                     _ensure_scheme(d.redemption_url), d.expires_at, d.school, d.tags)
                     for d in rows
                 ])
             await conn.commit()
