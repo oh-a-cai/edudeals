@@ -7,4 +7,5 @@ export interface Discount {
   redemption_url: string
   expires_at: string | null
   created_at: string
+  school: string | null
 }
