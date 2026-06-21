@@ -6,7 +6,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#84-viet",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -18,7 +18,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#bobby-g-s",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -30,7 +30,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#bench-cafe-patisserie",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -42,7 +42,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#ikes-love-sandwiches",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -54,7 +54,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#juice-appeal",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -66,7 +66,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#cancun-sabor-mexicano",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -78,7 +78,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#southside-station",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -90,7 +90,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#burgerim",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -102,7 +102,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#namaste-madras-cuisine",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -114,7 +114,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#moe-s-sushi-grill",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -126,7 +126,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#masa-ramen-bistro",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -138,7 +138,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#cal-s-fried-chicken-burgers",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -150,7 +150,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#university-taqueria",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -162,7 +162,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#the-breakroom",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Food & Drink"
     ]
@@ -174,7 +174,7 @@
     "category": "Retail",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#pegasus-books",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Retail"
     ]
@@ -186,7 +186,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#freight-and-salvage",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Entertainment"
     ]
@@ -198,7 +198,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#berkeley-repertory-theatre",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Entertainment"
     ]
@@ -206,11 +206,11 @@
   {
     "brand": "Berkeley Art Museum and Pacific Film Archive",
     "description": "Discount: Free Admission",
-    "discount_percent": null,
+    "discount_percent": "100%",
     "category": "Entertainment",
     "redemption_url": "https://www.downtownberkeley.com/student-discounts/#berkeley-art-museum-and-pacific-film-archive",
     "expires_at": null,
-    "school": "UC Berkeley",
+    "school": "UCB",
     "tags": [
       "Entertainment"
     ]
@@ -222,7 +222,7 @@
     "category": "Services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#davis-sexual-health-clinic",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Services",
       "Health & Wellness"
@@ -235,7 +235,7 @@
     "category": "Services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#a-room-of-our-own-massage",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Services",
       "Health & Wellness"
@@ -248,7 +248,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#upper-crust-baking",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -260,7 +260,7 @@
     "category": "Services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#hilton-garden-inn-davis",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Services",
       "Travel"
@@ -273,7 +273,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#woodstocks-pizza",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink",
       "Tech & Software"
@@ -286,7 +286,7 @@
     "category": "Retail",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#yesterday-vintage",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Retail"
     ]
@@ -298,7 +298,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#crazy-ds-hot-chicken",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -310,7 +310,7 @@
     "category": "Retail",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#the-good-people-farms",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Retail"
     ]
@@ -322,7 +322,7 @@
     "category": "Services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#akasha-yoga",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Services"
     ]
@@ -334,7 +334,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#the-posh-bagel",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -346,7 +346,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#blaze-pizza",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -358,7 +358,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#bubble-belly",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -370,7 +370,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#falafel-corner",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -382,7 +382,7 @@
     "category": "Services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#cpa-tax-desk-andrew-newman",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Services"
     ]
@@ -394,7 +394,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#open-rice-kitchen",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -406,7 +406,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#el-patio-fresh-mexican-grill",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -418,7 +418,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#mayas-authentic-mexican-food",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -430,7 +430,7 @@
     "category": "Retail",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#creme-de-la-creme",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Retail"
     ]
@@ -442,7 +442,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#cultive-frozen-yogurt",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -454,19 +454,19 @@
     "category": "Retail",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#the-paint-chip",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Sweet and Shavery",
-    "description": "Wednesday Student Special 3pm-5pm BOGO Small",
+    "description": "Wednesday Student Special: 3pm-5pm BOGO Small",
     "discount_percent": null,
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#sweet-and-shavery",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -478,7 +478,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#red-88",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Food & Drink"
     ]
@@ -490,7 +490,7 @@
     "category": "Services",
     "redemption_url": "https://davisdowntown.com/aggie-deals/#fit-house-davis",
     "expires_at": null,
-    "school": "UC Davis",
+    "school": "UCD",
     "tags": [
       "Services",
       "Retail",
@@ -504,31 +504,31 @@
     "category": "Retail",
     "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#spartan-bookstore",
     "expires_at": null,
-    "school": "San Jose State University",
+    "school": "SJSU",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Rental Car Agencies",
-    "description": "Members receive discounts between 15 - 25% at Alamo, Auto Europe, Avis, Budget, Hertz, National, and Payless",
+    "description": "Discounts between 15 - 25% at Alamo, Auto Europe, Avis, Budget, Hertz, National, and Payless",
     "discount_percent": "25%",
     "category": "Services",
     "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#rental-car-agencies",
     "expires_at": null,
-    "school": "San Jose State University",
+    "school": "SJSU",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Choice Hotels",
-    "description": "Receive up to 20% off your next stay",
+    "description": "Up to 20% off next stay",
     "discount_percent": "20%",
     "category": "Services",
     "redemption_url": "https://www.sjsu.edu/alumni/join/member-benefits.php#choice-hotels",
     "expires_at": null,
-    "school": "San Jose State University",
+    "school": "SJSU",
     "tags": [
       "Services"
     ]
@@ -540,19 +540,19 @@
     "category": "Food & Drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#99-ranch-market",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Absolute Socks",
-    "description": "Save 15% with couple code edu15",
+    "description": "Save 15% with couple code \"edu15\"",
     "discount_percent": "15%",
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#absolute-socks",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail",
       "Tech & Software"
@@ -565,7 +565,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#aj-usa-automotive-service",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -577,7 +577,7 @@
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#alpine-division",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail",
       "Tech & Software"
@@ -590,7 +590,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#bike-and-kayak-tours-inc",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -602,7 +602,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#birch-aquarium",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -614,7 +614,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#california-center-for-the-arts-escondido",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -626,7 +626,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#caroline-s-seaside-cafe",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Food & Drink"
     ]
@@ -638,34 +638,33 @@
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#chevrolet-parts",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "CorePower Yoga",
-    "description": "$17 drop-in with Student ID, or 10 classes for $144; Monthly unlimited membership is $115",
+    "description": "$17 drop-in with Student ID, or 10 classes for $144. Monthly unlimited membership is $115",
     "discount_percent": null,
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#corepower-yoga",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Day Translations",
-    "description": "10% discounts on any of our services. Must email or call us this code: UCSD10",
+    "description": "10% discounts on any of our services.",
     "discount_percent": "10%",
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#day-translations",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
-      "Services",
-      "Tech & Software"
+      "Services"
     ]
   },
   {
@@ -675,7 +674,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#diversionary-theatre",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -687,7 +686,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#dr-pilates",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -699,7 +698,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#estancia-la-jolla-hotel-spa",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services",
       "Health & Wellness"
@@ -712,7 +711,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#golf-upgrades",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -724,7 +723,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#great-clips",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -736,7 +735,7 @@
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#j-crew",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail"
     ]
@@ -748,7 +747,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#jobtest-org",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -760,7 +759,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#journey-golf-rental",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services",
       "Travel"
@@ -768,36 +767,36 @@
   },
   {
     "brand": "La Jolla Playhouse",
-    "description": "Rush tickets for $20 (Under 30); 50% off regular price (student rush)",
+    "description": "Regular student rush: 50% off regular price",
     "discount_percent": "50%",
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#la-jolla-playhouse",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "Lamb's Players Theatre",
-    "description": "$4 off adult price, $10 student rush",
+    "description": "$10 student rush",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#lamb-s-players-theatre",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "Landini's Pizzeria",
-    "description": "10% off the entire bill",
+    "description": "10% off the entire bill with UCSD ID",
     "discount_percent": "10%",
     "category": "Food & Drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#landini-s-pizzeria",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Food & Drink"
     ]
@@ -809,7 +808,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#learner-com",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services",
       "Education"
@@ -817,12 +816,12 @@
   },
   {
     "brand": "Moonlight Stage Productions",
-    "description": "Student lawn $10 (Wed., Thur., and Sun.); $15 (Fri. and Sat.)",
+    "description": "student lawn $10 (Wed., Thur., and Sun.); $15 (Fri. and Sat.)",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#moonlight-stage-productions",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -834,7 +833,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#national-comedy-theatre",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -846,19 +845,19 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#nature-center",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "Nelson Photo Supplies",
-    "description": "10% student discount on tripods, bags, and everything else",
+    "description": "10% student discount on tripods, bags, and everything else, EXCEPT cameras and lens",
     "discount_percent": "10%",
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#nelson-photo-supplies",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail"
     ]
@@ -870,7 +869,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#nexus-auto-transport",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services",
       "Travel"
@@ -878,12 +877,12 @@
   },
   {
     "brand": "North Coast Repertory Theatre",
-    "description": "$18-$20; $15 student rush",
+    "description": "$15 student rush",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#north-coast-repertory-theatre",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -895,7 +894,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#onstage-playhouse",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -907,7 +906,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#patio-playhouse",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -919,7 +918,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#pinkberry",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Food & Drink"
     ]
@@ -931,7 +930,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#poway-performing-arts-company",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -940,12 +939,12 @@
     "brand": "Printmoz",
     "description": "10% off discount",
     "discount_percent": "10%",
-    "category": "Services",
+    "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#printmoz",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
-      "Services"
+      "Retail"
     ]
   },
   {
@@ -955,31 +954,31 @@
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#ray-ban",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail"
     ]
   },
   {
-    "brand": "Riffs Studios | Yoga & Wellness | La Jolla",
+    "brand": "Riffs Studios",
     "description": "15% off any recurring membership",
     "discount_percent": "15%",
     "category": "Services",
-    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#riffs-studios-yoga-wellness-la-jolla",
+    "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#riffs-studios",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Rothy’s",
-    "description": "20% discount for students",
+    "description": "20% discount",
     "discount_percent": "20%",
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#rothys",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail"
     ]
@@ -991,7 +990,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-padres",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -1003,7 +1002,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-gulls",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -1015,31 +1014,31 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-museum-of-art",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "San Diego Opera",
-    "description": "20% off regular prices; $20 rush tickets",
+    "description": "20% off regular prices 1 hour before show time; $20 rush tickets",
     "discount_percent": "20%",
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-opera",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "San Diego Symphony",
-    "description": "$3 off regular prices; $5 rush tickets",
+    "description": "$3 off regular prices",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#san-diego-symphony",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -1051,19 +1050,19 @@
     "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#scripps-golf",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Scoops La Jolla",
-    "description": "10% off with UCSD student ID",
+    "description": "10% off",
     "discount_percent": "10%",
     "category": "Food & Drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#scoops-la-jolla",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Food & Drink"
     ]
@@ -1075,7 +1074,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#sportsclips",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -1087,7 +1086,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#supercuts",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -1096,22 +1095,22 @@
     "brand": "SwagPrint",
     "description": "15% off custom swag",
     "discount_percent": "15%",
-    "category": "Services",
+    "category": "Retail",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#swagprint",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
-      "Services"
+      "Retail"
     ]
   },
   {
     "brand": "Tomedes",
-    "description": "A 10% discount on translation services.",
+    "description": "10% discount on translation services",
     "discount_percent": "10%",
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#tomedes",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
@@ -1123,31 +1122,31 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#top-nutrition-coaching",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "UCSD Theatre and Dance",
-    "description": "Single ticket: $10",
+    "description": "$10 single ticket",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#ucsd-theatre-and-dance",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "UTC ICE",
-    "description": "$5 off a public session.",
+    "description": "$5 off a public session",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#utc-ice",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment"
     ]
@@ -1159,7 +1158,7 @@
     "category": "Entertainment",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#vertical-hold",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Entertainment",
       "Travel"
@@ -1172,7 +1171,7 @@
     "category": "Services",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#yoga-six-studios",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Services",
       "Education"
@@ -1185,544 +1184,45 @@
     "category": "Food & Drink",
     "redemption_url": "https://sfs.ucsd.edu/campus-cards/discounts.html#z-pizza",
     "expires_at": null,
-    "school": "UC San Diego",
+    "school": "UCSD",
     "tags": [
       "Food & Drink"
     ]
   },
   {
-    "brand": "Chaiwale & Co.",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#chaiwale-co",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Smoqued BBQ",
-    "description": "10% off total lunch bill, Monday-Friday",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#smoqued-bbq",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Blaze Pizza",
-    "description": "10% off or free drink",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#blaze-pizza",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Snooze AM Eatery",
-    "description": "10% off with ID",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#snooze-am-eatery",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Jalapeños",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#jalapenos",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Fins n Wings",
-    "description": "20% off",
+    "brand": "AMVET Thrift",
+    "description": "20% discount on total purchases",
     "discount_percent": "20%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#fins-n-wings",
+    "category": "Retail",
+    "redemption_url": "https://www.fresnocitycollege.edu/campus-life/clubs/asg-student-discounts.html#amvet-thrift",
     "expires_at": null,
-    "school": "chapman.edu",
+    "school": "FCC",
     "tags": [
-      "Food & Drink"
+      "Retail"
     ]
   },
   {
-    "brand": "Euro Caffe",
-    "description": "20% off with ID, Fridays only",
-    "discount_percent": "20%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#euro-caffe",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "L'Orange Cafe",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#l-orange-cafe",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Zocalo Cafe",
-    "description": "15% off, alcohol excluded",
-    "discount_percent": "15%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#zocalo-cafe",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Long Dog Coffee & Treats",
-    "description": "$1 off with $5+ purchase",
+    "brand": "Dutch Bros.",
+    "description": "$1.00 off any drink",
     "discount_percent": null,
     "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#long-dog-coffee-treats",
+    "redemption_url": "https://www.fresnocitycollege.edu/campus-life/clubs/asg-student-discounts.html#dutch-bros",
     "expires_at": null,
-    "school": "chapman.edu",
+    "school": "FCC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
-    "brand": "Zito’s",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#zitos",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Palm Market & Deli",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#palm-market-deli",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Subway",
-    "description": "Free cookie with valid student ID",
-    "discount_percent": null,
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#subway",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "1886 Brewing Co.",
-    "description": "10% off total lunch bill, Monday-Friday",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#1886-brewing-co",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Orange Grocery Outlet",
-    "description": "5% off",
-    "discount_percent": "5%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#orange-grocery-outlet",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Provisions",
-    "description": "10% off food & drink",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#provisions",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Pizza Press",
-    "description": "10% off or free drink",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#pizza-press",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Bagel Me",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#bagel-me",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Citrus City Grille",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#citrus-city-grille",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Orange Cafe Bistro",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#orange-cafe-bistro",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Baba G Mediterranean",
-    "description": "10% off with ID",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#baba-g-mediterranean",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Full Circle",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#full-circle",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Wild Horses Clothing",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#wild-horses-clothing",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "The Collection by Casa Teresa",
-    "description": "5% off",
-    "discount_percent": "5%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#the-collection-by-casa-teresa",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Something's New OC",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#something-s-new-oc",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Sweet Peach Vintage",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#sweet-peach-vintage",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Nonahme Vintage",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#nonahme-vintage",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Nikkidee Essentials",
-    "description": "10% off with ID",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#nikkidee-essentials",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Groovy Ghost Vintage",
-    "description": "10% off vinyls & CDs",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#groovy-ghost-vintage",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail",
-      "Entertainment"
-    ]
-  },
-  {
-    "brand": "Tranquil Nail and Spa",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Services",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#tranquil-nail-and-spa",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Tana's Wellness Spa",
-    "description": "20% off first massage or facial",
-    "discount_percent": "20%",
-    "category": "Services",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#tana-s-wellness-spa",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Services",
-      "Health & Wellness"
-    ]
-  },
-  {
-    "brand": "Sunny Smith Boardshop",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#sunny-smith-boardshop",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Helping Hands Live Scan",
-    "description": "$7 off total",
-    "discount_percent": null,
-    "category": "Services",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#helping-hands-live-scan",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "American Barbershop",
-    "description": "$5 off any service",
-    "discount_percent": null,
-    "category": "Services",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#american-barbershop",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Timbang Chiropractic",
-    "description": "10% off overall visit, adjustments only $55 per visit",
-    "discount_percent": "10%",
-    "category": "Services",
-    "redemption_url": "https://www.chapman.edu/campus-services/marketing-public-affairs/community-relations/info-for-students/student-discounts.aspx#timbang-chiropractic",
-    "expires_at": null,
-    "school": "chapman.edu",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "American Conservatory Theater",
-    "description": "Half-price full season subscriptions",
-    "discount_percent": "50%",
-    "category": "Entertainment",
-    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#american-conservatory-theater",
-    "expires_at": null,
-    "school": "UC San Francisco",
-    "tags": [
-      "Entertainment",
-      "Tech & Software"
-    ]
-  },
-  {
-    "brand": "Best Online Traffic School",
-    "description": "25% discount on the course fee",
-    "discount_percent": "25%",
-    "category": "Services",
-    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#best-online-traffic-school",
-    "expires_at": null,
-    "school": "UC San Francisco",
-    "tags": [
-      "Services",
-      "Education"
-    ]
-  },
-  {
-    "brand": "Chamberlin Real Estate School",
-    "description": "Save $25 off any pre-license package.",
-    "discount_percent": null,
-    "category": "Services",
-    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#chamberlin-real-estate-school",
-    "expires_at": null,
-    "school": "UC San Francisco",
-    "tags": [
-      "Services",
-      "Tech & Software"
-    ]
-  },
-  {
-    "brand": "Palace Games",
-    "description": "10% off weekday discount",
-    "discount_percent": "10%",
-    "category": "Entertainment",
-    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#palace-games",
-    "expires_at": null,
-    "school": "UC San Francisco",
-    "tags": [
-      "Entertainment"
-    ]
-  },
-  {
-    "brand": "The Word Point",
-    "description": "Save 20% on translation services.",
-    "discount_percent": "20%",
-    "category": "Services",
-    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#the-word-point",
-    "expires_at": null,
-    "school": "UC San Francisco",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Varsity Tutors",
-    "description": "20% discount on all paid products",
-    "discount_percent": "20%",
-    "category": "Services",
-    "redemption_url": "https://campuslifeserviceshome.ucsf.edu/arts-and-events/student-only-discounts#varsity-tutors",
-    "expires_at": null,
-    "school": "UC San Francisco",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Tickets at Work",
-    "description": "Sign up & save $5 on your first order",
+    "brand": "FCC Athletics",
+    "description": "$1.00 admission to all home sporting events",
     "discount_percent": null,
     "category": "Entertainment",
-    "redemption_url": "https://hr.ucr.edu/employee-resources/ucr-discounts#tickets-at-work",
+    "redemption_url": "https://www.fresnocitycollege.edu/campus-life/clubs/asg-student-discounts.html#fcc-athletics",
     "expires_at": null,
-    "school": "UC Riverside",
+    "school": "FCC",
     "tags": [
       "Entertainment"
-    ]
-  },
-  {
-    "brand": "Booking.com",
-    "description": "Special employee pricing of up to 40% off select hotels worldwide",
-    "discount_percent": "40%",
-    "category": "Services",
-    "redemption_url": "https://hr.ucr.edu/employee-resources/ucr-discounts#booking-com",
-    "expires_at": null,
-    "school": "UC Riverside",
-    "tags": [
-      "Services",
-      "Travel"
-    ]
-  },
-  {
-    "brand": "Expedia.com",
-    "description": "Employees can save 8% OFF select hotels",
-    "discount_percent": "8%",
-    "category": "Services",
-    "redemption_url": "https://hr.ucr.edu/employee-resources/ucr-discounts#expedia-com",
-    "expires_at": null,
-    "school": "UC Riverside",
-    "tags": [
-      "Services",
-      "Travel"
     ]
   },
   {
@@ -1732,7 +1232,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#sierra-bella-lanes",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Entertainment",
       "Retail",
@@ -1746,7 +1246,7 @@
     "category": "Services",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#feather-river-fitness-center",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Services"
     ]
@@ -1758,7 +1258,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#leon-roys-pizza",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Food & Drink"
     ]
@@ -1770,55 +1270,55 @@
     "category": "Retail",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#pet-country-feed-n-tack",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Quincy Natural Foods Co-Op",
-    "description": "10% off with membership.",
+    "description": "10% off with membership",
     "discount_percent": "10%",
     "category": "Food & Drink",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#quincy-natural-foods-co-op",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Quincy Provisions",
-    "description": "20% off ALL DRINKS on Tuesdays.",
+    "description": "20% off ALL DRINKS on Tuesdays",
     "discount_percent": "20%",
     "category": "Food & Drink",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#quincy-provisions",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Rich Bar Taproom and Kitchen",
-    "description": "10% off with a valid student ID",
+    "description": "10% off",
     "discount_percent": "10%",
     "category": "Food & Drink",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#rich-bar-taproom-and-kitchen",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Town Hall Theater",
-    "description": "$8 admission ($1 discount) with current FRC student ID card",
+    "description": "$8 admission ($1 discount)",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#town-hall-theater",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Entertainment"
     ]
@@ -1830,7 +1330,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#the-scoop",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Food & Drink",
       "Entertainment"
@@ -1838,15 +1338,1204 @@
   },
   {
     "brand": "Plumas Pines: Hot Shots",
-    "description": "30% student discount on rentals for Hot Shot driving range",
+    "description": "30% student discount on rentals",
     "discount_percent": "30%",
     "category": "Entertainment",
     "redemption_url": "https://www.frc.edu/studentservices/local-discounts-for-students#plumas-pines-hot-shots",
     "expires_at": null,
-    "school": "Feather River College",
+    "school": "FRC",
     "tags": [
       "Entertainment",
       "Travel"
+    ]
+  },
+  {
+    "brand": "A Lit'le Irish Too",
+    "description": "10% off entire purchase",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#a-lit-le-irish-too",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Alora Pure LLC",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#alora-pure-llc",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Atomic 97 Beer & Wine",
+    "description": "15% OFF one item!",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#atomic-97-beer-wine",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Bailey’s Treasures",
+    "description": "10% off any purchase",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#baileys-treasures",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "BK Juices",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#bk-juices",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Brewer's Alley",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#brewer-s-alley",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Colonial Jewelers",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#colonial-jewelers",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Cowork Frederick",
+    "description": "10% off Day Passes & Meeting Rooms",
+    "discount_percent": "10%",
+    "category": "Services",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#cowork-frederick",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Crash & Catharsis Rage Factory",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#crash-catharsis-rage-factory",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "Curious Iguana",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#curious-iguana",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Dancing Bear Toys",
+    "description": "10% off purchase",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#dancing-bear-toys",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Embark Skate Shop",
+    "description": "10% off clothing and shoes",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#embark-skate-shop",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Fraternal Order of Eagles",
+    "description": "15% with student ID",
+    "discount_percent": "15%",
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#fraternal-order-of-eagles",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "Frederick Book Arts Center",
+    "description": "10% off classes and merchandise",
+    "discount_percent": "10%",
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#frederick-book-arts-center",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "Frederick MADE",
+    "description": "Free sticker with every purchase",
+    "discount_percent": null,
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#frederick-made",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Great Stuff By Paul",
+    "description": "50% off",
+    "discount_percent": "50%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#great-stuff-by-paul",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Hinzi's Kitchen",
+    "description": "15% off any order",
+    "discount_percent": "15%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#hinzi-s-kitchen",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Hippy Chick Hummus",
+    "description": "10% off any item",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#hippy-chick-hummus",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Lockhouse Studios",
+    "description": "10% off studio rentals",
+    "discount_percent": "10%",
+    "category": "Services",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#lockhouse-studios",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Travel"
+    ]
+  },
+  {
+    "brand": "Maryland Ensemble Theatre",
+    "description": "$5 tickets",
+    "discount_percent": null,
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#maryland-ensemble-theatre",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "Maxwell's Burgers and Shakes",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#maxwell-s-burgers-and-shakes",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "National Museum of Civil War Medicine",
+    "description": "10% off purchase in the gift store",
+    "discount_percent": "10%",
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#national-museum-of-civil-war-medicine",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment",
+      "Retail"
+    ]
+  },
+  {
+    "brand": "North Market Pop Shop",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#north-market-pop-shop",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "One Goods Co. Vintage",
+    "description": "6% off any purchase",
+    "discount_percent": "6%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#one-goods-co-vintage",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Pretzel and Pizza Creations",
+    "description": "BOGO pretzels and 50% off cheese pizzas after 4pm",
+    "discount_percent": "50%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#pretzel-and-pizza-creations",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Rare Morsel",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#rare-morsel",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Retro-Metro",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#retro-metro",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Savage Soaps",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#savage-soaps",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Showroom",
+    "description": "½-price Mocktails Mon–Thu. $5 Pot Pie Fritters, Onion Rings, Fries, Chicken Biscuit Sandwich.",
+    "discount_percent": "50%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#showroom",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Surelocked In Escape Games",
+    "description": "25% off weekday bookings",
+    "discount_percent": "25%",
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#surelocked-in-escape-games",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "Terra Moda",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#terra-moda",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "The Kitchenette",
+    "description": "10% off entire purchase",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#the-kitchenette",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "The Temple: A Paul Mitchell School",
+    "description": "25% off retail + 25% off clinic services",
+    "discount_percent": "25%",
+    "category": "Services",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#the-temple-a-paul-mitchell-school",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Retail",
+      "Health & Wellness"
+    ]
+  },
+  {
+    "brand": "The Trail House",
+    "description": "10% off your entire purchase",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#the-trail-house",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "TONED Studio Pilates",
+    "description": "10% off Pilates classes",
+    "discount_percent": "10%",
+    "category": "Services",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#toned-studio-pilates",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Health & Wellness"
+    ]
+  },
+  {
+    "brand": "TONIQ",
+    "description": "10% off alcohol, 5% off non-alcoholic products",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#toniq",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "UR Nuts | Fresh Roasted Nuts",
+    "description": "10% off all nuts",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#ur-nuts-fresh-roasted-nuts",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Wag’s Restaurant",
+    "description": "Free fries with any burger every Tuesday",
+    "discount_percent": null,
+    "category": "Food & Drink",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#wags-restaurant",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Waves of Tory",
+    "description": "10% off purchase",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#waves-of-tory",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Weinberg Center for the Arts",
+    "description": "$5 off tickets",
+    "discount_percent": null,
+    "category": "Entertainment",
+    "redemption_url": "https://www.hood.edu/student-life/student-engagement/community-connections/student-discounts#weinberg-center-for-the-arts",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "American Aquatics and Safety Training",
+    "description": "20% discount on training fees",
+    "discount_percent": "20%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#american-aquatics-and-safety-training",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Bottle Your Brand",
+    "description": "25% off any custom stickers or labels",
+    "discount_percent": "25%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#bottle-your-brand",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Commercial Wall Decor",
+    "description": "15% discount",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#commercial-wall-decor",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Crazy Neon",
+    "description": "20% discount on a minimum order value of $150",
+    "discount_percent": "20%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#crazy-neon",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Custom Cufflinks",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#custom-cufflinks",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Custom Neon Signs",
+    "description": "10% discount on orders above $300",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#custom-neon-signs",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Custompens.com",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#custompens-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "DCAcar",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#dcacar",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "DC Lash Bar",
+    "description": "15% off any first-time service",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#dc-lash-bar",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "DHC Translations",
+    "description": "15% discount",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#dhc-translations",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Echo Neon",
+    "description": "10% off custom glass neon signs, LED neon signs, and other creative lighting products.",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#echo-neon",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail",
+      "Design"
+    ]
+  },
+  {
+    "brand": "Filthy Clean",
+    "description": "10% off storewide",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#filthy-clean",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Flyances",
+    "description": "10% off custom patches",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#flyances",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "GS-JJ Keychains",
+    "description": "10% off on custom keychains",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#gs-jj-keychains",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Herda Radio",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#herda-radio",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "HeySunday.com",
+    "description": "20% off",
+    "discount_percent": "20%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#heysunday-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "iMoving.com",
+    "description": "10% off any booking",
+    "discount_percent": "10%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#imoving-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Jobtest.org",
+    "description": "15% discount on all of our packages",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#jobtest-org",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Keychains Co",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#keychains-co",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Lamomo Neon Signs",
+    "description": "40% discount",
+    "discount_percent": "40%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#lamomo-neon-signs",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Learner.com",
+    "description": "15% discount on the cost of their tutoring sessions",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#learner-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Education"
+    ]
+  },
+  {
+    "brand": "Leslie Store",
+    "description": "25% discount",
+    "discount_percent": "25%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#leslie-store",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "LetsLiveItUp.com",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#letsliveitup-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Levittown Ford Parts",
+    "description": "15% discount on shipping fees",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#levittown-ford-parts",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Linguation.com",
+    "description": "20% off",
+    "discount_percent": "20%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#linguation-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "L.L.Bean",
+    "description": "10% student discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#l-l-bean",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "MachineTranslation.com",
+    "description": "50% student discount",
+    "discount_percent": "50%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#machinetranslation-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Maid Bright",
+    "description": "15% OFF initial cleaning",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#maid-bright",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Meble Furniture",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#meble-furniture",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Mirraw",
+    "description": "10% student discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#mirraw",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Monterey Company",
+    "description": "15% off any custom merch order",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#monterey-company",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Mopar Online Parts",
+    "description": "5% discount on total purchase; 15% discount on shipping fees",
+    "discount_percent": "5%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#mopar-online-parts",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Nantahala Outdoor Center",
+    "description": "10% off guided rafting",
+    "discount_percent": "10%",
+    "category": "Entertainment",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#nantahala-outdoor-center",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "NeonSigns",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#neonsigns",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Neon By Design",
+    "description": "10% all purchases",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#neon-by-design",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Neon Now",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#neon-now",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Nexus Auto Transport",
+    "description": "$100 discount for safe, hassle-free car transport",
+    "discount_percent": null,
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#nexus-auto-transport",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Travel"
+    ]
+  },
+  {
+    "brand": "PackM",
+    "description": "10% off on all non-sample products",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#packm",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "PeaKeen",
+    "description": "10% discount on all our custom products",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#peakeen",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Pettable.com",
+    "description": "$30 off",
+    "discount_percent": null,
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#pettable-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Price4Limo",
+    "description": "$100 off any rental",
+    "discount_percent": null,
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#price4limo",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Travel"
+    ]
+  },
+  {
+    "brand": "ProTrainings",
+    "description": "35% discount on certification",
+    "discount_percent": "35%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#protrainings",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Education"
+    ]
+  },
+  {
+    "brand": "Salon Emmanuel",
+    "description": "20% off any service",
+    "discount_percent": "20%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#salon-emmanuel",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Send Smiles",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#send-smiles",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Sentinel Mouthguards",
+    "description": "15% off their order",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#sentinel-mouthguards",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Shapeways",
+    "description": "15% discount",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#shapeways",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Stamped With Love",
+    "description": "10% on all purchases",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#stamped-with-love",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Subaru Online Parts",
+    "description": "15% discount on shipping",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#subaru-online-parts",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Subaru Parts Pros",
+    "description": "15% discount on shipping fees",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#subaru-parts-pros",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "The Escape Game",
+    "description": "20% discount",
+    "discount_percent": "20%",
+    "category": "Entertainment",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#the-escape-game",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Entertainment"
+    ]
+  },
+  {
+    "brand": "Therapy Trainings",
+    "description": "15% off any purchase",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#therapy-trainings",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "TopNutritionCoaching.com",
+    "description": "15% off of personalized nutrition coaching",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#topnutritioncoaching-com",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Health & Wellness"
+    ]
+  },
+  {
+    "brand": "TrueTrac",
+    "description": "10% off storewide",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#truetrac",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Verizon",
+    "description": "Save up to $25 on Unlimited mobile service",
+    "discount_percent": null,
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#verizon",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services",
+      "Tech & Software"
+    ]
+  },
+  {
+    "brand": "Volvo Dealer Accessories",
+    "description": "15% discount on shipping fees",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#volvo-dealer-accessories",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Voodoo Neon",
+    "description": "10% discounts on all orders",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#voodoo-neon",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Wondershare PDFelement",
+    "description": "63% discount",
+    "discount_percent": "63%",
+    "category": "Services",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#wondershare-pdfelement",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "Yearpins",
+    "description": "10% discount",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://business-services.gwu.edu/student-discount-page#yearpins",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
     ]
   },
   {
@@ -1856,7 +2545,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#arslans-turkish-street-food",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -1868,7 +2557,7 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#artifact",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
@@ -1880,7 +2569,7 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#artisans-agency",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
@@ -1892,7 +2581,7 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#comicopolis",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail",
       "Design"
@@ -1900,15 +2589,14 @@
   },
   {
     "brand": "Cruzio",
-    "description": "Use Code STUDENT to get one month free!",
+    "description": "one month free!",
     "discount_percent": null,
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#cruzio",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Services",
-      "Tech & Software"
+      "Services"
     ]
   },
   {
@@ -1918,7 +2606,7 @@
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#eyeq",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
@@ -1927,48 +2615,48 @@
     "brand": "Far West Fungi",
     "description": "10% off",
     "discount_percent": "10%",
-    "category": "Food & Drink",
+    "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#far-west-fungi",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Food & Drink"
+      "Retail"
     ]
   },
   {
     "brand": "Fine Point Law",
-    "description": "10% off Fledgling Plan ($999 instead of $2,000)",
-    "discount_percent": "50%",
+    "description": "$999 instead of the usual price of $2,000",
+    "discount_percent": null,
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#fine-point-law",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Fusion Fare",
-    "description": "10% off with Student ID",
+    "description": "10% off",
     "discount_percent": "10%",
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#fusion-fare",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Go Ask Alice",
-    "description": "10% off student discount anytime. 20% off student days every Wednesday.",
+    "description": "10% off anytime; 20% off every Wednesday",
     "discount_percent": "20%",
-    "category": "Retail",
+    "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#go-ask-alice",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Retail"
+      "Food & Drink"
     ]
   },
   {
@@ -1978,7 +2666,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#hidden-peak-tea-house",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -1990,7 +2678,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#hula-s",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -2002,7 +2690,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#ibiza",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -2014,31 +2702,31 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#izzy-s-ices",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Kianti's",
-    "description": "BOGO (Buy One Get One) Kianti's Signature Cocktail with the purchase of any entree.",
+    "description": "BOGO Kianti's Signature Cocktail with the purchase of any entree",
     "discount_percent": null,
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#kianti-s",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "Kinship Hair Co.",
-    "description": "10% off products",
+    "description": "10% Off products",
     "discount_percent": "10%",
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#kinship-hair-co",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
@@ -2047,37 +2735,48 @@
     "brand": "Level Up Video Games",
     "description": "10% Off Used Games",
     "discount_percent": "10%",
-    "category": "Retail",
+    "category": "Entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#level-up-video-games",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Retail",
       "Entertainment"
     ]
   },
   {
+    "brand": "Lookout Santa Cruz",
+    "description": "Free Memberships",
+    "discount_percent": null,
+    "category": "Services",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#lookout-santa-cruz",
+    "expires_at": null,
+    "school": "UCSC",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
     "brand": "Los Pinos",
-    "description": "15% off your order.",
+    "description": "15% off your order",
     "discount_percent": "15%",
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#los-pinos",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
     "brand": "M.K. Contemporary Art",
-    "description": "10% off.",
+    "description": "10% off",
     "discount_percent": "10%",
-    "category": "Retail",
+    "category": "Entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#m-k-contemporary-art",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Retail"
+      "Entertainment"
     ]
   },
   {
@@ -2087,7 +2786,7 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#mission-hill-creamery",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -2099,34 +2798,32 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#nectar-creations",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Nicely",
-    "description": "20% off any item all the time- except ART!",
+    "description": "20% off any item all the time",
     "discount_percent": "20%",
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#nicely",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Retail",
-      "Entertainment"
+      "Retail"
     ]
   },
   {
     "brand": "Offshore Sounds",
-    "description": "10% off on all records and tapes in-store.",
+    "description": "10% off on all records and tapes",
     "discount_percent": "10%",
-    "category": "Retail",
+    "category": "Entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#offshore-sounds",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
-      "Retail",
       "Entertainment"
     ]
   },
@@ -2137,7 +2834,7 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#old-school-shoes",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
@@ -2149,19 +2846,19 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#om-gallery",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Plaza Lane Optometry",
-    "description": "Buy one complete set of glasses (frame and lenses) and get the second set of single vision, glare-free lenses for FREE",
+    "description": "Buy one complete set of glasses, get the second set of single vision, glare-free lenses for FREE",
     "discount_percent": null,
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#plaza-lane-optometry",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
@@ -2173,43 +2870,43 @@
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#poke-house",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
   },
   {
-    "brand": "Santa Cruz Ayuverda",
+    "brand": "Santa Cruz Ayurveda",
     "description": "30% off on an initial Ayurvedic consultation",
     "discount_percent": "30%",
     "category": "Services",
-    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-ayuverda",
+    "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-ayurveda",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Santa Cruz Cinema",
-    "description": "Student price Monday:$8; Discount Tuesday’s :$5; Student price Wednesday:$8",
+    "description": "Monday:$8; Discount Tuesday’s :$5; Wednesday:$8",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-cinema",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "Santa Cruz Somatic Bodywork",
-    "description": "20% off cranial sacral and somatic wellness massage.",
+    "description": "20% off cranial sacral and somatic wellness massage",
     "discount_percent": "20%",
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-somatic-bodywork",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services",
       "Health & Wellness"
@@ -2217,12 +2914,12 @@
   },
   {
     "brand": "Santa Cruz Symphony",
-    "description": "STUDENT RUSH: Students pay only $15 for all Symphony concerts!",
+    "description": "$15 for all Symphony concerts",
     "discount_percent": null,
     "category": "Entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#santa-cruz-symphony",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Entertainment"
     ]
@@ -2234,7 +2931,7 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#shen-s-gallery",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
@@ -2246,19 +2943,19 @@
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#super-silver",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "The Hat Company",
-    "description": "10% off to students",
+    "description": "10% off",
     "discount_percent": "10%",
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-hat-company",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
@@ -2270,19 +2967,19 @@
     "category": "Entertainment",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-museum-of-art-history",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Entertainment"
     ]
   },
   {
     "brand": "The Salty Otter Sports Grill",
-    "description": "10% off student discount",
+    "description": "10% off",
     "discount_percent": "10%",
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-salty-otter-sports-grill",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -2294,7 +2991,7 @@
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#the-sol-method",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
@@ -2306,55 +3003,55 @@
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#thrifty-cuts",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Variance Objects",
-    "description": "15% off for students.",
+    "description": "15% off",
     "discount_percent": "15%",
     "category": "Retail",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#variance-objects",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Retail"
     ]
   },
   {
     "brand": "Vision Sanctuary",
-    "description": "10% discount on studio memberships.",
+    "description": "10% discount on studio memberships",
     "discount_percent": "10%",
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#vision-sanctuary",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Volta Vitality",
-    "description": "10% off with student ID",
+    "description": "10% off",
     "discount_percent": "10%",
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#volta-vitality",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
   },
   {
     "brand": "Woodstock's Pizza",
-    "description": "$6 off an extra-large pizza anytime.",
+    "description": "$6 off an extra-large pizza",
     "discount_percent": null,
     "category": "Food & Drink",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#woodstock-s-pizza",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Food & Drink"
     ]
@@ -2366,578 +3063,251 @@
     "category": "Services",
     "redemption_url": "https://downtownsantacruz.com/discover/student-discounts#yoso-wellness-spa",
     "expires_at": null,
-    "school": "UC Santa Cruz",
+    "school": "UCSC",
     "tags": [
       "Services"
     ]
   },
   {
-    "brand": "A Cut of Confidence",
-    "description": "Half price on Tuesdays",
+    "brand": "Ann Taylor LOFT",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#ann-taylor-loft",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Ann Taylor",
+    "description": "20% off",
+    "discount_percent": "20%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#ann-taylor",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Banana Republic",
+    "description": "15 % off",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#banana-republic",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "J. Crew",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#j-crew",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Madewell",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#madewell",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Levi’s",
+    "description": "15% off in stores and online",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#levis",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Urban Outfitters",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#urban-outfitters",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Vineyard Vines",
+    "description": "15% off",
+    "discount_percent": "15%",
+    "category": "Retail",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#vineyard-vines",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Retail"
+    ]
+  },
+  {
+    "brand": "Amazon Prime",
+    "description": "50% off on a six-month subscription",
     "discount_percent": "50%",
     "category": "Services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#a-cut-of-confidence",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#amazon-prime",
     "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Advanced Wellness of Main Street",
-    "description": "Consultation, spinal exam and x-rays (if medically necessary) for $25",
-    "discount_percent": null,
-    "category": "Services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#advanced-wellness-of-main-street",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Services",
-      "Education"
-    ]
-  },
-  {
-    "brand": "Avocado Theory",
-    "description": "10% off with NCC flyer or ID",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#avocado-theory",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Ben and Jerry’s",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#ben-and-jerrys",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "BK Jewelry, Inc.",
-    "description": "20% off",
-    "discount_percent": "20%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#bk-jewelry-inc",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Catch 35",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#catch-35",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Cheronda Beauty & Braids",
-    "description": "$100 Sew-Ins",
-    "discount_percent": null,
-    "category": "Services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#cheronda-beauty-braids",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Couture Vision",
-    "description": "20% off eyeglass or sunglass purchase",
-    "discount_percent": "20%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#couture-vision",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Everdine’s Grilled Cheese Co.",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#everdines-grilled-cheese-co",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Jeni's Splendid Ice Creams",
-    "description": "15% off",
-    "discount_percent": "15%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#jeni-s-splendid-ice-creams",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "JoJo’s Shake Bar",
-    "description": "20% off",
-    "discount_percent": "20%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#jojos-shake-bar",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Karisma Boutique",
-    "description": "20% off",
-    "discount_percent": "20%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#karisma-boutique",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Le Chocolat du Bouchard/Bistro du Bouchard",
-    "description": "10% off any entrée for lunch or dinner",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#le-chocolat-du-bouchard-bistro-du-bouchard",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Little Barn Baby",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#little-barn-baby",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Miskatonic Craft Kitchen",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#miskatonic-craft-kitchen",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Pinot’s Palette",
-    "description": "15% off",
-    "discount_percent": "15%",
-    "category": "Entertainment",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pinots-palette",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Entertainment"
-    ]
-  },
-  {
-    "brand": "Pro Image Sports",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pro-image-sports",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Pure Barre",
-    "description": "$10 off",
-    "discount_percent": null,
-    "category": "Services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#pure-barre",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Shyft Pilates",
-    "description": "10% on a single class or class package, 20% off any membership for students",
-    "discount_percent": "20%",
-    "category": "Services",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#shyft-pilates",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Services",
-      "Education"
-    ]
-  },
-  {
-    "brand": "Sparrow Coffee",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#sparrow-coffee",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Standard Goods",
-    "description": "15% off",
-    "discount_percent": "15%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#standard-goods",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Treasures",
-    "description": "10% off",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.northcentralcollege.edu/life-location/naperville/downtown-discounts#treasures",
-    "expires_at": null,
-    "school": "North Central College",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Bloom Ink",
-    "description": "10% OFF First Service",
-    "discount_percent": "10%",
-    "category": "Services",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#bloom-ink",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Dillon James Jewelry",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#dillon-james-jewelry",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Lightexture",
-    "description": "15% OFF",
-    "discount_percent": "15%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#lightexture",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Maitri Yoga",
-    "description": "10% OFF with code STUDENT10",
-    "discount_percent": "10%",
-    "category": "Services",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#maitri-yoga",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
       "Services",
       "Tech & Software"
     ]
   },
   {
-    "brand": "MoJo's Cafe and Gallery",
-    "description": "7.5% OFF",
-    "discount_percent": "7.5%",
+    "brand": "Pizza Hut",
+    "description": "10% discount",
+    "discount_percent": "10%",
     "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#mojo-s-cafe-and-gallery",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#pizza-hut",
     "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
       "Food & Drink"
     ]
   },
   {
-    "brand": "River Street Poké Bar",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#river-street-poke-bar",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "T&J Handcrafted Soap",
-    "description": "10% OFF Body Products",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#t-j-handcrafted-soap",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Troy Dance Factory",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Services",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#troy-dance-factory",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Services"
-    ]
-  },
-  {
-    "brand": "Upstate of Mind",
-    "description": "15% OFF",
-    "discount_percent": "15%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#upstate-of-mind",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Weathered Wood",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#weathered-wood",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "db trends",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#db-trends",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Annick Designs",
+    "brand": "Subway",
     "description": "10% off",
     "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#annick-designs",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Bard and Baker Board Game Cafe",
-    "description": "10% OFF Food and Drink Daily. 50% OFF Game Fee Daily.",
-    "discount_percent": "50%",
     "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#bard-and-baker-board-game-cafe",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#subway",
     "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Food & Drink",
-      "Entertainment"
-    ]
-  },
-  {
-    "brand": "Collectiveffort",
-    "description": "Studio rental 50 % off",
-    "discount_percent": "50%",
-    "category": "Services",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#collectiveffort",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Services",
-      "Travel"
-    ]
-  },
-  {
-    "brand": "First Choice Caribbean",
-    "description": "Free Drink",
-    "discount_percent": null,
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#first-choice-caribbean",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
       "Food & Drink"
     ]
   },
   {
-    "brand": "Hart-Cluett Museum",
-    "description": "Free for students with valid ID.",
+    "brand": "Chick-fil-A",
+    "description": "free drink at most locations",
+    "discount_percent": null,
+    "category": "Food & Drink",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#chick-fil-a",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "Burger King",
+    "description": "10% off",
+    "discount_percent": "10%",
+    "category": "Food & Drink",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#burger-king",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Food & Drink"
+    ]
+  },
+  {
+    "brand": "National Geographic Museum",
+    "description": "$9 admission",
     "discount_percent": null,
     "category": "Entertainment",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#hart-cluett-museum",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#national-geographic-museum",
     "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
   },
   {
-    "brand": "Lo Porto Ristorante Caffe",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#lo-porto-ristorante-caffe",
+    "brand": "Phillips Collection",
+    "description": "$10 tickets",
+    "discount_percent": null,
+    "category": "Entertainment",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#phillips-collection",
     "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
-      "Food & Drink"
+      "Entertainment"
     ]
   },
   {
-    "brand": "Marcus Blaque",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#marcus-blaque",
+    "brand": "Wolf Trap",
+    "description": "50% off tickets",
+    "discount_percent": "50%",
+    "category": "Entertainment",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#wolf-trap",
     "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
-      "Retail"
+      "Entertainment"
     ]
   },
   {
-    "brand": "Mi Casa Market",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#mi-casa-market",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Oh Corn! Arepas",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#oh-corn-arepas",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Stacks Espresso Bar",
-    "description": "10% OFF Food and Drink",
-    "discount_percent": "10%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#stacks-espresso-bar",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "The Ruck",
-    "description": "15% OFF Lunch",
-    "discount_percent": "15%",
-    "category": "Food & Drink",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#the-ruck",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Food & Drink"
-    ]
-  },
-  {
-    "brand": "Uncle Sam's Good Nutrition",
-    "description": "25% OFF Supplements",
-    "discount_percent": "25%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#uncle-sam-s-good-nutrition",
-    "expires_at": null,
-    "school": "downtowntroyny.org",
-    "tags": [
-      "Retail"
-    ]
-  },
-  {
-    "brand": "Vibe Beauty Collective",
-    "description": "15% OFF",
-    "discount_percent": "15%",
+    "brand": "New York Times",
+    "description": "$1 a week",
+    "discount_percent": null,
     "category": "Services",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#vibe-beauty-collective",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#new-york-times",
     "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
       "Services"
     ]
   },
   {
-    "brand": "Yellow Lab Vintage",
-    "description": "10% OFF",
-    "discount_percent": "10%",
-    "category": "Retail",
-    "redemption_url": "https://www.downtowntroyny.org/for-students#yellow-lab-vintage",
+    "brand": "Wall Street Journal",
+    "description": "$4 a month or $24 for a yearly subscription",
+    "discount_percent": null,
+    "category": "Services",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#wall-street-journal",
     "expires_at": null,
-    "school": "downtowntroyny.org",
+    "school": "All",
     "tags": [
-      "Retail"
+      "Services",
+      "Tech & Software"
+    ]
+  },
+  {
+    "brand": "Revolve Fitness",
+    "description": "10% off package deals of 10 or 20 rides",
+    "discount_percent": "10%",
+    "category": "Services",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#revolve-fitness",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
+    ]
+  },
+  {
+    "brand": "The Studio",
+    "description": "15% off all packages",
+    "discount_percent": "15%",
+    "category": "Services",
+    "redemption_url": "https://secretdc.com/student-discounts-dc/#the-studio",
+    "expires_at": null,
+    "school": "All",
+    "tags": [
+      "Services"
     ]
   },
   {
@@ -2947,7 +3317,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://aws.amazon.com/education/awseducate/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -2959,7 +3329,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://azure.microsoft.com/en-us/free/students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Services"
@@ -2972,7 +3342,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://edu.google.com/programs/students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -2985,7 +3355,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.digitalocean.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -2997,7 +3367,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.heroku.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3009,7 +3379,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.ibm.com/academic",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Services",
@@ -3023,7 +3393,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.alibabacloud.com/campaign/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3036,7 +3406,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://vercel.com/pricing",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3048,7 +3418,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.netlify.com/pricing/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3060,7 +3430,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.oracle.com/cloud/free/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3072,7 +3442,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.linode.com/docs/guides/linode-for-education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3085,7 +3455,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.jetbrains.com/community/education/#students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3097,7 +3467,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://code.visualstudio.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3109,7 +3479,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.git-tower.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3121,7 +3491,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://termius.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3133,7 +3503,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.gitkraken.com/student-resources",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3145,7 +3515,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://bootstrapstudio.io/pages/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3157,7 +3527,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.axure.com/edu",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3169,7 +3539,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.postman.com/student-program/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3182,7 +3552,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://support.typora.io/Purchase-Typora/#discount-for-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3194,7 +3564,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://workingcopyapp.com/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3206,7 +3576,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.sublimetext.com/buy",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3218,7 +3588,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://nc.me/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3230,7 +3600,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://webflow.com/classrooms",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3242,7 +3612,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.framer.com/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3254,7 +3624,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.wix.com/students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3266,7 +3636,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.squarespace.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3278,7 +3648,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://themeisle.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3290,7 +3660,7 @@
     "category": "Education",
     "redemption_url": "https://education.github.com/pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3302,7 +3672,7 @@
     "category": "Education",
     "redemption_url": "https://openai.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3314,7 +3684,7 @@
     "category": "Education",
     "redemption_url": "https://huggingface.co/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3326,7 +3696,7 @@
     "category": "Education",
     "redemption_url": "https://deepnote.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3338,7 +3708,7 @@
     "category": "Education",
     "redemption_url": "https://colab.research.google.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3350,7 +3720,7 @@
     "category": "Education",
     "redemption_url": "https://www.polymersearch.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3362,7 +3732,7 @@
     "category": "Education",
     "redemption_url": "https://wandb.ai/site/academic",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3374,7 +3744,7 @@
     "category": "Education",
     "redemption_url": "https://roboflow.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3386,7 +3756,7 @@
     "category": "Design",
     "redemption_url": "https://www.adobe.com/creativecloud/buy/students.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Tech & Software"
@@ -3399,7 +3769,7 @@
     "category": "Design",
     "redemption_url": "https://www.figma.com/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -3411,7 +3781,7 @@
     "category": "Design",
     "redemption_url": "https://www.sketch.com/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -3423,7 +3793,7 @@
     "category": "Design",
     "redemption_url": "https://www.canva.com/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Education"
@@ -3436,7 +3806,7 @@
     "category": "Design",
     "redemption_url": "https://www.coreldraw.com/en/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -3448,7 +3818,7 @@
     "category": "Design",
     "redemption_url": "https://www.blender.org/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -3460,7 +3830,7 @@
     "category": "Design",
     "redemption_url": "https://www.maxon.net/en/educational-licenses",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Tech & Software"
@@ -3473,7 +3843,7 @@
     "category": "Design",
     "redemption_url": "https://www.autodesk.com/education/edu-software/overview",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -3485,7 +3855,7 @@
     "category": "Design",
     "redemption_url": "https://www.invisionapp.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Education",
@@ -3499,7 +3869,7 @@
     "category": "Design",
     "redemption_url": "https://iconscout.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -3511,7 +3881,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.notion.so/product/notion-for-education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3523,7 +3893,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://miro.com/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3536,7 +3906,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://todoist.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3548,7 +3918,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://trello.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3561,7 +3931,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://asana.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3573,7 +3943,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://monday.com/lang/students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3585,7 +3955,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://ticktick.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3597,7 +3967,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://airtable.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3609,7 +3979,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.typeform.com/help/a/student-discount-360029574451/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3621,7 +3991,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://linear.app/method/linear-for-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3633,7 +4003,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://help.clickup.com/hc/en-us/articles/6303426214551-ClickUp-for-students-and-educators",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3645,7 +4015,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://slack.com/help/articles/206646877-Apply-for-the-Slack-for-Education-discount",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3658,7 +4028,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://evernote.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3670,7 +4040,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.mongodb.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3683,7 +4053,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.tableau.com/academic/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3695,7 +4065,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.navicat.com/en/sponsorship/education/student",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3707,7 +4077,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://popsql.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3719,7 +4089,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.sas.com/en_us/learn/academic-programs/students.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3731,7 +4101,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.metabase.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3743,7 +4113,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.ableton.com/en/shop/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design"
@@ -3756,7 +4126,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.avid.com/pro-tools/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design"
@@ -3769,7 +4139,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.apple.com/us-edu/shop/product/BMGE2Z/A/pro-apps-bundle-for-education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design",
@@ -3784,7 +4154,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.image-line.com/fl-studio/educational-version/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design",
@@ -3798,7 +4168,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.presonus.com/en/buy-studio-one-education.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design"
@@ -3811,7 +4181,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.bitwig.com/buy/educational/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design"
@@ -3824,7 +4194,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.blackmagicdesign.com/products/davinciresolve",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design"
@@ -3837,7 +4207,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://1password.com/github-student-developer-pack/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3849,7 +4219,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.dashlane.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3861,7 +4231,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.namecheap.com/security/ssl-certificates/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -3874,7 +4244,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://cryptomator.org/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -3886,7 +4256,7 @@
     "category": "Education",
     "redemption_url": "https://www.oreilly.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3898,7 +4268,7 @@
     "category": "Education",
     "redemption_url": "https://frontendmasters.com/guides/learning-roadmap/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -3911,7 +4281,7 @@
     "category": "Education",
     "redemption_url": "https://www.educative.io/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -3924,7 +4294,7 @@
     "category": "Education",
     "redemption_url": "https://www.coursera.org/for-university-and-college-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3936,7 +4306,7 @@
     "category": "Education",
     "redemption_url": "https://www.codecademy.com/student-center",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3948,7 +4318,7 @@
     "category": "Education",
     "redemption_url": "https://www.udacity.com/scholarships",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3960,7 +4330,7 @@
     "category": "Education",
     "redemption_url": "https://www.freecodecamp.org/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3972,7 +4342,7 @@
     "category": "Education",
     "redemption_url": "https://www.datacamp.com/groups/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -3984,7 +4354,7 @@
     "category": "Entertainment",
     "redemption_url": "https://education.github.com/pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Tech & Software",
@@ -3998,7 +4368,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://bio.link/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4010,7 +4380,7 @@
     "category": "Entertainment",
     "redemption_url": "https://anydesk.com/en/education/free-for-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design",
@@ -4024,7 +4394,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://visualstudio.microsoft.com/students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4036,7 +4406,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.lastpass.com",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4048,7 +4418,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.surveyhero.com/esurveycreator-is-now-surveyhero",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4060,7 +4430,7 @@
     "category": "Services",
     "redemption_url": "https://www.lucidchart.com/pages/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Services",
       "Design"
@@ -4073,7 +4443,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://prezi.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Design"
@@ -4086,7 +4456,7 @@
     "category": "Education",
     "redemption_url": "https://blackberry.qnx.com/en",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4099,7 +4469,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://nc.me/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4111,7 +4481,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.name.com/partner/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4123,7 +4493,7 @@
     "category": "Education",
     "redemption_url": "https://www.educative.io/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -4135,7 +4505,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://education.github.com/benefits/offers",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4147,7 +4517,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://azure.microsoft.com/en-in/free/students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Services"
@@ -4160,7 +4530,7 @@
     "category": "Entertainment",
     "redemption_url": "https://unity.com/products/unity-student",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Tech & Software"
@@ -4173,7 +4543,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://get.tech/github-student-developer-pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4185,7 +4555,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://pomodoneapp.com/pomodoro-timer-for-students.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4197,7 +4567,7 @@
     "category": "Education",
     "redemption_url": "https://onemonth.com/github/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -4209,7 +4579,7 @@
     "category": "Education",
     "redemption_url": "https://www.interviewcake.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -4221,7 +4591,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.mongodb.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Education"
@@ -4234,7 +4604,7 @@
     "category": "Education",
     "redemption_url": "https://education.github.com/experts",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -4246,7 +4616,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.twilio.com/blog/twilio-perks-students-and-educators-now-available-github-education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4258,7 +4628,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://testmail.app/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4270,7 +4640,7 @@
     "category": "Design",
     "redemption_url": "https://polypane.app/github-students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Tech & Software"
@@ -4283,7 +4653,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://pageclip.co/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4295,7 +4665,7 @@
     "category": "Education",
     "redemption_url": "https://next.tech/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4308,7 +4678,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://https://www.arduino.cc/education/explore-iot-kit",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4320,7 +4690,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://product.typeform.com/github/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Design"
@@ -4333,7 +4703,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://hazeover.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4345,7 +4715,7 @@
     "category": "Design",
     "redemption_url": "https://icons8.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Tech & Software"
@@ -4358,7 +4728,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.mailgun.com/github-students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4370,7 +4740,7 @@
     "category": "Education",
     "redemption_url": "https://gorails.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Design"
@@ -4383,7 +4753,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.rhino3d.com/for/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4395,7 +4765,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://enscape3d.com/educational-license/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4407,7 +4777,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.chaos.com/education/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4419,7 +4789,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.qt.io/qt-educational-license",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4431,7 +4801,7 @@
     "category": "Education",
     "redemption_url": "https://www.copyright.com/solutions-annual-copyright-license-student-assessments/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4444,7 +4814,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://support.cpanel.net/hc/en-us/articles/1500005429921-cPanel-Education-Licenses",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4456,7 +4826,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.gurobi.com/academia/academic-program-and-licenses/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4468,7 +4838,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.shapr3d.com/education",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4480,7 +4850,7 @@
     "category": "Design",
     "redemption_url": "https://help.gliffy.com/online/Content/GliffyOnline/free_for_students.htm",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -4492,7 +4862,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://https://www.portfoliobox.net/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4504,7 +4874,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://lumion.com/educational-licenses.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4516,7 +4886,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.tableau.com/academic/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4528,7 +4898,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.tableau.com/products/prep",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4540,7 +4910,7 @@
     "category": "Education",
     "redemption_url": "https://www.thinkful.com/blog/github-adds-thinkful-to-student-developer-pack/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4553,7 +4923,7 @@
     "category": "Design",
     "redemption_url": "https://support.invisionapp.com/hc/en-us",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -4565,7 +4935,7 @@
     "category": "Other",
     "redemption_url": "https://basecamp.com/discounts",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -4577,7 +4947,7 @@
     "category": "Retail",
     "redemption_url": "https://www.myunidays.com/US/en-US",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Retail"
     ]
@@ -4589,7 +4959,7 @@
     "category": "Retail",
     "redemption_url": "https://www.sheerid.com/shoppers/studentdeals/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Retail"
     ]
@@ -4601,7 +4971,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://onthehub.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4613,7 +4983,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.ptc.com/en/products/education/free-software/creo-college-download",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4625,7 +4995,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.intel.com/content/www/us/en/education/intel-education.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4637,7 +5007,7 @@
     "category": "Retail",
     "redemption_url": "https://www.newegg.com/neweggpremier",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Retail"
     ]
@@ -4649,7 +5019,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://mnx.io/pricing",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4661,7 +5031,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://dnsimple.com/signup",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4673,7 +5043,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://sendgrid.com/pricing/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4685,7 +5055,7 @@
     "category": "Services",
     "redemption_url": "https://orchestration.io/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Services",
       "Tech & Software"
@@ -4698,7 +5068,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://bitnami.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4710,7 +5080,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.truelancer.com/crowdflower-online-jobs-freelancer-job",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4722,7 +5092,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.timescale.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4734,7 +5104,7 @@
     "category": "Education",
     "redemption_url": "https://hexagon.com/company/divisions/safety-infrastructure-geospatial/education-program",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4747,7 +5117,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.axure.com/edu",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Design"
@@ -4760,7 +5130,7 @@
     "category": "Education",
     "redemption_url": "https://replit.com/site/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4773,7 +5143,7 @@
     "category": "Retail",
     "redemption_url": "https://www.bhphotovideo.com/find/eduAdvantage.jsp",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Retail",
       "Tech & Software"
@@ -4786,7 +5156,7 @@
     "category": "Education",
     "redemption_url": "https://flatironschool.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4799,7 +5169,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://github.com/marketplace/imgbot/plan/MLP_kgDNGw8#pricing-and-setup",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4811,7 +5181,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.datadoghq.com/blog/datadog-github-student-developer-pack/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4823,7 +5193,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://kodika.io/pricing/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Design"
@@ -4836,7 +5206,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4848,7 +5218,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.adafruit.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4860,7 +5230,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://education.travis-ci.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4872,7 +5242,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4884,7 +5254,7 @@
     "category": "Education",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4897,7 +5267,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4909,7 +5279,7 @@
     "category": "Education",
     "redemption_url": "https://gitpod.io/plans/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education",
       "Tech & Software"
@@ -4922,7 +5292,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://sentry.io/for/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4934,7 +5304,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.xojo.com/githubstudent/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Design"
@@ -4947,7 +5317,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4959,7 +5329,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://app.cryptolens.io/user/githubstudent",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4971,7 +5341,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4983,7 +5353,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.browserstack.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -4995,7 +5365,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.freshpoint.com/news/page/6/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5007,7 +5377,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5019,7 +5389,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://themeisle.com/github-students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software",
       "Design"
@@ -5032,7 +5402,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://about.codecov.io/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5044,7 +5414,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://cart.org/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5056,7 +5426,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5068,7 +5438,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.sqlgate.com/pricing/subscription?language=en",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5080,7 +5450,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://vaadin.com/student-program",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5092,7 +5462,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5104,7 +5474,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://deepscan.io/github-student-pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5116,7 +5486,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5128,7 +5498,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://codescene.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5140,7 +5510,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://simpleanalytics.com/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5152,7 +5522,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5164,7 +5534,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5176,7 +5546,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://bettercodehub.com/github-student-developer-pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5188,7 +5558,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.dailybot.com/pricing",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5200,7 +5570,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://poeditor.com/blog/translation-localization-educational-projects/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5212,7 +5582,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.honeybadger.io/github-students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5224,7 +5594,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://corp.kaltura.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5236,7 +5606,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.getastra.com/github-student-developer-pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5248,7 +5618,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://pushbots.com/for/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5260,7 +5630,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://lingohub.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5272,7 +5642,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5284,7 +5654,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://blockchair.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5296,7 +5666,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.datree.io/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5308,7 +5678,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.eversql.com/github-students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5320,7 +5690,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://baremetrics.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5332,7 +5702,7 @@
     "category": "Other",
     "redemption_url": "https://www.lambdatest.com/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5344,7 +5714,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://sqlsmash.com/buy.html",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5356,7 +5726,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://wisej.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5368,7 +5738,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://github.com/AccessLint",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5380,7 +5750,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://appfigures.com/landing/github-student",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5392,7 +5762,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.mezmo.com/blog/get-a-free-logdna-account-in-the-github-student-developer-pack",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5404,7 +5774,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.mezmo.com/blog/get-a-free-logdna-account-in-the-github-student-developer-packs://",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5416,7 +5786,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://transloadit.com/github-students/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5428,7 +5798,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://bit.ly/PhraseOffer",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5440,7 +5810,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://coveralls.io/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5452,7 +5822,7 @@
     "category": "Education",
     "redemption_url": "https://www.itemis.com/en/yakindu/state-machine/yakindu-universities/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5464,7 +5834,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://crowdin.com/page/github-students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5476,7 +5846,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.transifex.com/pricing/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5488,7 +5858,7 @@
     "category": "Entertainment",
     "redemption_url": "https://education.minecraft.net/en-us/licensing",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Tech & Software"
@@ -5501,7 +5871,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://testbook.com/offers/5c6d38b3fdb8bb27ca727f62",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5513,7 +5883,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://macpaw.com/store/cleanmymac",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5525,7 +5895,7 @@
     "category": "Other",
     "redemption_url": "https://corporate.spicejet.com/studentdiscountlanding.aspx",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5537,7 +5907,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://blog.qoddi.com/flashdrive-student-program/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5549,7 +5919,7 @@
     "category": "Design",
     "redemption_url": "https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design",
       "Tech & Software"
@@ -5562,7 +5932,7 @@
     "category": "Education",
     "redemption_url": "https://www.amazon.com/hz/audible/mlp?ie=UTF8&tag=colinfgee-20",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5574,7 +5944,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.youneedabudget.com/college/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]
@@ -5586,7 +5956,7 @@
     "category": "Health & Wellness",
     "redemption_url": "https://www.headspace.com/studentplan",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Health & Wellness"
     ]
@@ -5598,7 +5968,7 @@
     "category": "Other",
     "redemption_url": "https://www.apple.com/us-edu/store",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5610,7 +5980,7 @@
     "category": "Education",
     "redemption_url": "https://www.coursera.support/s/article/209819033-Apply-for-Financial-Aid-or-a-Scholarship?language=en_US",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5622,7 +5992,7 @@
     "category": "Education",
     "redemption_url": "https://msftstudentcert.cloudreadyskills.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5634,7 +6004,7 @@
     "category": "Design",
     "redemption_url": "https://www.hulu.com/student",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -5646,7 +6016,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.expedia.com/student-travel-discounts",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Travel"
@@ -5659,7 +6029,7 @@
     "category": "Entertainment",
     "redemption_url": "https://impactsoundworks.com/support/#academic-discounts/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5671,7 +6041,7 @@
     "category": "Education",
     "redemption_url": "https://cursa.app/en",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5683,7 +6053,7 @@
     "category": "Design",
     "redemption_url": "https://elements.envato.com/pricing/students",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Design"
     ]
@@ -5695,7 +6065,7 @@
     "category": "Other",
     "redemption_url": "https://www.dell.com/en-in/lp/student-laptop-discount#Featured-Student-Laptops",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5707,7 +6077,7 @@
     "category": "Other",
     "redemption_url": "https://www.lenovo.com/in/en/d/students-offer/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5719,7 +6089,7 @@
     "category": "Entertainment",
     "redemption_url": "https://mubi.com/promos/student-india",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5731,7 +6101,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.primevideo.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment",
       "Design"
@@ -5744,7 +6114,7 @@
     "category": "Other",
     "redemption_url": "https://macpaw.com/macpaw-student-discount?campaign=cmmx_search_sitelink_en&campaign=cmmx_search_brand_in_en&ci=16806056043&adgroupid=135530056059&adpos=&ck=cleanmymac%20discount&targetid=kwd-331823206928&match={if:p}&gnetwork=g&creative=591911619779&placement=&placecat=&accname=cmm&gclid=CjwKCAjw79iaBhAJEiwAPYwoCPikBA_zA5hEVpgUUyVjqLZnihdOCw1OfTYojxBtjJf2wcOTAGKP4RoCa4IQAvD_BwE",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5756,7 +6126,7 @@
     "category": "Other",
     "redemption_url": "https://www.samsung.com/in/microsite/student-advantage/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5768,7 +6138,7 @@
     "category": "Other",
     "redemption_url": "https://www.hp.com/us/shop/students/about-the-program",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5780,7 +6150,7 @@
     "category": "Retail",
     "redemption_url": "https://www.flipkart.com/students-enrollment-store?",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Retail"
     ]
@@ -5792,7 +6162,7 @@
     "category": "Education",
     "redemption_url": "https://googie.coupons/udemy/?loc=9061866&pos=&ad=430569585489&device=c⌖=kwd-66803475385&ext=&camp=2036421541&group=70876059966&utm_medium=16772139466432396440&utm_source=16772139466432396440&utm_campaign=16772139466432396440&gclid=CjwKCAjw79iaBhAJEiwAPYwoCM5iqdWKVmKsuXzAMIZvdlI8y7nTHdvnNI7RePjU9jYwcPyCu-4VFRoC_XAQAvD_BwE?loc=9061866&pos=&ad=430569585489&device=c⌖=kwd-66803475385&ext=&camp=2036421541&group=70876059966&utm_medium=16772139466432396440&utm_source=adu92&utm_campaign=16772139466432396440&gclid=CjwKCAjw79iaBhAJEiwAPYwoCM5iqdWKVmKsuXzAMIZvdlI8y7nTHdvnNI7RePjU9jYwcPyCu-4VFRoC_XAQAvD_BwE",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5804,7 +6174,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.spotify.com/us/student/?utm_source=in-en_neev_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_asia_in_premiumbusiness_Student_brand_neev+contextual-mobile+text+phrase+in-en+google&gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ39ZqLWFVjo64WGLp_cNwrKx_3eiJ8GZ6_lUSUGpt8XrCngK2ApVgYaAoN0EALw_wcB&gclsrc=aw.ds",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5816,7 +6186,7 @@
     "category": "Education",
     "redemption_url": "https://gateway.studentbeans.com/us/offer/89f9c9b4-d223-41b1-bf58-48f66d73362c?brand=adobe&category=tech-mobile&utm_source=affiliate&utm_medium=rakuten&utm_campaign=3781960:BrokeScholar&utm_content=3&utm_term=usnetwork&ranMID=44445&ranEAID=*LjTQqvRo5A&ranSiteID=.LjTQqvRo5A-CmG1u971Dcl4NiZHqsZEpA",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Education"
     ]
@@ -5828,7 +6198,7 @@
     "category": "Other",
     "redemption_url": "https://lenovo.studentbeans.com/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5840,7 +6210,7 @@
     "category": "Other",
     "redemption_url": "https://www.printful.com/student-deals",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Other"
     ]
@@ -5852,7 +6222,7 @@
     "category": "Retail",
     "redemption_url": "https://www.realme.com/eu/student-discount",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Retail"
     ]
@@ -5864,7 +6234,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.spitfireaudio.com/education-program",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5876,7 +6246,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.ableton.com/en/shop/education/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5888,7 +6258,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.steinberg.net/education/students-teachers/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5900,7 +6270,7 @@
     "category": "Entertainment",
     "redemption_url": "https://www.image-line.com/edu-licenses/",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5912,7 +6282,7 @@
     "category": "Entertainment",
     "redemption_url": "https://identit-e.com/antaresaudiotech",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Entertainment"
     ]
@@ -5924,7 +6294,7 @@
     "category": "Tech & Software",
     "redemption_url": "https://www.perplexity.ai/backtoschool",
     "expires_at": null,
-    "school": "Online",
+    "school": "All",
     "tags": [
       "Tech & Software"
     ]

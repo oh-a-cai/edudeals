@@ -370,24 +370,24 @@ def is_foreign_url(url: str) -> bool:
     return any(hint in url.lower() for hint in _FOREIGN_PATH_HINTS)
 
 
-# Curated source-host -> school label. Discovered hosts not listed here fall back
-# to their bare domain, so a new directory is still traceable without a code edit.
+# Curated source-host -> school abbreviation. Hosts not listed here aren't a known
+# campus, so school_for() labels them 'All' (a general/non-campus offer).
 _SCHOOL_BY_HOST = {
-    "downtownberkeley.com": "UC Berkeley",
-    "davisdowntown.com": "UC Davis",
-    "downtownsantacruz.com": "UC Santa Cruz",
-    "sjsu.edu": "San Jose State University",
-    "ucsd.edu": "UC San Diego",
-    "ucsf.edu": "UC San Francisco",
-    "fresnocitycollege.edu": "Fresno City College",
-    "frc.edu": "Feather River College",
-    "northcentralcollege.edu": "North Central College",
-    "ucr.edu": "UC Riverside",
-    "uoregon.edu": "University of Oregon",
+    "downtownberkeley.com": "UCB",
+    "davisdowntown.com": "UCD",
+    "downtownsantacruz.com": "UCSC",
+    "sjsu.edu": "SJSU",
+    "ucsd.edu": "UCSD",
+    "ucsf.edu": "UCSF",
+    "fresnocitycollege.edu": "FCC",
+    "frc.edu": "FRC",
+    "northcentralcollege.edu": "NCC",
+    "ucr.edu": "UCR",
+    "uoregon.edu": "UO",
 }
 
 # GitHub-list deals aren't tied to a campus — they're national/online offers.
-_ONLINE_SCHOOL = "Online"
+_ONLINE_SCHOOL = "All"
 
 
 # Canonical tag vocabulary — kept small and short. A deal can carry several tags;
@@ -450,15 +450,15 @@ def canonical_tags(raw: str | None, description: str = "") -> list[str]:
 
 
 def school_for(url: str) -> str:
-    """Friendly school/source label from the deal's host. Known campus sources map
-    to a curated name; anything else falls back to its bare domain."""
+    """Friendly school label from the deal's host. Known campus sources map to a
+    curated abbreviation; anything else is a general/non-campus source -> 'All'."""
     host = urlsplit(url if "//" in url else "//" + url).netloc.lower()
     if host.startswith("www."):
         host = host[4:]
     for frag, name in _SCHOOL_BY_HOST.items():
         if frag in host:
             return name
-    return host or "Unknown"
+    return _ONLINE_SCHOOL  # not a known campus (e.g. secretdc.com) -> 'All'
 
 
 def _unescape_md(s: str) -> str:
@@ -663,16 +663,16 @@ if __name__ == "__main__":
     assert not _md_deal("AmazonIN", "https://www.amazon.in/x", "10% off")  # foreign, dropped
     print("ok: region filter drops foreign URLs, remaps /in-en/ -> /us/")
 
-    # School tag: curated campus hosts -> name, GitHub -> Online, unknown -> domain.
-    assert school_for("https://sfs.ucsd.edu/campus-cards/x#a") == "UC San Diego"
-    assert school_for("https://www.downtownberkeley.com/student-discounts/#b") == "UC Berkeley"
-    assert school_for("https://newplace.edu/deals#c") == "newplace.edu"  # fallback
-    assert _md_deal("Figma", "https://figma.com/edu", "Free").school == "Online"
+    # School tag: curated campus hosts -> abbreviation, everything else -> 'All'.
+    assert school_for("https://sfs.ucsd.edu/campus-cards/x#a") == "UCSD"
+    assert school_for("https://www.downtownberkeley.com/student-discounts/#b") == "UCB"
+    assert school_for("https://secretdc.com/deals#c") == "All"  # non-campus -> All
+    assert _md_deal("Figma", "https://figma.com/edu", "Free").school == "All"
     campus = _deals_from_llm_json([{"brand": "Cafe", "description": "10% off",
         "discount_percent": "10%", "category": "Food",
         "redemption_url": "https://www.downtownberkeley.com/student-discounts/"}])
-    assert campus[0].school == "UC Berkeley", campus
-    print("ok: school tag set from source host (campus name / Online / domain)")
+    assert campus[0].school == "UCB", campus
+    print("ok: school tag set from source host (campus abbr / All)")
 
     # Canonical tags: small vocabulary, multiple per deal, category = primary.
     assert canonical_tags("Food and Drink", "10% off pizza") == ["Food & Drink"]
